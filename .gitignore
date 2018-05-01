@@ -1,0 +1,13 @@
+appfront/config/fecshop_local_services/Store.php
+.idea/workspace.xml
+.idea/yii2_fecshop.iml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/blade.xml
+.idea/deployment.xml
+.idea/webServers.xml
+appfront/config/fecshop_local_services/Image.php
+appfront/config/fecshop_local_services/Email.php
+common/config/main-local.php
+
+appfront/config/fecshop_local_modules/Catalog.php

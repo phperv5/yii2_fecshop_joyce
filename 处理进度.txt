@@ -1,0 +1,6 @@
+1、需要修改账号信息
+2、favor中没有添加购买链接
+
+沙盒账户测试paypal支付：zqy234api1-facilitator-1@126.com 11111111
+
+支付宝沙盒账户：买家账号 wgvchs5996@sandbox.com 登录密码 111111 支付密码 111111

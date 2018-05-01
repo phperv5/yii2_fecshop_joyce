@@ -1,0 +1,41 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>404 Page not found</title>
+<link href="/style.css" rel="stylesheet" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<script type="text/javascript" src="/js/common.js"></script>
+</head>
+
+<body>
+
+<br /><br /><br /><br /><br />
+
+<div class="w90per" style="width:500px;">
+<h1 class="red">404 Page not found</h1>
+Whoops, sorry, this page does not exist or maybe have moved.
+
+<br /><br /><br /><br />
+
+Search can help you find what you're looking for.
+<br /><br />
+
+		<form name="formSearch" method="get" onsubmit="javascript:return CF_Search();" action="/search/"><input name="q" type="text" id="q" class="input_normal" size="40" maxlength="50" onfocus="javascript:if (this.value == 'Product name or keywords')  this.value = '';document.getElementById('q').className='input_focus';" onblur="javascript:if (this.value == '')  this.value = 'Product name or keywords';if (this.value == 'Product name or keywords')  document.getElementById('q').className='input_normal';" value="Product name or keywords">
+		<input type="submit" value=" Search " class="btn_submit" title="search" />
+		</form>
+<br />
+...or head back to the <a href="/">Homepage</a>
+
+<br /><br /><br /><br />
+
+<a href="/"><img src="/images/logo.png" alt="Goto Homepage" border="0" /></a>
+<br />
+<br />
+
+</div>
+
+
+</body>
+</html>
