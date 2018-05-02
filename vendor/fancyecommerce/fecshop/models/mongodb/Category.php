@@ -67,11 +67,7 @@ class Category extends ActiveRecord
             'created_user_id',
             //品牌
             'is_brand',
-            //other
-            /*
-                category filter
-                category product
-            */
+            'sort',
        ];
     }
 }

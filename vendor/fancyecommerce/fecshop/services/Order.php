@@ -21,12 +21,12 @@ class Order extends Service
 {
     public $requiredAddressAttr; // 必填的订单字段。
     // 下面是订单支付状态
-    public $payment_status_pending          = 'pending';
-    public $payment_status_processing       = 'processing';
+    public $payment_status_pending          = 'Unpaid';
+    public $payment_status_processing       = 'Paid';
     public $payment_status_canceled         = 'canceled';
     public $payment_status_complete         = 'complete';
     public $payment_status_holded           = 'holded';
-    public $payment_status_suspected_fraud  = 'suspected_fraud';
+    public $payment_status_suspected_fraud  = 'Shipped';
     // 订单号格式。
     public $increment_id = 1000000000;
     // 将xx分钟内未支付的pending订单取消掉，并释放产品库存的设置
@@ -607,7 +607,7 @@ class Order extends Service
     /**
      * @property $order_id | Int
      * @return $increment_id | Int
-     *                       通过 order_id 生成订单号。
+     * 通过 order_id 生成订单号。
      */
     protected function generateIncrementIdByOrderId($order_id)
     {
@@ -704,5 +704,19 @@ class Order extends Service
                 $one->save();
             }
         }
+    }
+
+    protected function actionUpdateOrderInfo($increment_id,$payment_method)
+    {
+        if ($increment_id) {
+            $order = $this->getByIncrementId($increment_id);
+            if ($order) {
+                $order->payment_method    = $payment_method;
+                $order->updated_at        = time();
+                $order->save();
+                return true;
+            }
+        }
+        return false;
     }
 }

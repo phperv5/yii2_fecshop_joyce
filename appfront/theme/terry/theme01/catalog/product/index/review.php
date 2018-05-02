@@ -1,17 +1,8 @@
 <?php
-/**
- * FecShop file.
- *
- * @link http://www.fecshop.com/
- * @copyright Copyright (c) 2016 FecShop Software LLC
- * @license http://www.fecshop.com/license/
- */
+
 ?>
 <div class="product-Reviews">
-	<div id="pic_list_2" class="scroll_horizontal">
-		<div class="scroll_left">
-			<a href=""><?= Yii::$service->page->translate->__('Product Review'); ?></a>
-		</div>
+	<div id="pic_list_2" class="">
 		<div class="clear"></div>
 		<div class="box">
 			<div class="product-Reviews_top">
@@ -34,12 +25,12 @@
 								<div class="review-content">
 									<?= $one['review_content'] ?>
 								</div>
-								<?php if($one['status'] == $noActiveStatus): ?>  
+								<?php if($one['status'] == $noActiveStatus): ?>
 								<div class="moderation">
 									<?= Yii::$service->page->translate->__('Your comment is awaiting moderation'); ?>...
 								</div>
 								<?php endif; ?>
-								
+
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -50,12 +41,12 @@
 			</div>
 			<div class="clear"></div>
 			<a class="submitbutton" href="<?= Yii::$service->url->getUrl('catalog/reviewproduct/add',['spu'=>$spu,'_id'=>$_id]); ?>" >
-				<?= Yii::$service->page->translate->__('Add Review'); ?>
+				<?= Yii::$service->page->translate->__('Write a Comment'); ?>
 			</a>
 			<div class="clear"></div>
 			<div class="view_all_review">
 				<a href="<?= Yii::$service->url->getUrl('catalog/reviewproduct/lists',['spu'=>$spu,'_id'=>$_id]); ?>" >
-					<?= Yii::$service->page->translate->__('View  All Review'); ?>(<?= $review_count; ?>) 
+					<?= Yii::$service->page->translate->__('View  All Review'); ?>(<?= $review_count; ?>)
 				</a>
 			</div>
 		</div>

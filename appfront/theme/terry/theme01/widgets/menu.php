@@ -1,7 +1,7 @@
 <div class="hd_menu hd_menu_home">
-    <div class="hd_menu_home_cate">OBD2 Categories</div>
+    <div class="hd_menu_home_cate">Categories</div>
     <div class="hd_menu_brands">
-        <div class="hd_wr_nav"><a href="search/search.html"><b>Brands</b></a>
+        <div class="hd_wr_nav"><a href="javascript:void(0);"><b>Brands</b></a>
             <ul class="hdbrands">
                 <?php $categories = Yii::$service->category->menu->getBrand();?>
                 <?php foreach($categories as $category): ?>

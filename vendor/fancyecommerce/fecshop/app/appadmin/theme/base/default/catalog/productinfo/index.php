@@ -26,6 +26,7 @@ use fec\helpers\CRequest;
 		<?php echo CRequest::getCsrfInputHtml();  ?>
 		<div class="searchBar">
 			<?php  echo $searchBar; ?>
+			<?php  echo $batchImportBar; ?>
 		</div>
 	</form>
 </div>

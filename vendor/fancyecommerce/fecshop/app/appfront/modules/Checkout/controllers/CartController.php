@@ -36,7 +36,6 @@ class CartController extends AppfrontController
         $custom_option = Yii::$app->request->post('custom_option');
         $product_id = Yii::$app->request->post('product_id');
         $qty = Yii::$app->request->post('qty');
-        //$custom_option  = \Yii::$service->helper->htmlEncode($custom_option);
         $product_id = \Yii::$service->helper->htmlEncode($product_id);
         $qty = \Yii::$service->helper->htmlEncode($qty);
         $qty = abs(ceil((int)$qty));

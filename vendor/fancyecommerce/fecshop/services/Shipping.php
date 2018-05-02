@@ -42,7 +42,6 @@ class Shipping extends Service
      */
     protected function actionIfIsCorrect($shipping_method)
     {
-        var_dump($shipping_method);
         $allmethod = $this->shippingConfig;
         if (isset($allmethod[$shipping_method]) && !empty($allmethod[$shipping_method])) {
             return true;
@@ -100,7 +99,7 @@ class Shipping extends Service
         if (!$weight) {
             return 0;
         }
-        $shippingArr = $this->getShippingByTableCsv($shipping_method);
+        $shippingArr = $this->getShippingByTableCsvCache($shipping_method);
         $priceData = [];
         if (isset($shippingArr[$country][$region])) {
             $priceData = $shippingArr[$country][$region];
@@ -109,29 +108,48 @@ class Shipping extends Service
         } else {
             $priceData = $shippingArr['*']['*'];
         }
-        //var_dump($priceData);
-        $prev_weight = 0;
-        $prev_price  = 0;
-        $last_price  = 0;
+
+        $last_price = 0;
         if (is_array($priceData)) {
             foreach ($priceData as $data) {
-                $csv_weight = (float) $data[0];
-                $csv_price  = (float) $data[1];
-                if ($weight >= $csv_weight) {
-                    $prev_weight = $csv_weight;
-                    $prev_price  = $csv_price;
+                $csv_weight = (float)$data[0];
+                $csv_price = (float)$data[1];
+                if ($weight > $csv_weight) {
                     continue;
                 } else {
-                    $last_price = $prev_price;
+                    $last_price = $csv_price;
                     break;
                 }
             }
             if (!$last_price) {
                 $last_price = $csv_price;
             }
-
             return $last_price;
         }
+    }
+
+    /*
+     * shipping cache
+     */
+    public function getShippingByTableCsvCache($shipping_method)
+    {
+        $shipping_key = 'norman.shipping.key1.' . $shipping_method;
+        $shippingArr = $this->rememberCache($shipping_key, 7 * 24 * 60 * 60, function () use ($shipping_method) {
+            $shippingArr = $this->getShippingByTableCsv($shipping_method);
+            return $shippingArr;
+        });
+        return $shippingArr;
+    }
+
+    protected function rememberCache($key, $expire, $func)
+    {
+        $res = Yii::$app->cache->get($key);
+        //存在返回数据
+        if ($res) return $res;
+        $data = call_user_func($func);
+        if (empty($data)) return false;
+        $flag = Yii::$app->cache->set($key, $data, $expire);
+        return $flag ? $data : false;
     }
 
     /**
@@ -158,14 +176,14 @@ class Shipping extends Service
                 $currentCost = Yii::$service->page->currency->getCurrentCurrencyPrice($usdCost);
 
                 return [
-                    'currCost'   => $currentCost,
-                    'baseCost'     => $usdCost,
+                    'currCost' => $currentCost,
+                    'baseCost' => $usdCost,
                 ];
-            // $cost = 0 代表为free shipping方式
+                // $cost = 0 代表为free shipping方式
             } elseif ($cost == 0) {
                 return [
-                    'currCost'  => number_format(0, 2),
-                    'baseCost'    => number_format(0, 2),
+                    'currCost' => number_format(0, 2),
+                    'baseCost' => number_format(0, 2),
                 ];
             }
         }
@@ -190,8 +208,8 @@ class Shipping extends Service
     {
         //$shippingCsvDir = '@common/config/shipping';
         $commonDir = Yii::getAlias($this->shippingCsvDir);
-        $csv = $commonDir.'/'.$shipping_method.'.csv';
-        if(!file_exists($csv)) return false;
+        $csv = $commonDir . '/' . $shipping_method . '.csv';
+        if (!file_exists($csv)) return false;
         $fp = fopen($csv, 'r');
         $shippingArr = [];
         $i = 0;

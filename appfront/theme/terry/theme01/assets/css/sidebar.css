@@ -1,0 +1,212 @@
+@media print {
+    *,
+    *:before,
+    *:after {
+        color: #000 !important;
+        text-shadow: none !important;
+        background: transparent !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    .kefu_list {
+        width: 26px;
+        height: 122px;
+        right: 0px;
+        bottom: 0px;
+        position: fixed;
+        z-index: 10084;
+    }
+
+    .kefu_list > li {
+        width: 26px;
+        height: 36px;
+        float: left;
+        position: relative;
+    }
+
+    .kefu_list .slide_wrapper {
+        display: none;
+    }
+
+    li.wq_to_top {
+        display: none;
+        list-style: none;
+    }
+
+    #wechatCode {
+        display: none;
+    }
+
+    .tel_list {
+        display: none;
+    }
+
+    .kefu_list > li > a {
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+        background-image: url("./images/top.jpg");
+        background-repeat: no-repeat;
+    }
+
+    #toTop {
+        background-image: url("./images/top.jpg");
+    }
+
+    #toTop:hover {
+        background-image: url("./images/top.jpg");
+    }
+}
+
+.kefu_list {
+    width: 50px;
+    height: 255px;
+    right: 21px;
+    bottom: 180px;
+    position: fixed;
+    z-index: 10084;
+}
+
+.kefu_list > li {
+    width: 50px;
+    height: 51px;
+    float: left;
+    position: relative;
+}
+
+.kefu_list .slide_wrapper {
+    transition: 0.4s ease-in-out;
+    top: 0px;
+    right: -240px;
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.kefu_list .slide_wrapper p {
+    padding: 0px;
+}
+
+.kefu_list .simple {
+    width: 80px;
+    height: 50px;
+    text-align: center;
+    color: rgb(51, 51, 51);
+    line-height: 50px;
+    font-size: 16px;
+}
+
+.kefu_list li:hover .slide_wrapper {
+    opacity: 1;
+    transform: translateX(-290px);
+    -webkit-transform: translateX(-290px);
+    -moz-transform: translateX(-290px);
+    -o-transform: translateX(-290px);
+}
+
+.ie .kefu_list li:hover .slide_wrapper {
+    right: 50px;
+}
+
+li.wq_to_top {
+    display: none;
+}
+
+.kefu_list > li > a {
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    cursor: pointer;
+    background-image: url("../images/bg_kefu.png");
+    background-repeat: no-repeat;
+}
+
+#toTop {
+    background-position: 0px -204px;
+}
+
+#toTop:hover {
+    background-position: -51px -204px;
+}
+
+#wechatCode {
+    background-position: 0px -153px;
+}
+
+#wechatCode:hover {
+    background-position: -51px -153px;
+}
+
+.tel_list {
+    position: relative;
+}
+
+.tel_list div {
+    padding: 10px;
+    width: 200px;
+    text-align: right;
+}
+
+.tel_list p {
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.tel_list p span {
+    color: rgb(132, 132, 132);
+    font-size: 16px;
+    float: left;
+}
+
+.tel_list p .country {
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+#telList {
+    background-position: 0px -102px;
+}
+
+#telList:hover {
+    background-position: -51px -102px;
+}

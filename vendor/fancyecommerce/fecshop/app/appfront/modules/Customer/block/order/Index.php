@@ -17,11 +17,12 @@ use Yii;
  */
 class Index
 {
-    protected $numPerPage = 10;
+    protected $numPerPage = 15;
     protected $pageNum;
     protected $orderBy;
     protected $customer_id;
     protected $_page = 'p';
+    protected $order_status = null;
 
     /**
      * 初始化类变量.
@@ -32,23 +33,26 @@ class Index
             $identity = Yii::$app->user->identity;
             $this->customer_id = $identity;
         }
-        $this->pageNum = (int) Yii::$app->request->get('p');
+        $this->pageNum = (int)Yii::$app->request->get('p');
         $this->pageNum = ($this->pageNum >= 1) ? $this->pageNum : 1;
-        $this->orderBy = ['created_at' => SORT_DESC];
+        $this->orderBy = ['order_id' => SORT_DESC];
+        $this->order_status = Yii::$app->request->get('order_status');
     }
 
     public function getLastData()
     {
         $this->initParam();
         $return_arr = [];
+        if ($this->order_status) {
+            $where['order_status'] = $this->order_status;
+        }
         if ($this->customer_id) {
+            $where['customer_id'] = $this->customer_id->id;
             $filter = [
-                'numPerPage'    => $this->numPerPage,
-                'pageNum'        => $this->pageNum,
-                'orderBy'        => $this->orderBy,
-                'where'            => [
-                    ['customer_id' => $this->customer_id],
-                ],
+                'numPerPage' => $this->numPerPage,
+                'pageNum' => $this->pageNum,
+                'orderBy' => $this->orderBy,
+                'where' => [$where],
                 'asArray' => true,
             ];
 
@@ -57,6 +61,8 @@ class Index
             $count = $customer_order_list['count'];
             $pageToolBar = $this->getProductPage($count);
             $return_arr['pageToolBar'] = $pageToolBar;
+            $return_arr['order_status_arr'] = Yii::$service->order->getStatusArr();
+            $return_arr['order_status'] = $this->order_status;
         }
 
         return $return_arr;
@@ -68,12 +74,12 @@ class Index
             return '';
         }
         $config = [
-            'class'        => 'fecshop\app\appfront\widgets\Page',
-            'view'        => 'widgets/page.php',
-            'pageNum'        => $this->pageNum,
-            'numPerPage'    => $this->numPerPage,
-            'countTotal'    => $countTotal,
-            'page'            => $this->_page,
+            'class' => 'fecshop\app\appfront\widgets\Page',
+            'view' => 'widgets/page.php',
+            'pageNum' => $this->pageNum,
+            'numPerPage' => $this->numPerPage,
+            'countTotal' => $countTotal,
+            'page' => $this->_page,
         ];
 
         return Yii::$service->page->widget->renderContent('category_product_page', $config);

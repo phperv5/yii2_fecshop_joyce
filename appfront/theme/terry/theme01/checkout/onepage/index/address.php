@@ -13,5 +13,5 @@
 <?php  $state_html = $parentThis['state_html'];   ?>
 <?php  $cart_address = $parentThis['cart_address'];   ?>
 <div class="scene" id="ar_os_shippingAddress" style="display:">
-    Your shipping address is null, please <a href="<?= Yii::$service->url->getUrl('customer/address/edit') ?>"><b class="px14">Add Your Shipping Address</b></a>.
+    Your shipping address is null, please <a href="<?= Yii::$service->url->getUrl('customer/address/edit?redirect_url='.Yii::$service->url->getUrl('checkout/onepage')) ?>"><b class="px14">Add Your Shipping Address</b></a>.
 </div>

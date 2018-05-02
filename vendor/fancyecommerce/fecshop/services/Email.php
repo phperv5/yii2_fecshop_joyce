@@ -184,7 +184,7 @@ class Email extends Service
      * 您可以参看上面的函数 function actionMailer($mailerConfigParam = '') 或者到 @fecshop/config/services/Email.php参看 $mailerConfig的配置
      * 该函数用于发送邮件.
      */
-    protected function actionSend($sendInfo, $mailerConfigParam = '')
+    public function actionSend($sendInfo, $mailerConfigParam = '')
     {
         $to         = isset($sendInfo['to']) ? $sendInfo['to'] : '';
         $subject    = isset($sendInfo['subject']) ? $sendInfo['subject'] : '';

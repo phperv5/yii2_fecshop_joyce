@@ -218,6 +218,7 @@ class CategoryMongodb implements CategoryInterface
                     $idKey    => $idVal,
                     'level'   => $level,
                     'name'    => Yii::$service->fecshoplang->getLangAttrVal($cate['name'], 'name', $lang),
+                    'url' => Yii::$service->url->getUrl($cate['url_key']),
                 ];
                 if($appserver){
                     $arr[$idVal]['url'] = '/catalog/category/'.$idVal;
@@ -333,7 +334,7 @@ class CategoryMongodb implements CategoryInterface
         return $data;
     }
 
-    protected function getOneLevelCateChild($category)
+    public function getOneLevelCateChild($category)
     {
         //'_id' 		=> $currentId,
         //'name' 		=> $currentName,
@@ -360,7 +361,7 @@ class CategoryMongodb implements CategoryInterface
         return $data;
     }
 
-    protected function getAllParentCate($allParent)
+    public function getAllParentCate($allParent)
     {
         //var_dump($allParent);exit;
         $d = $allParent;
@@ -407,7 +408,7 @@ class CategoryMongodb implements CategoryInterface
         return $data;
     }
 
-    protected function getChildCate($category_id)
+    public function getChildCate($category_id)
     {
         //echo $category_id;
         $data = $this->_categoryModel->find()->asArray()->where([

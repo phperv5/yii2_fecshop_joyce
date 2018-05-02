@@ -6,8 +6,22 @@ appfront/config/fecshop_local_services/Store.php
 .idea/blade.xml
 .idea/deployment.xml
 .idea/webServers.xml
-appfront/config/fecshop_local_services/Image.php
-appfront/config/fecshop_local_services/Email.php
+common/config/fecshop_local_services/Image.php
+common/config/fecshop_local_services/Email.php
 common/config/main-local.php
 
 appfront/config/fecshop_local_modules/Catalog.php
+common/config/fecshop_local_services/Payment.php
+common/config/fecshop_local_services/Payment_old.php
+dump.rdb
+.idea/jsLinters/jscs.xml
+/nbproject/private/
+nbproject/project.properties
+nbproject/project.xml
+appfront/web/index.php
+.idea/workspace.xml___jb_tmp___
+common/config/fecshop_local_services/Payment_new.php
+appfront/web/
+vendor/fancyecommerce/fecshop/shell/backup.sh
+common/config/fecshop_local_services/Email.php
+

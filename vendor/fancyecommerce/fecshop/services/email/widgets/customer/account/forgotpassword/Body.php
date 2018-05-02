@@ -30,7 +30,7 @@ class Body extends BodyBase
             'contactsEmailAddress'  => Yii::$service->email->contactsEmailAddress(),
             'contactsPhone'         => Yii::$service->email->contactsPhone(),
             'homeUrl'               => Yii::$service->url->homeUrl(),
-            'logoImg'               => Yii::$service->image->getImgUrl('mail/logo.png', 'appfront'),
+            'logoImg'    => Yii::$service->image->getImgUrl('email/logo.png'),
             'identity'              => $identity,
         ];
     }

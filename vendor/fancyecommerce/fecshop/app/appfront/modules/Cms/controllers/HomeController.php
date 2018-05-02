@@ -61,4 +61,14 @@ class HomeController extends AppfrontController
         $currency = \fec\helpers\CRequest::param('currency');
         Yii::$service->page->currency->setCurrentCurrency($currency);
     }
+
+    /*
+     * 侧栏联系信息
+     */
+    public function actionSidebar()
+    {
+        Yii::$service->page->theme->layoutFile = 'sidebar_head.php';
+        $data = $this->getBlock('sidebar')->getLastData();
+        return $this->render($this->action->id, $data);
+    }
 }

@@ -56,4 +56,39 @@ class ProductinfoController extends CatalogController
     {
         $data = $this->getBlock('manageredit')->delete();
     }
+
+    public function actionBatchimport()
+    {
+        $data = $this->getBlock()->getLastData();
+
+        return $this->render($this->action->id, $data);
+    }
+
+    //批量导入保存
+    public function actionBatchimportsave()
+    {
+        $data = $this->getBlock('batchimport')->save();
+
+        return $this->render($this->action->id, $data);
+    }
+
+    //上传附件
+    // catalog
+    public function actionAttachmentupload()
+    {
+        $this->getBlock('imageupload')->attachmentupload();
+    }
+
+    public function actionEditcategory()
+    {
+        $data = $this->getBlock()->getLastData();
+
+        return $this->render($this->action->id, $data);
+    }
+
+    //批量修改分类保存
+    public function actionEditcategorysave()
+    {
+        $data = $this->getBlock('editcategory')->save();
+    }
 }

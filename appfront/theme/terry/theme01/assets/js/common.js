@@ -142,7 +142,7 @@ function AreaMultiMenuShowHide(mA,aA,iAll,iA,css_on,css_off)
 				document.getElementById(a).style.display = "none";
 			}
 		}
-		else{alert("undefined! -"+m)}
+
 	}
 }
 

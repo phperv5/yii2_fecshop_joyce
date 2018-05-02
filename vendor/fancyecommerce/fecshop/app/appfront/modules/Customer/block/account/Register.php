@@ -23,14 +23,14 @@ class Register
         $firstname = isset($param['firstname']) ? $param['firstname'] : '';
         $lastname = isset($param['lastname']) ? $param['lastname'] : '';
         $is_subscribed = isset($param['is_subscribed']) ? $param['is_subscribed'] : '';
-        $email = isset($param['email']) ? $param['email'] : '';
+        $email = isset($param['email']) ? trim($param['email']) : '';
         $registerParam = \Yii::$app->getModule('customer')->params['register'];
         $registerPageCaptcha = isset($registerParam['registerPageCaptcha']) ? $registerParam['registerPageCaptcha'] : false;
         return [
-            'firstname'        => $firstname,
-            'lastname'        => $lastname,
-            'email'            => $email,
-            'is_subscribed'    => $is_subscribed,
+            'firstname' => $firstname,
+            'lastname' => $lastname,
+            'email' => $email,
+            'is_subscribed' => $is_subscribed,
             'minNameLength' => Yii::$service->customer->getRegisterNameMinLength(),
             'maxNameLength' => Yii::$service->customer->getRegisterNameMaxLength(),
             'minPassLength' => Yii::$service->customer->getRegisterPassMinLength(),

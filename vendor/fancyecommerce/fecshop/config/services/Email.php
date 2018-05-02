@@ -59,7 +59,7 @@ return [
             'phone'            => 'xxxxxxxxxx',
             // 在邮件中显示的联系邮箱地址。
             'contacts'    => [
-                'emailAddress' => '2358269014@qq.com',
+                'emailAddress' => 'Sales@norman-keys.com',
             ],
 
         ],
@@ -75,7 +75,7 @@ return [
                 'emailTheme' => [
                     // 注册账户发送的邮件的模板配置
                     'register' => [
-                        'enable' => true,
+                        'enable' => false,
                         // 邮件内容的动态数据提供部分
                         'widget'        => 'fecshop\services\email\widgets\customer\account\register\Body',
                         // 邮件内容的view部分
@@ -133,7 +133,7 @@ return [
                         'widget'        => 'fecshop\services\email\widgets\customer\contacts\Body',
                         // 邮件内容的view部分
                         'viewPath'    => '@fecshop/services/email/views/customer/contacts',
-                        'address'    => '2358269014@qq.com',
+                        'address'    => 'Sales@norman-keys.com',
                         // 如果不定义 mailerConfig，则会使用email service里面的默认配置
                         //'mailerConfig'  => 'default',
                     ],

@@ -64,7 +64,6 @@ class Index
         $productCollInfo = $this->getCategoryProductColl();
         $products = $productCollInfo['coll'];
         $this->_productCount = $productCollInfo['count'];
-        //echo $this->_productCount;
         return [
             'title' => $this->_title,
             'name' => Yii::$service->store->getStoreAttrVal($this->_category['name'], 'name'),
@@ -121,7 +120,6 @@ class Index
             }
             $str .= '</ul>';
         }
-        //exit;
         return $str;
     }
 
@@ -441,7 +439,6 @@ class Index
             'where' => $this->_where,
             'select' => $select,
         ];
-//        var_dump($filter);exit;
         return Yii::$service->category->product->getFrontList($filter);
     }
 

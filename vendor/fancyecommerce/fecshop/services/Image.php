@@ -65,7 +65,7 @@ class Image extends Service
      * @property $app | String @appimage下面的文件夹的名称。各个名称对应各个入口的名字，譬如common appfront appadmin等
      * @return 返回图片的完整URL
      */
-    protected function actionGetImgUrl($str, $app = 'common')
+    public function actionGetImgUrl($str, $app = 'common')
     {
         //echo "$str,$app";
         if ($appbase = $this->appbase) {

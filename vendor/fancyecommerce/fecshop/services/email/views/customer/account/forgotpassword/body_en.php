@@ -7,7 +7,7 @@
                         <tr>
 							<td valign="top">
 								<a href="<?= $homeUrl; ?>">
-									<img src="<?=  $logoImg; ?>" alt="" style="margin:10px 0 ;" border="0"/>
+									<img src="<?=  $logoImg; ?>" alt="" style="margin-left:10px;width: 200px;" border="0"/>
 								</a>
 							</td>
 						</tr>
@@ -22,9 +22,6 @@
 								<p style="font-size:12px; line-height:16px; margin:0 0 8px 0;">If you have any questions about your account or any other matter, please feel free to contact us at <a href="mailto:<?= $contactsEmailAddress ?>" style="color:#1E7EC8;"><?= $contactsEmailAddress ?></a> or by phone at <?= $contactsPhone ?>.</p>
                        
 							</td>
-                        </tr>
-                        <tr>
-                            <td style="background-color: #EAEAEA; text-align: center;"><p style="font-size:12px; margin:0; text-align: center;">Thank you, <strong><?= $storeName; ?></strong></p></td>
                         </tr>
                     </table>
                 </td>

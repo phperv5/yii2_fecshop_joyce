@@ -465,7 +465,6 @@ class Paypal extends Service
         //ADDROVERRIDE
         // 得到购物车的信息，通过购物车信息填写。
         $orderInfo      = Yii::$service->order->getInfoByPaymentToken($token);
-        //$cartInfo     = Yii::$service->cart->getCartInfo();
         $currency       = Yii::$service->page->currency->getCurrentCurrency();
         $grand_total    = Yii::$service->helper->format->number_format($orderInfo['grand_total']);
         $subtotal       = Yii::$service->helper->format->number_format($orderInfo['subtotal']);

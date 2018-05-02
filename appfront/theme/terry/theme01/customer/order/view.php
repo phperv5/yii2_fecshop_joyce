@@ -12,7 +12,7 @@ use fecshop\app\appfront\helper\Format;
     <div class="main_scene">
         <div class="exh_top"></div>
         <div class="exh_main">
-            <div class="align_right px11 verdana" style="margin-top:-10px;"><a href="<?= $homeUrl ?>">Home</a> - <a href="<?= Yii::$service->url->getUrl('customer/order') ?>">My Account: <b class="red account-email"></b></a> - My Order Form: S/N.<b class="red">U2170826416375</b></div><div class="blank5px"></div>
+            <div class="align_right px11 verdana" style="margin-top:-10px;"><a href="<?= $homeUrl ?>">Home</a> - <a href="<?= Yii::$service->url->getUrl('customer/order') ?>">My Account: <b class="red account-email"></b></a> - My Order Form: <b class="red"><?=  $increment_id ?></b></div><div class="blank5px"></div>
             <h1>My Order Form: S/N.<b class="red"><?=  $increment_id ?></b></h1>
             <div class="blank10px"></div>
             <div class="p_sub_a">Order Status</div>
@@ -33,7 +33,9 @@ use fecshop\app\appfront\helper\Format;
             <div class="blank15px"></div>
             <div class="p_sub_a">Order Information</div>
             <div class="p_con_a">
-                <div class="fr"><br /><input type="button" class="btn_submit btn_big" value="Pay for this Order" onclick="location.href='<?= Yii::$service->url->getUrl('checkout/onepage'); ?>'" /></div>
+                <?php if($order_status == 'Unpaid'):?>
+                <div class="fr"><br /><input type="button" class="btn_submit btn_big" value="Pay for this Order" onclick="location.href='<?= Yii::$service->url->getUrl('checkout/onepage/orderdetail?order_id='.$order_id); ?>'" /></div>
+                <?php endif;?>
                 <span class="px11">Order Serial Number: </span><b class="blue_dark"><?=  $increment_id ?></b><br />
                 <span class="px11">Order Date: </span><span class="px11 verdana"><?=  date('Y-m-d H:i:s',$created_at); ?></span><br />
                 <span class="px11">Order Total Sum: </span><b class="red px14"><?= $currency_symbol ?><?= Format::price($grand_total); ?></b>
@@ -91,21 +93,21 @@ use fecshop\app\appfront\helper\Format;
                 <div class="blank10px"></div>
             </div>
             <div class="blank15px"></div>
-            <div class="p_sub_a">Order Comments</div>
-            <div class="p_con_a">
-                <div class="blank10px"></div>
-                <div class="p_sub_a"><span class="red_dark"><img src="../images/ico/edit.gif" border="0" align="absmiddle" hspace="5" />Post a New Comment</span></div>
-                <div class="p_con_a">
-                    <form action="order_comment_app.asp" method="post" name="formAddOrderComment" onsubmit="return OrderCommentAddSim();">
-                        <textarea name="CommentMessage" cols="120" rows="6" id="CommentMessage" class="input"></textarea><span class="alert" id="txtOrderCommentMessage"></span>
-                        <div class="blank5px"></div>
-                        <input type="submit" name="Submit5" value="Submit" class="btn_submit">
-                        <input name="OrderID" type="hidden" value="416375">
-                        <input type="hidden" name="UserID" value="351041">
-                    </form>
-                </div>
-                <div class="clear"></div>
-            </div>
+<!--            <div class="p_sub_a">Order Comments</div>-->
+<!--            <div class="p_con_a">-->
+<!--                <div class="blank10px"></div>-->
+<!--                <div class="p_sub_a"><span class="red_dark"><img src="../images/ico/edit.gif" border="0" align="absmiddle" hspace="5" />Post a New Comment</span></div>-->
+<!--                <div class="p_con_a">-->
+<!--                    <form action="order_comment_app.asp" method="post" name="formAddOrderComment" onsubmit="return OrderCommentAddSim();">-->
+<!--                        <textarea name="CommentMessage" cols="120" rows="6" id="CommentMessage" class="input"></textarea><span class="alert" id="txtOrderCommentMessage"></span>-->
+<!--                        <div class="blank5px"></div>-->
+<!--                        <input type="submit" name="Submit5" value="Submit" class="btn_submit">-->
+<!--                        <input name="OrderID" type="hidden" value="416375">-->
+<!--                        <input type="hidden" name="UserID" value="351041">-->
+<!--                    </form>-->
+<!--                </div>-->
+<!--                <div class="clear"></div>-->
+<!--            </div>-->
             <div class="clear"></div>
         </div>
         <div class="exh_bottom"></div>

@@ -12,7 +12,7 @@ use fec\helpers\CUrl;
 class Header{
 	public static function getContent(){
 		return '<div class="headerNav">
-				<a class="logo" href="http://www.fecshop.com">FECSHOP</a>
+				<a class="logo" href="http://www.norman-keys.com" target="_blank">norman-keys</a>
 				
 				<a style="color:#fff; display: block; height: 21px;position: absolute; right: 10px;top: 18px;z-index: 31;" 
 				href="'.CUrl::getUrl("fecadmin/logout").'">

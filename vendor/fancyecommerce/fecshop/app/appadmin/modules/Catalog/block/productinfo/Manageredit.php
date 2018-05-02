@@ -80,6 +80,7 @@ class Manageredit extends AppadminbaseBlockEdit implements AppadminbaseBlockEdit
             'descriptionInfo'   => $this->getDescriptionInfo(),
             'attrGroup'         => $this->_attr->getProductAttrGroupSelect(),
             'primaryInfo'       => $this->getCurrentProductPrimay(),
+            'attachment_html'  => $this->getAttachmentHtml(),
             'img_html'          => $this->getImgHtml(),
             'custom_option'     => $this->_one['custom_option'],
             'product_id'        => $this->_one[Yii::$service->product->getPrimaryKey()],
@@ -250,6 +251,30 @@ class Manageredit extends AppadminbaseBlockEdit implements AppadminbaseBlockEdit
         }
 
         return '';
+    }
+    public function getAttachmentHtml()
+    {
+        $str = '<div><table class="list productattach" width="100%" >
+				<thead>
+					<tr>
+						<td>文件名</td>
+                        <td>删除</td>
+					</tr>
+				</thead><tbody>';
+
+        if (isset($this->_one['attachment']) && !empty($this->_one['attachment'])) {
+            $i = 1;
+            foreach ($this->_one['attachment'] as $gallery) {
+                $str .= '</tr><tr class="p_img" rel="'.$i.'" data="'.$gallery.'"  style="border-bottom:1px solid #ccc;">
+									<td style="width:120px;text-align:center;"><a href="'.Yii::$service->image->getImgUrl('attachment/'.$gallery).'">'.$gallery.'</a> </td>
+									<td style="padding:0 0 0 20px;"><a class="attachment_delete_img btnDel" href="javascript:void(0)">删除</a></td>
+								</tr>';
+            }
+            $i++;
+        }
+
+        $str .= '</tbody></table></div>';
+        return $str;
     }
 
     public function getImgHtml()
@@ -580,6 +605,14 @@ class Manageredit extends AppadminbaseBlockEdit implements AppadminbaseBlockEdit
         }
         $tier_price_arr = \fec\helpers\CFunc::array_sort($tier_price_arr, 'qty', 'asc');
         $this->_param['tier_price'] = $tier_price_arr;
+
+
+        /*
+         * zhuang
+         * 附件
+         */
+        $attachment = json_decode(CRequest::param('attachment'),true);
+        $this->_param['attachment'] = $attachment;
     }
 
     // 批量删除

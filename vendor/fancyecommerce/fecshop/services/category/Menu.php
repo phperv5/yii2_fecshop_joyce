@@ -119,7 +119,7 @@ class Menu extends Service
             $parentId = $this->rootCategoryId;
         }
         $data = $this->_categoryModel->find()->asArray()->select([
-            '_id', 'parent_id', 'name', 'url_key', 'menu_custom','thumbnail_image','image',
+            '_id', 'parent_id', 'name', 'url_key', 'menu_custom', 'thumbnail_image', 'image',
         ])->where([
             'parent_id' => $parentId,
             'status' => $model::STATUS_ENABLE,
@@ -139,6 +139,16 @@ class Menu extends Service
             return $data;
         }
         return '';
+    }
+
+    /*
+     * 获取所有子分类
+     */
+    protected function actionGetAllParentCate($parent_id)
+    {
+        $cates = $this->_categoryModel->getAllParentCate($parent_id);
+        var_dump($cates);
+        return $cates;
     }
 
 }

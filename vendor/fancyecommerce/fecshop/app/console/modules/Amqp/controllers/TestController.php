@@ -11,7 +11,7 @@ namespace fecshop\app\console\modules\Amqp\controllers;
 
 use Yii;
 use yii\console\Controller;
-use fecshop\app\console\modules\Amqp\block\PushTest;
+use fecshop\app\console\modules\Amqp\block\Push;
 
 /**
  * @author Terry Zhao <2358269014@qq.com>
@@ -29,17 +29,10 @@ class TestController extends Controller
     public function actionTest()
     {
         // 这个是对象的方式，消息的传递和接收都是fecshop的时候使用
-        // Yii::$app->queue->push(new PushTest([
-         //   'name'  => 'terry',
-         //   'age'   => 31,
-        // ]));
-        
-        // 这是一种比较随便的方式，发送的数组会以序列化的方式发送过去
-        // 传递的给MQ的个数格式为序列化数组。
-         Yii::$app->queue->push([
+         Yii::$app->queue->push(new Push([
             'name'  => 'terry',
             'age'   => 31,
-         ]);
+         ]));
     }
     
     

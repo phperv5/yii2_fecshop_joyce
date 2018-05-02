@@ -32,28 +32,28 @@ class Index
     protected $_image_thumbnails;
     // 在产品详细页面，在产品描述部分显示的产品图片列表
     protected $_image_detail;
-    
+
     /**
      * 为了可以使用rewriteMap，use 引入的文件统一采用下面的方式，通过Yii::mapGet()得到className和Object
      */
     protected $_reviewHelperName = '\fecshop\app\appfront\modules\Catalog\helpers\Review';
     protected $_reviewHelper;
-    
+
     public function __construct()
     {
         /**
          * 通过Yii::mapGet() 得到重写后的class类名以及对象。Yii::mapGet是在文件@fecshop\yii\Yii.php中
          */
-        list($this->_reviewHelperName,$this->_reviewHelper) = Yii::mapGet($this->_reviewHelperName);  
-        
+        list($this->_reviewHelperName, $this->_reviewHelper) = Yii::mapGet($this->_reviewHelperName);
+
     }
-    
+
     public function getLastData()
     {
         $reviewHelper = $this->_reviewHelper;
         $productImgSize = Yii::$app->controller->module->params['productImgSize'];
         $productImgMagnifier = Yii::$app->controller->module->params['productImgMagnifier'];
-        if(!$this->initProduct()){
+        if (!$this->initProduct()) {
             Yii::$service->url->redirect404();
             return;
         }
@@ -63,38 +63,57 @@ class Index
         $this->filterProductImg($this->_product['image']);
         $groupAttr = Yii::$service->product->getGroupAttr($this->_product['attr_group']);
         $groupAttrArr = $this->getGroupAttrArr($groupAttr);
+        //附件处理
+        $attach = [];
+        if (!empty($this->_product['attachment'])) {
+            foreach ($this->_product['attachment'] as $k => $v) {
+                $attach[$k]['name'] = $v;
+                $attach[$k]['path'] = Yii::$service->image->getImgUrl('attachment/' . $v);
+            }
+        }
+        //var_dump($this->_product);
         return [
-            'groupAttrArr'              => $groupAttrArr,
-            'name'                      => Yii::$service->store->getStoreAttrVal($this->_product['name'], 'name'),
-            'image_thumbnails'          => $this->_image_thumbnails,
-            'image_detail'              => $this->_image_detail,
-            'sku'                       => $this->_product['sku'],
-            'spu'                       => $this->_product['spu'],
-            'weight'                       => $this->_product['weight'],
-            'package'                       => $this->_product['package'],
-            'attr_group'                => $this->_product['attr_group'],
-            'review_count'              => $review_count,
-            'reviw_rate_star_average'   => $reviw_rate_star_average,
-            'price_info'                => $this->getProductPriceInfo(),
-            'tier_price'                => $this->_product['tier_price'],
+            'groupAttrArr' => $groupAttrArr,
+            'name' => Yii::$service->store->getStoreAttrVal($this->_product['name'], 'name'),
+            'image_thumbnails' => $this->_image_thumbnails,
+            'image_detail' => $this->_image_detail,
+            'sku' => $this->_product['sku'],
+            'spu' => $this->_product['spu'],
+            'weight' => $this->_product['weight'],
+            'package' => $this->_product['package'],
+            'attr_group' => $this->_product['attr_group'],
+            'review_count' => $review_count,
+            'reviw_rate_star_average' => $reviw_rate_star_average,
+            'price_info' => $this->getProductPriceInfo(),
+            'tier_price' => $this->_product['tier_price'],
             'media_size' => [
-                'small_img_width'       => $productImgSize['small_img_width'],
-                'small_img_height'      => $productImgSize['small_img_height'],
-                'middle_img_width'      => $productImgSize['middle_img_width'],
+                'small_img_width' => $productImgSize['small_img_width'],
+                'small_img_height' => $productImgSize['small_img_height'],
+                'middle_img_width' => $productImgSize['middle_img_width'],
             ],
-            'productImgMagnifier'       => $productImgMagnifier,
-            'options'                   => $this->getSameSpuInfo(),
-            'custom_option'             => $this->_product['custom_option'],
-            'description'               => Yii::$service->store->getStoreAttrVal($this->_product['description'], 'description'),
-            '_id'                       => $this->_product['_id'],
-            'buy_also_buy'              => $this->getProductBySkus($skus),
+            'productImgMagnifier' => $productImgMagnifier,
+            'options' => $this->getSameSpuInfo(),
+            'custom_option' => $this->_product['custom_option'],
+            'description' => Yii::$service->store->getStoreAttrVal($this->_product['description'], 'description'),
+            '_id' => $this->_product['_id'],
+            'buy_also_buy' => $this->getProductBySkus($this->_product['relation_sku'], $this->_product->category),
+            'video' => Yii::$service->store->getStoreAttrVal($this->_product['video'], 'video'),
+            'tech_support' => Yii::$service->store->getStoreAttrVal($this->_product['tech_support'], 'tech_support'),
+            'payment' => Yii::$service->store->getStoreAttrVal($this->_product['payment'], 'payment'),
+            'related_download_files' => Yii::$service->store->getStoreAttrVal($this->_product['related_download_files'], 'related_download_files'),
+            'attachment' => $attach,
+            'main_description' => Yii::$service->store->getStoreAttrVal($this->_product['main_description'], 'main_description'),
+            'about_us' => Yii::$service->product->config->getOne('about_us'),
+            'is_in_stock' => $this->_product['is_in_stock'] == 1 ? true : false,
         ];
     }
-    public function getGroupAttrArr($groupAttr){
+
+    public function getGroupAttrArr($groupAttr)
+    {
         $gArr = [];
-        if(is_array($groupAttr)){
-            foreach($groupAttr as $attr){
-                if(isset($this->_product[$attr]) && $this->_product[$attr]){
+        if (is_array($groupAttr)) {
+            foreach ($groupAttr as $attr) {
+                if (isset($this->_product[$attr]) && $this->_product[$attr]) {
                     $gArr[$attr] = $this->_product[$attr];
                 }
             }
@@ -102,37 +121,39 @@ class Index
         //var_dump($gArr);
         return $gArr;
     }
+
     /**
      * @property $product_images | Array ，产品的图片属性
      * 根据图片数组，得到橱窗图，和描述图
      * 橱窗图：在产品详细页面顶部，放大镜显示部分的产品列表
      * 描述图，在产品description文字描述后面显示的产品图片。
      */
-    public function filterProductImg($product_images){
-        $this->_image_thumbnails        = $product_images;
+    public function filterProductImg($product_images)
+    {
+        $this->_image_thumbnails = $product_images;
         //$this->_image_detail['gallery'] = $product_images['gallery'];
-        if(isset($product_images['gallery']) && is_array($product_images['gallery'])){
+        if (isset($product_images['gallery']) && is_array($product_images['gallery'])) {
             $thumbnails_arr = [];
-            $detail_arr     = [];
-            foreach($product_images['gallery'] as $one){
-                $is_thumbnails  = $one['is_thumbnails'];
-                $is_detail      = $one['is_detail'];
-                if($is_thumbnails == 1){
-                    $thumbnails_arr[]   = $one;
+            $detail_arr = [];
+            foreach ($product_images['gallery'] as $one) {
+                $is_thumbnails = $one['is_thumbnails'];
+                $is_detail = $one['is_detail'];
+                if ($is_thumbnails == 1) {
+                    $thumbnails_arr[] = $one;
                 }
-                if($is_detail == 1){
-                    $detail_arr[]       = $one;
+                if ($is_detail == 1) {
+                    $detail_arr[] = $one;
                 }
             }
             $this->_image_thumbnails['gallery'] = $thumbnails_arr;
-            $this->_image_detail     = $detail_arr;
+            $this->_image_detail = $detail_arr;
         }
-        if(isset($product_images['main']['is_detail']) && $product_images['main']['is_detail'] == 1 ){
+        if (isset($product_images['main']['is_detail']) && $product_images['main']['is_detail'] == 1) {
             $this->_image_detail[] = $product_images['main'];
         }
-        
+
     }
-    
+
     /**废弃
      * @property $data | Array 和当前产品的spu相同，但sku不同的产品  数组。
      * @property $current_size | String 当前产品的size值
@@ -162,32 +183,32 @@ class Index
             if ($attr1_val || $attr2_val) {
                 if ($attr1_val) {
                     $all_attr1[$attr1_val] = [
-                        'name'        => $name,
-                        'image'    => $image,
-                        'url_key'    => $url_key,
+                        'name' => $name,
+                        'image' => $image,
+                        'url_key' => $url_key,
                     ];
                 }
                 if ($attr2_val) {
                     $all_attr2[$attr2_val] = [
-                        'name'        => $name,
-                        'image'    => $image,
-                        'url_key'    => $url_key,
+                        'name' => $name,
+                        'image' => $image,
+                        'url_key' => $url_key,
                     ];
                 }
                 //echo $attr2_val.'#'.$current_attr2;
                 //echo '<br/>';
                 if ($attr2_val && $current_attr2 == $attr2_val) {
                     $attr1_2_attr2[$attr1_val] = [
-                        'name'        => $name,
-                        'image'    => $image,
-                        'url_key'    => $url_key,
+                        'name' => $name,
+                        'image' => $image,
+                        'url_key' => $url_key,
                     ];
                 }
                 if ($attr1_val && $current_attr1 == $attr1_val) {
                     $attr2_2_attr1[$attr2_val] = [
-                        'name'        => $name,
-                        'image'    => $image,
-                        'url_key'    => $url_key,
+                        'name' => $name,
+                        'image' => $image,
+                        'url_key' => $url_key,
                     ];
                 }
             }
@@ -207,8 +228,8 @@ class Index
         $select = array_merge($select, $this->_productSpuAttrArr);
 
         $filter = [
-            'select'    => $select,
-            'where'            => [
+            'select' => $select,
+            'where' => [
                 ['spu' => $spu],
             ],
             'asArray' => true,
@@ -297,6 +318,7 @@ class Index
 
         return $spuShowArr;
     }
+
     // spu属性部分
     protected function getSpuAttrInfo($spuAttr, $attrVal, $reverse_val_spu)
     {
@@ -318,7 +340,7 @@ class Index
         if (isset($reverse_val_spu[$reverse_key]) && is_array($reverse_val_spu[$reverse_key])) {
             $return['active'] = 'active';
             $arr = $reverse_val_spu[$reverse_key];
-            foreach ($arr as $k=>$v) {
+            foreach ($arr as $k => $v) {
                 $return[$k] = $v;
             }
             if ($spuAttr == $this->_spuAttrShowAsImg) {
@@ -330,7 +352,7 @@ class Index
                 $return['active'] = 'active';
                 $arr = $this->_spuAttrShowAsImgArr[$attrVal];
                 if (is_array($arr) && !empty($arr)) {
-                    foreach ($arr as $k=>$v) {
+                    foreach ($arr as $k => $v) {
                         $return[$k] = $v;
                     }
                 }
@@ -352,14 +374,14 @@ class Index
             $reverse_key .= $one[$spuAttr];
         }
 
-        return  $reverse_key;
+        return $reverse_key;
     }
 
     /**
-     *	@property $data | Array  各个尺码对应的产品数组
-     *  @return array 排序后的数组
-     *		该函数，按照在配置中的size的顺序，将$data中的数据进行排序，让其按照尺码的由小到大的顺序
-     * 		排列，譬如 ：s,m,l,xl,xxl,xxxl等
+     * @property $data | Array  各个尺码对应的产品数组
+     * @return array 排序后的数组
+     *        该函数，按照在配置中的size的顺序，将$data中的数据进行排序，让其按照尺码的由小到大的顺序
+     *        排列，譬如 ：s,m,l,xl,xxl,xxxl等
      */
     protected function sortSpuAttr($spuAttr, $data)
     {
@@ -414,12 +436,12 @@ class Index
         $product = Yii::$service->product->getByPrimaryKey($primaryVal);
         if ($product) {
             $enableStatus = Yii::$service->product->getEnableStatus();
-            if ($product['status'] != $enableStatus){
-                
+            if ($product['status'] != $enableStatus) {
+
                 return false;
             }
         } else {
-            
+
             return false;
         }
         $this->_product = $product;
@@ -467,26 +489,28 @@ class Index
             Yii::$service->page->breadcrumbs->active = false;
         }
     }
-    // 买了的人还买了什么，通过产品字段取出来sku，然后查询得到。
-    protected function getProductBySkus($skus)
+
+    // 通过relate产品字段取出来sku，然后查询得到。
+    protected function getProductBySkus($skus, $category_id, $limit = 3)
     {
-        $buy_also_buy_sku = $this->_product['buy_also_buy_sku'];
-        if ($buy_also_buy_sku) {
-            $skus = explode(',', $buy_also_buy_sku);
+        $relation_sku = $this->_product['relation_sku'];
+        $filter['select'] = [
+            'sku', 'spu', 'name', 'image',
+            'price', 'special_price',
+            'special_from', 'special_to',
+            'url_key', 'score', 'short_description',
+        ];
+        if ($relation_sku) {
+            $skus = explode(',', $relation_sku);
             if (is_array($skus) && !empty($skus)) {
-                $filter['select'] = [
-                    'sku', 'spu', 'name', 'image',
-                    'price', 'special_price',
-                    'special_from', 'special_to',
-                    'url_key', 'score',
-                ];
                 $filter['where'] = ['in', 'sku', $skus];
                 $products = Yii::$service->product->getProducts($filter);
-                //var_dump($products);
                 $products = Yii::$service->category->product->convertToCategoryInfo($products);
-
-                return $products;
             }
+        } elseif (!empty($category_id)) {
+            $filter['where'] = ['in', 'category', $category_id];
+            $products = Yii::$service->product->getRelateProduct($filter, $limit);
         }
+        return $products;
     }
 }

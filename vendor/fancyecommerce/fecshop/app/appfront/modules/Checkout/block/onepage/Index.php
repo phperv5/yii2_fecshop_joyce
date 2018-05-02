@@ -42,7 +42,18 @@ class Index
         $this->initState();
         $shippings = $this->getShippings();
         $last_cart_info = $this->getCartInfo($this->_shipping_method, $this->_country, $this->_state);
-        $address_list = Yii::$service->customer->address->Coll()['coll'];
+
+        $customer_id = Yii::$app->user->identity['id'];
+        $filter = [
+                    'numPerPage' => 50,
+                    'pageNum' => 1,
+                    'orderBy' => ['updated_at' => SORT_DESC],
+                    'where' => [
+                        ['customer_id' => $customer_id],
+                    ],
+                    'asArray' => true,
+        ];
+        $address_list = Yii::$service->customer->address->Coll($filter)['coll'];
         $address_select = $this->getDefaultAddress($address_list);
         return [
             'payments' => $this->getPayment(),

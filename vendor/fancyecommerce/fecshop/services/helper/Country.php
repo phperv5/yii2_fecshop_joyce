@@ -152,7 +152,7 @@ class Country extends Service
     {
         return [
             'AF'=>'Afghanistan',
-            'AX'=>'Åland Islands',
+            'AX'=>'Aland Islands',
             'AL'=>'Albania',
             'DZ'=>'Algeria',
             'AS'=>'American Samoa',

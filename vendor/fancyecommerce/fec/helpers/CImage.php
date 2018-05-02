@@ -86,9 +86,7 @@ class CImage
 			$resizeWidth = $resize;
 			$resizeHeight = $resizeWidth * $imgHeight / $imgWidth;
 		}
-		//echo 22;
-		//echo $resizeWidth.' && '.$resizeHeight;
-		//exit;
+
 		if(!$resizeWidth && !$resizeHeight){
 			return false;
 		}

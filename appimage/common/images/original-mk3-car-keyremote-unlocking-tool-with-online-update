@@ -1,0 +1,761 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Original MK3 Remote Unlocking Tool from PAM Devices with Online Update</title>
+<link rel="shortcut icon" href="http://www.norman-keys.com/favicon.ico">
+<link rel="apple-touch-icon" href="http://www.norman-keys.com/apple-touch-icon.png">
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="keywords" content="MK3 Unlocker ">
+<meta name="description" content="&lt;p&gt;Original MK3 Remote Unlocking Tool from PAM Devices with Online Update.&lt;/p&gt;&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&lt;p&gt;With both Remote Unlocking Functions and Transponder Key Maker Functions&amp;nbsp;&lt;/p&gt;">
+<link href="/assets/e4062ffb/css/style.css?v=1" rel="stylesheet">
+<link href="/assets/e4062ffb/css/style_fecshop.css?v=1" rel="stylesheet">
+<link href="/assets/e4062ffb/fancybox/jquery.fancybox.css?v=1" rel="stylesheet">
+<link href="/assets/6856f57f/css/owl.carousel.css?v=1" rel="stylesheet">
+
+</head>
+<body>
+<header id="header">
+    <input type="hidden" class="currentBaseUrl" value="http://www.norman-keys.com" />
+<input type="hidden" class="logoutUrl" value="http://www.norman-keys.com/customer/account/logout?rt=Ly93d3cubm9ybWFuLWtleXMuY29tL29yaWdpbmFsLW1rMy1jYXIta2V5cmVtb3RlLXVubG9ja2luZy10b29sLXdpdGgtb25saW5lLXVwZGF0ZQ==" />
+<input type="hidden" class="logoutStr" value="Logout" />
+<input type="hidden" class="welcome_str" value="Welcome!" />
+<div class="hd_wrapper">
+    <div class="hd_wrap_fun">
+        <div class="hd_wr_f_nav" id="hd_f_signin">
+            <div class="login-text t_r">
+            <a href="http://www.norman-keys.com/customer/account/login" class="link_green" rel="nofollow"><b>Sign In</b></a>
+            <span class="gray px11">or</span>
+            <a href="http://www.norman-keys.com/customer/account/register" class="link_green" rel="nofollow"><b>Register</b></a>
+            </div>
+        </div>
+        <div class="hd_wr_f_bar">
+            <div class="hd_wr_f_my">
+                <div class="hd_wr_nav"><a href="http://www.norman-keys.com/customer/order" rel="nofollow">My Account</a>
+                    <ul>
+                        <a href="http://www.norman-keys.com/customer/order"
+                           rel="nofollow">My Orders<span
+                                    id="myaccount_num_orders"></span></a>
+                        <a href="http://www.norman-keys.com/customer/productreview" rel="nofollow">My Review<span id="myaccount_num_orders"></span></a>
+                        <a id="myaccount_myfavorites" href="http://www.norman-keys.com/customer/productfavorite" rel="nofollow">My Favorites<span id="myaccount_num_orders"></span></a>
+                    </ul>
+                </div>
+            </div>
+            <div class="hd_wr_f_help">
+                <div class="hd_wr_nav"><a href="support/support.html">Help</a>
+                    <ul>
+                        <a href="http://www.norman-keys.com/help">Help Center</a>
+                        <a href="http://www.norman-keys.com/freed back">Feed Back</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="hd_wr_f_help">
+            <div class="hd_wr_nav">
+                        <a class="current_currency" style="color: #039;padding-left:10px"><b>USD</b></a>
+                        <ul class="currency_list">
+                                                            <a rel="EUR">EUR</a>
+                                                            <a rel="USD">USD</a>
+                                                            <a rel="GBP">GBP</a>
+                                                            <a rel="CNY">CNY</a>
+                                                    </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="header" id="WebPageTop">
+    <div class="hd_logo"><a href="http://www.norman-keys.com" target="_top"><h1></h1></a></div>
+    <div class="hd_sch">
+    <form method="get" name="searchFrom" class="js_topSeachForm" action="http://www.norman-keys.com/catalogsearch/index">
+        <input name="q" type="text" id="q" class="kw"  value=""
+               placeholder="Products keyword">
+        <select name="DirID">
+            <option value="" style="color:#999;">all categories</option>
+                                        <option value="http://www.norman-keys.com/new-arrvival.html">New Arrvival</option>
+                            <option value="http://www.norman-keys.com/key-programmer">Key Programmer</option>
+                            <option value="http://www.norman-keys.com/remote-control-and-key-case">Car Keys & Remotes</option>
+                            <option value="http://www.norman-keys.com/tech-support">Tech Support</option>
+                            <option value="http://www.norman-keys.com/news-notice">News & Notice</option>
+                            <option value="http://www.norman-keys.com/tango">TANGO & TMPro</option>
+                            <option value="http://www.norman-keys.com/opening-tools">Opening Tools</option>
+                            <option value="http://www.norman-keys.com/diagnostic">Diagnostic</option>
+                            <option value="http://www.norman-keys.com/car-key-chips">Transponder Chip</option>
+                            <option value="http://www.norman-keys.com/original-keys-remotes">Original Keys & Remotes</option>
+                    </select>
+        <input type="submit" value="" class="go fl js_topSearch seachBtn" title="Search"/>
+    </form>
+</div>    <div class="hd_cart">
+        <a href="http://www.norman-keys.com/checkout/cart" target="_top" rel="nofollow" id="hd_mycart">
+            <span class="mycart-text">My Shopping Cart</span>
+        </a>
+    </div>
+    <div class="hd_pop_kw">
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=MB BGA Tool">MB BGA Tool</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=VVDI Key Tool">VVDI Key Tool</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=MK3">MK3</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=Tango">Tango</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=TMPro">TMPro</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=OBDStar">OBDStar</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=AVDI">AVDI</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=Turbo Decoder">Turbo Decoder</a>
+                  <a href="http://www.norman-keys.com/catalogsearch/index?q=KD900">KD900</a>
+            </div>
+    <div class="clear">
+    </div>
+    <div class="hd_menu">
+    <a href="/" class="hd_menu_nv_gohome">Home</a>
+    <div class="hd_menu_cate">
+        <div class="hd_wr_nav"><a href="javascript:void(0);" rel="nofollow"><strong>Categories</strong></a>
+            <ul class="hdcate">
+                                                    <a href="http://www.norman-keys.com/new-arrvival.html" class="mhl_first">New Arrvival</a>
+                                    <a href="http://www.norman-keys.com/key-programmer" class="mhl_first">Key Programmer</a>
+                                    <a href="http://www.norman-keys.com/remote-control-and-key-case" class="mhl_first">Car Keys & Remotes</a>
+                                    <a href="http://www.norman-keys.com/tech-support" class="mhl_first">Tech Support</a>
+                                    <a href="http://www.norman-keys.com/news-notice" class="mhl_first">News & Notice</a>
+                                    <a href="http://www.norman-keys.com/tango" class="mhl_first">TANGO & TMPro</a>
+                                    <a href="http://www.norman-keys.com/opening-tools" class="mhl_first">Opening Tools</a>
+                                    <a href="http://www.norman-keys.com/diagnostic" class="mhl_first">Diagnostic</a>
+                                    <a href="http://www.norman-keys.com/car-key-chips" class="mhl_first">Transponder Chip</a>
+                                    <a href="http://www.norman-keys.com/original-keys-remotes" class="mhl_first">Original Keys & Remotes</a>
+                            </ul>
+        </div>
+    </div>
+
+    <div class="hd_menu_brands">
+        <div class="hd_wr_nav"><a href="javascript:void(0);" rel="nofollow"><b>Brands</b></a>
+            <ul class="hdbrands">
+                                                    <a href="http://www.norman-keys.com/obdstar">
+                        <img src="http://img.normankeys.com/media/catalog/category/s/7q/s7qb3pft78kwr4k1506004809.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="OBDSTAR" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/launch">
+                        <img src="http://img.normankeys.com/media/catalog/category/b/48/b48f6pdqxj0hzuu1506004874.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="LAUNCH" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/xhorse">
+                        <img src="http://img.normankeys.com/media/catalog/category/3/vk/3vk764xgn3ann0u1506005129.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="Xhorse" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/xtool">
+                        <img src="http://img.normankeys.com/media/catalog/category/w/ze/wzelv4nm6ggj2k11506005154.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="Xtool" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/yh-tech">
+                        <img src="http://img.normankeys.com/media/catalog/category/b/85/b85nu13ju1e39go1506005506.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="YH Tech" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/autel">
+                        <img src="http://img.normankeys.com/media/catalog/category/f/lu/flufiylor0d9jpg1506005524.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="Autel" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/lishi">
+                        <img src="http://img.normankeys.com/media/catalog/category/x/2z/x2z48kg2l23g2411509020746.png" width="120" height="40" border="0" hspace="0" vspace="0" alt="LISHI" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/keydiy">
+                        <img src="http://img.normankeys.com/media/catalog/category/u/av/uav7ka29d6bmlty1506005636.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="KEYDIY" align="absmiddle"/>
+                    </a>
+                                    <a href="http://www.norman-keys.com/xtuner">
+                        <img src="http://img.normankeys.com/media/catalog/category/l/ga/lga3qnwdsduoy4y1507826000.jpg" width="120" height="40" border="0" hspace="0" vspace="0" alt="Xtuner" align="absmiddle"/>
+                    </a>
+                                <div class="clear"></div>
+            </ul>
+        </div>
+    </div>
+
+    <div class="hd_menu_nav">
+                    <a class="" href="http://www.norman-keys.com/new-arrvival.html">New Arrvival</a>
+                    <a class="" href="http://www.norman-keys.com/key-programmer">Key Programmer</a>
+                    <a class="" href="http://www.norman-keys.com/remote-control-and-key-case">Car Keys & Remotes</a>
+                    <a class="" href="http://www.norman-keys.com/tango">TANGO & TMPro</a>
+                    <a class="" href="http://www.norman-keys.com/opening-tools">Opening Tools</a>
+                    <a class="" href="http://www.norman-keys.com/diagnostic">Diagnostic</a>
+                    <a class="" href="http://www.norman-keys.com/car-key-chips">Transponder Chip</a>
+                    <a class="" href="http://www.norman-keys.com/original-keys-remotes">Original Keys & Remotes</a>
+            </div>
+</div></header>
+
+<div class="main-container">
+    <div class="main">
+    <div class="page_where_l"><a href="/" rel="nofollow">Home</a> - <a href="/wholesale/" rel="nofollow">Products</a> - Original MK3 Car Key Remotes Unlocking Tool with Online Update    </div>
+    <div class="page_where_r"><a href="javascript:history.go(-1);" rel="nofollow">&laquo; Go Back</a></div>
+    <div class="blank8px"></div>
+
+    <div class="ms_f_m">
+        <input type="hidden" class="product_view_id" value="59e083ad6f1a2c2a37147d07">
+        <input type="hidden" class="sku" value="11005"/>
+        <div class="pro_chief">
+            <div class="pro_chf_photo">
+                                <div class="product-main-img">
+	<img id="zoom_03" src="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/500/0/3/d7/3d7th2bhfcghmgd1508765643.jpg" data-zoom-image="http://img.normankeys.com/media/catalog/product/3/d7/3d7th2bhfcghmgd1508765643.jpg"/>
+</div>
+		<div class="product-img-box">
+			<div class="gallery-img">
+				<a href="javascript:;" class="pre_images"></a>
+				<div class="box-img" id="gal1">
+					<div class="list-img" >
+		           <a href="#" data-image="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/500/0/3/d7/3d7th2bhfcghmgd1508765643.jpg" data-zoom-image="http://img.normankeys.com/media/catalog/product/3/d7/3d7th2bhfcghmgd1508765643.jpg">
+				<img class="elevateZoom lazyOwl" id="img_01" src="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/50/50/3/d7/3d7th2bhfcghmgd1508765643.jpg" />
+		   </a>
+		           <a href="#" data-image="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/500/0/4/9v/49v98xu3x8xkeq81508765655.jpg" data-zoom-image="http://img.normankeys.com/media/catalog/product/4/9v/49v98xu3x8xkeq81508765655.jpg">
+				<img class="elevateZoom lazyOwl" id="img_01" src="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/50/50/4/9v/49v98xu3x8xkeq81508765655.jpg" />
+		   </a>
+		           <a href="#" data-image="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/500/0/j/jd/jjd9iuw8xhfymqq1508765665.jpg" data-zoom-image="http://img.normankeys.com/media/catalog/product/j/jd/jjd9iuw8xhfymqq1508765665.jpg">
+				<img class="elevateZoom lazyOwl" id="img_01" src="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/50/50/j/jd/jjd9iuw8xhfymqq1508765665.jpg" />
+		   </a>
+							</div>
+				</div>
+<!--				<a href="javascript:;" class="next_images"></a>-->
+				<div class="clear"></div>
+			</div>
+		</div>
+	<div class="clear"></div>
+
+<script>
+</script>  
+
+<style>
+.owl-theme .owl-controls{display:none}
+.owl-theme:hover .owl-controls .owl-buttons div.owl-next{right:-5px}
+.owl-theme:hover .owl-controls .owl-buttons div.owl-prev{left:-5px}
+.list-img a{text-decoration:none;}
+</style>            </div>
+            <div class="pro_chf_brief">
+                <h1>Original MK3 Car Key Remotes Unlocking Tool with Online Update</h1>
+                <div class="blank5px"></div>
+                <div class="pro_chf_bri_itemno">Item No.11005                    <div class="blank5px"></div>
+                    <!--                    <span class="gray verdana no_bold">Manufacturer: <a href="/wholesale/brand-obdstar/">OBDSTAR</a></span>-->
+                    <span id="num_pro_sold_51561"></span>
+                </div>
+                <div class="pro_ch_bf_rate" id="pro_rate_51561">
+                    <div class="pro_ch_bf_rate_bg">
+                        <div class="pro_ch_bf_rate_vw" style="width:0px;"></div>
+                    </div>
+                    <div class="pro_ch_bf_rate_tx">0 stars, <a
+                                href="http://www.norman-keys.com/catalog/reviewproduct/lists?spu=11005&_id=59e083ad6f1a2c2a37147d07"
+                                target="_blank">0 reviews.</a></div>
+                </div>
+                <div class="blank15px"></div>
+                <div class="pro_bo_m">
+                    <div class="pro_bo_stock_pra">
+                        <!--                        <div class="p_bo_instock">In Stock</div>-->
+                    </div>
+                    <div class="">
+                                                    <span class="pro_pri_tit_sale">Latest price:</span>
+    <span class="pro_pri_curr_speical" name="cc_v_USD" style="display:"><strong>$1800</strong></span>
+    <span class="pro_pri_tit_vip">Buy It Now:</span><span class="pro_pri_curr_vip" name="cc_v_USD" style="display:">$1750</span>
+                    </div>
+                    <div class="pro_b_item" id="id_pro_b_item_oQty">
+                        <div class="pro_bitm_tit">Quantity:</div>
+                        <div class="pro_bitm_cont">
+                            <input type="text" name="qty" class="qty" value="1"/><span class="px11"></span>
+                            <span id="txtSingleProSubTotal" class="px12 verdana"></span>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="blank10px"></div>
+                    <div class="blank10px"></div>
+                    <div class="pro_bo_add_l">
+                        <input name="btn_buyitnow" type="button" class="btn_buyitnow goProductToCart" value=""
+                               title="Buy It Now"/>
+                    </div>
+                    <div class="pro_bo_add_m">
+                        <div id="flyItem" class="fly_item"><img
+                                    src="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/40/40/3/d7/3d7th2bhfcghmgd1508765643.jpg"
+                                    width="40" height="40"></div>
+                        <input name="add_to_cart" type="button" class="btn_addtocart addProductToCart" value=""
+                               title="Add to Cart"/>
+                    </div>
+
+                    <div class="pro_bo_add_r">
+                        <input name="add_to_favorites" type="button" class="btn_add_to_favorites" id="divMyFavorite"
+                               url="http://www.norman-keys.com/catalog/favoriteproduct/add?product_id=59e083ad6f1a2c2a37147d07"/>
+                        <span id="txt_r_addToFavorites"></span>
+                    </div>
+                    <div class="blank5px"></div>
+                </div>
+                <!--            11-->
+                <div class="blank10px"></div>
+                <dl>
+                    <dt class="w100px">Shipping:</dt>
+                    <dd class="w420px">
+                        Express Shipping Service&nbsp;<br/>
+                        <span class="px11 verdana gray_dark">Estimated delivery time: 3-5 Days.<a
+                                    href="/support/how-we-ship-the-item-to-you-4072.html" target="_blank"><span
+                                        class="px10">See details &raquo;</span></a></span></dd>
+                    <dt class="w100px">Weight:</dt>
+                    <!--                <dd class="w420px">3.5KG<span class="gray_dark">( 7.72LB )</span></dd>-->
+                    <dd class="w420px">0.35KG</dd>
+                    <dt class="w100px">Package:</dt>
+                    <dd class="w420px">1</span>
+                    </dd>
+                    <dt class="w100px">Returns:</dt>
+                    <dd class="w420px">Return for refund within 7 days,buyer pays return shipping.
+                        <!--<a href="/support/return-policy-4174.html" target="_blank"><span class="px11 verdana">Read details »</span></a>-->
+                    </dd>
+                </dl>
+                <div class="blank10px"></div>
+                <div class="dashed5px"></div>
+                <div class="blank5px"></div>
+                <!--                <div class="pro_ch_bf_digg">-->
+                <!--                    <div class="pro_digg_180x35"><a href="javascript:ProDiggIt('51561','sv_pro_digg_51561');">-->
+                <!--                            <span id="num_pro_digg_51561"></span></a><span id="sv_pro_digg_51561" class="alert"></span>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <div class="blank5px"></div>-->
+                <!--                <div class="dashed5px"></div>-->
+                                <div class="blank5px"></div>
+                <div class="pro_ch_bf_g_plusone">
+                    <g:plusone></g:plusone>
+                </div>
+                <!--分享-->
+                <div class="pro_ch_bf_share">
+                    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-59c0776ba615dc47"></script>
+                    <div class="addthis_inline_share_toolbox"></div>
+                </div>
+            </div>
+        </div>
+        <div class="blank10px"></div>
+        <div class="blank10px"></div>
+                <div class="w95per">
+    <fieldset class="sec">
+        <legend><b class="px14 red_dark">Buy more related tools and Save more!</b></legend>
+                <div class="pro_list">
+            <div class="photo"><div class="special"><img src="http://img.normankeys.com/images/lazyload1.gif" align="absmiddle" alt="Featured"></div>
+                <a href="http://www.norman-keys.com/xhorse-renew-adapters-set-for-vvdi-key-tool-hand-free-kit-" title="Hands-Free Renew Adapters Kit Works for MK3 & VVDI Key Tool - Full Set with 12 Pieces"><img src="http://img.normankeys.com/media/catalog/product/cache/bd935443df1c50537d4edaab4af5d446/120/120/d/8f/d8f3ox8qubq3ry81508255565.jpg" width="120" height="120" border="0" hspace="0" vspace="0" alt="Hands-Free Renew Adapters Kit Works for MK3 & VVDI Key Tool - Full Set with 12 Pieces" align="absmiddle"></a></div>
+            <div class="brief_fs_suit">
+                <div class="title"><a href="http://www.norman-keys.com/xhorse-renew-adapters-set-for-vvdi-key-tool-hand-free-kit-" target="_blank" title="Hands-Free Renew Adapters Kit Works for MK3 & VVDI Key Tool - Full Set with 12 Pieces">Hands-Free Renew Adapters Kit Works for MK3 & VVDI Key Tool - Full Set with 12 Pieces</a></div>
+                <b class="px11 gray">(Item No.19003)</b><br>
+                Xhorse VVDI Key Tool Renew Adapter Full Kit with 12 pieces for Unlocker                <a href="http://www.norman-keys.com/xhorse-renew-adapters-set-for-vvdi-key-tool-hand-free-kit-" target="_blank"><span>More Details »</span></a>
+                <div class="blank10px"></div>
+                <!-- 　<img src="/images/ico/freeshipping.gif" border="0" align="absmiddle" alt="Free Shipping"> -->
+                <div class="clear"></div>
+            </div>
+            <div class="order_fun_suit">
+                                 <span class="pro_pri_tit_sale_s">Latest price:</span><span class="pro_pri_curr_sale_s" name="" style="display:"><strong>$325</strong></span>
+    <span class="pro_pri_tit_vip_m">Buy It Now:</span>
+    <span class="pro_pri_curr_vip_m" name="" style="display:">$300</span>
+<!--    <span class="pro_pri_of_sr" name="" style="display:">20% off</span>-->
+                    <div class="blank10px"></div><span class="pro_b_item" id="id_pro_b_item_oQty_suit_48455"><b>Quantity: </b><input name="oQty_suit_48455" type="text" class="input" id="oQty_suit_48455" size="4" maxlength="6" onkeypress="event.returnValue=IsDigit();" value="1" onkeyup="ProQtySubTotal(this,'1','439.00','txt_single_subtotal_suit_48455');IsOrderNeedQty('Y','oQty_suit_48455');"><span class="px12"></span>　<b><span id="alert_o_need_oQty_suit_48455" class="alert"></span></b>　</span><span id="txt_single_subtotal_suit_48455" class="txt_subt_m"></span>
+                <div class="blank5px"></div>
+                <input name="add_to_cart" type="button" class="btn_addtocart_s" value="" title="Add to Cart" onclick="javascript:addProductToCart('59e627586f1a2c2a37147d20');return false;"/>
+                <div class="clear"></div></div>
+            <div class="clear"></div>
+        </div>
+                <div class="blank5px"></div>
+    </fieldset>
+</div>
+        <a name="Specifications"></a>
+        <div class="blank10px" id="pro_ctab_star"></div>
+        <div class="pro_ctab">
+            <ul>
+                <li id="p_ab_mn_1" class="current"
+                    onclick="AreaMultiMenuShowHide('p_ab_mn_','p_ab_vw_',5,1,'current',''); GotoScrollTop('1', 'pro_ctab_star', 100, '', '', '');">
+                    <span>Product Details</span></li>
+                                                <li id="p_ab_mn_4"
+                    onclick="AreaMultiMenuShowHide('p_ab_mn_','p_ab_vw_',5,4,'current','');  GotoScrollTop('1', 'pro_ctab_star', 100, '', '', '');">
+                    <span>Reviews<b id="num_pro_review_51561" class="red_dark"></b></span>
+                </li>
+                <li>
+                    <span><a href="http://www.norman-keys.com/catalog/reviewproduct/add?spu=11005&_id=59e083ad6f1a2c2a37147d07">Write a Comment</a></span>
+                </li>
+                <!--                <li onclick="GotoScrollTop('1', 'na_pro_releated', 100, '', '', '');"><span>Related Products</span></li>-->
+                <li id="p_ab_mn_5"
+                    onclick="AreaMultiMenuShowHide('p_ab_mn_','p_ab_vw_',5,5,'current',''); GotoScrollTop('1', 'pro_ctab_star', 100, '', '', '');">
+                    <span>After-sales Service</span></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div id="p_ab_vw_1" style="display:">
+            <div class="blank5px"></div>
+            <div class="exh_m_cont">
+                <p><span style="color: rgb(255, 0, 0); font-size: 20px;  font-family: verdana, geneva; letter-spacing: -1px;"><strong>Original MK3 full with no tokens needed!</strong></span><br /></p><p><span style="font-size: 18px; letter-spacing: -1px;"></span></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">MK3 is the world number 1 device, &nbsp;to unlock car keys. &nbsp; It refresh used keys, renew it, make it virgin, &nbsp;so as to reuse it.</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">Features:</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">1. With all 13 Remote Unlocking Software actiated.</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">2. With transponder key maker function. &nbsp;Works as good as a Tango</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">3. Free tokens</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">4. Update Online</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">5. &nbsp;One year warranty.</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">MK3 full unlock keys for the following car brands:<br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">1. Audi</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">2. BMW</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">3. Hyundai Kia<br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">4. Peugeot Citroen</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">5. Porsche</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">6. Land Rover</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">7. Volvo</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">8. Renault Dacia</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">9. &nbsp;GM Chevrolet Buick Opel Cadillac</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">10. Chrysler Jeep Dodge</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">11. Mitsubishi</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">12. Nissan</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;">13. All Toyota Lexus Smart Keys</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px 0px 20px; padding: 0px; font-size: 16px; line-height: 20px; font-family: verdana, geneva; box-sizing: content-box !important;"><br /></p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Features &amp; Advantages.</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">1. Free tokens. &nbsp; &nbsp;</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">When unlocking keys, no need tokens at all, free tokens even for Nissan.</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2. Fast &amp; Easy</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Easy operation, &nbsp;fast procedure. &nbsp;</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">To unlock a key, &nbsp;it takes less than 30 seconds.</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">3. Latest version by March 16<span style="vertical-align: text-top;">th</span>, 2017</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4. High quality.</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5. Wild Coverage. &nbsp; &nbsp;Cover 23 car makers.</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">6. Update Online</p><p class="p" style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">MK3 supporting key list:</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">BMW</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>BMW CAS3 Normal:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK – E – Series</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49125 ( 868 Mhz)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49127 ( 315Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49145 ( 868Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49147 ( 315Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>BMW CAS3 Proximity:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK - E – Series</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49125 ( 868Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49127 ( 315Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49145 ( 868Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49147 ( 315Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>BMW CAS4 Continental:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK - F – Series</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49661 ( 868Mhz Continental )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49663 ( 315Mhz Continental )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49662 ( 434Mhz Continental</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>BMW CAS4 HUF:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">HUF - F – Series</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">HUF5661 ( 868MHz HUF )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">HUF5662 ( 315Mhz HUF )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">HUF5663 ( 434Mhz HUF )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">HUF5667 ( 434Mhz HUF )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Chrysler</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Chrysler OHT692713AA</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2004 – 2007 Chrysler Town &amp; Country</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2004 – 2007 Dodge Caravan</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2004 – 2007 Dodge Grand Caravan</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Chrysler 2005 Normal Keys:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">OHT692427AA</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chrysler Sebring 2007-2011</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chrysler PT Cruiser 2006-2010</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chrysler PT Cruiser Convertible 2005-2007</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge Avenger 2008-2013</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge Caliber 2006-2012</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge Charger 2005-2007</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge Dakota 2004-2013</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge Durango 2004-2013</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge Magnum 2005-2007</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge Nitro 2007-2011</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Dodge RAM 2006-2009</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Jeep Commander 2006-2009</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Jeep Compass 2008-2013</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Jeep Grand Cherokee 2005-2007</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Jeep Liberty 2008-2012</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Jeep Patriot 2007-2013</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Jeep Wrangler 2007-2013</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Chrysler KOBOT04A</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2007-2009 Chrysler Aspen</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2005-2007 Chrysler 300</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2005-2007 Dodge Durango</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2007-2011 Dodge Dakota</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2007-2009 Dodge Ram</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2007-2013 Dodge Avenger</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2005-2007 Dodge Charger</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2007-2012 Dodge Caliber</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2005-2007 Jeep Commander</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2005-2007 Jeep Grand Cherokee</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Chrysler Fobik New Normal:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>IYZ-C01C / M3N5W783X</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: 567-738-031</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2011 Chrysler 300</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2013 Chrysler Town &amp; Country</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2010-2013 Dodge Caravan</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2013 Dodge Charger</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2013 Dodge Chanllenger</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2011-2013 Dodge Durango</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2012 Dodge Grand Caravan</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2011 Dodge Journey</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008- Dodge Magnum</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2009-2013 Dodge RAM</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2010 Jeep Commander</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2011-2013 Jeep Grand Cherokee</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Chrysler Fobik New Proximity:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>IYZ-C01C / Keyless Go</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip marking: 567-737-061</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2011 Chrysler 300</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2013 Chrysler Town &amp; Coutry</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2010-2013 Dodge Caravan</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2013 Dodge Challenger</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2011-2013 Dodge Durango</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2012 Dodge Grand Caravan</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2011 Dodge Journey</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008- Dodge Magnum</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2009-2013 Dodge RAM</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2008-2010 Jeep Commander</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2011-2013 Jeep Grand Cherokee</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong><br /></strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Chrylser Old Fobik: M3N</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>GQ4-53T</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: 61C0700 ( HITAG-2 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>M3M</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: F7953MC2800 ( HITAG-AES )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">- CHRYSLER GQ4-53T ( Hitag-2 , chip marking: 61C0700)<br />- CHRYSLER M3M ( Hitag-AES , chip marking: F7953MC2800 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>General Motors GM</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Astral H Non Flip:</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM 13149645 ( 433 Mhz Valeo )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Opel Astra H &nbsp;Opel Zafira B 2005-2009</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Corsa D Non Flip:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500234 ( 433Mhz 3 Buttons Opel )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500235 ( 433Mhz 2 Buttons Opel )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500221 ( 315Mhz 5 Buttons Chevrolet )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500222 (315Mhz 4 Buttons Chevrolet )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500218 ( 433Mhz 2 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500219 ( 433Mhz 3 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500226 ( 315Mhz 5 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500227 ( 315Mhz 4 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Cruze Flip:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500319 ( 315Mhz 5 Buttons Chevrolet )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500318 ( 315Mhz 4 Buttons Chevrolet )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500224 ( 315Mhz 5 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500225 ( 315Mhz 4 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Cruze Proximity ( Passive Entry ) &nbsp;Keys.</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500319 ( 315Mhz 5 Buttons Chevrolet )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500318 ( 315Mhz 4 Buttons Chevrolet )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500224 ( 315Mhz 5 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">GM13500225 ( 315Mhz 4 Buttons Buick )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Cadillac</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">NBG00976BT 315Mhz 5 Buttons Keyless Go / PCF7952E</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>KIA&nbsp;–&nbsp;Hyundai</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">2 Buttons:</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">SVI-CMFCH02 / Keyless Go Key</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Making: 049620C03</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>3 Buttons:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>SVI-CMFEU03 / Keyless Go Key</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: 049620C03</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>4 Buttons:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">SVI-HMFKR04 / Keyless Go Key</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">SVI-HMFEU04 / Keyless Go Key</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">SVI-HMFNA04 / Keyless Go Key</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Marking: 049620C03</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">09-13 Hyundai Genesis</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">11-13 Hyundai Elantra</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">11-13 Hyundai Sonata</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">12-14 Hyundai Veloster</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">11-13 Hyundai Equis</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">10-12 Kia Forte Koup</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">11-13 Kia Soul</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">11-13 Kia Sportage</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">11-13 Kia Optima</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>SVI-XMFGE04</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Comfort Access Key</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>SVI_KHFGE04 / SVI-KHFNA433</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Comfort Access Key</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>SVI-DMFGE04 / SVI-DMFNA04</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">- KIA/HYUNDAI SVI-KHFGE04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-XMFGE04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-DMFGE04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-DMFNA04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-KHFNA433 (Comfort Access Key)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Comfort Access Key</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">- KIA/HYUNDAI SVI-KHFGE04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-XMFGE04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-DMFGE04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-DMFNA04 (Comfort Access Key)<br />- KIA/HYUNDAI SVI-KHFNA433 (Comfort Access Key)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Mitsubishi</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>G8D-644M-Key ( 434Mhz ) F7952A</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: F7952A</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Porsche</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>PORSCHE</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">7PP959753AJ 434mHz Keyless GO</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">7PP959753BS 434mHz Keyless GO</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">7PP959753BN 434mHz. Remote</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">7PP959753BM 315MHZ. non keyless</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">7PP959753BQ 315MHZ. Keyless go</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">970.637.243.02 433MHZ Remote</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Renault &amp; Dacia</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">AK010008 Flence 3 Buttons ( 433Mhz</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Dacia 2 Button</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Renault, Dacia 805673071R &nbsp;(Remote Key 2 Buttons ) 433Mhz</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">SELECT SAME AS: 805673071R</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Clio 4 Hands Free</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Renault 285971998R</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Remote Car, Hitag-AES ( 433Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: F7953MC2200</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">PCB Code: A2C53419439</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Clio 4 Non Hands Free</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Renault 285974100R</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Remote Car, Hitag-AES ( 433 Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: F7953MC2200</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">PCB code: A2C53419439</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Renault 285970036R</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Remote Car, Hitag-2 ( 433 Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: PCF7941</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">PCB code: A2C53288852</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Renault 285979045R</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Remote Car, Comfort Access Card ( 433Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">Chip Marking: 049622C07</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">PCB code: A2C53307490</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">- RENAULT 285979045R ( Comfort Access Card, 433MHz, chip marking:049622C07)<br />- RENAULT 285970036R ( Remote Card, 433MHz, Hitag-2 , PCF7941)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>PSA &nbsp; &nbsp;Peugeot Citroen</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>407 New:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E25CI009</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E33CI002</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">21676652</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>407 Old</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E28CI01B</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E25CI009</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E33CI002</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">21676652</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Citroen 3 Buttons C5:</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E28CI01B</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E25CI009</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">E33CI002</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">21676652</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Range Rover</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5E0U40247 ( 434Mhz )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">YWX000061 ( 434Mhz ) Visteon</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">YWX000071 ( 315 Mhz) Visteon</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Audi &nbsp;</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4H0959754DA &nbsp; 434Mhz &nbsp;Comfort Access</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754 &nbsp; 433 Mhz &nbsp;Remote ( PCB Code: 233-453-111-02)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754D &nbsp;868 Mhz &nbsp;Remote ( PCB Code: 233-453-111-02)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754F &nbsp; 433 Mhz &nbsp;Comfort Access ( PCB Code: 233-453-111-02)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754 &nbsp;433 Mhz &nbsp; Remote ( PCB Code: 233-453-111-05/06)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754D ( 868Mhz ) &nbsp; &nbsp; &nbsp; &nbsp; ( PCB Code: 233-453-111-05/06)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754F 433 Mhz &nbsp; &nbsp;Comfort Access (233-453-111-05/06 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754G ( 315Mhz – Smart ) &nbsp;( PCB Code: 233-453-111-05/06 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">8T0959754 ( 433 Mhz ) &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;( PCB Code: 233-453-111-05/06 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4H0959754G &nbsp;315Mhz &nbsp; &nbsp; &nbsp; &nbsp; ( PCB Code:233-453-111-05/06)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4H0959754K ( 868Mhz Smart ) &nbsp; &nbsp;( PCB Code: 233-453-111-05/06 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4H0959754G ( 315Mhz Smart ) &nbsp; &nbsp;( PCB Code: 233-453-111-05/06 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4G0959754K ( 868 Mhz Smart ) &nbsp; &nbsp;( PCB Code: 233-453-111-05/06 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4H0959754DA &nbsp;433Mhz &nbsp;Comfort Access &nbsp;( PCB Code: 233-453-211-01/02 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4H0959754 DB &nbsp;315Mhz &nbsp;Comfort Access &nbsp;( PCB Code: 233-453-211-01/02 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">4H0959754DD &nbsp;868Mhz &nbsp; Comfort Access &nbsp;( PCB Code: 233-453-211-01/02 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Volvo</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49266 &nbsp;( 900 Mhz Smart Key )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">5WK49269 &nbsp;( 433 Mhz Smart Key )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>Nissan</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>4 Buttons</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">433 Mhz Hitag-3 &nbsp; ( PCB Code: A2C53405173 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">315 Mhz Hitag-3 &nbsp; ( PCB Code: A2C53188764 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><strong>5 Buttons</strong></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">433 Mhz Hitag-3 &nbsp;( PCB Code: A2C53408715 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">315 Mhz Hitag-3 &nbsp;( PCB Code: A2C53188764 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">A2C53297341 &nbsp;( 315Mhz &nbsp;Hitag – 2 )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">A2C32801600 &nbsp; ( 433 Mhz, &nbsp;HiTag – AES )</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">NISSAN PCB code: A2C53408715 (433MHz, Hitag-3)</p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;">All Toyota Lexus Smart Keys.<br /></p><p style="word-wrap: break-word; text-size-adjust: none; margin: 0px; padding: 0.5em; color: rgb(102, 102, 102); border: 0px none; font-family: verdana, geneva, sans-serif; font-size: 13px;"><img src="http://img.normankeys.com/media/upload/k/m1/km1bqvo4srqgrmb1508766314.jpg" alt="" /><br /></p><img src="http://img.normankeys.com/media/upload/l/dl/ldl69hc1cowdrhp1508766121.jpg" alt="" /><br /><p><span style="font-size: 18px; letter-spacing: -1px;"></span></p><p><strong><span style="letter-spacing: -1px; font-size: 18px; color: rgb(31, 73, 125);"><span style="color: rgb(51, 51, 51); font-size: 16px;">Original MK3 full with Free Tokens - Unlocking keys for 23 car makers - Update Online</span><br /></span></strong></p><p><span style="font-size: 18px; letter-spacing: -1px;"><a href="https://www.youtube.com/playlist?list=PL6qEv4JY_mo5NNZS3Zoh_WD5qa6F9B8Fq"><span style="color: rgb(51, 51, 255);">Video for MK3 Unlocker</span></a></span></p><p><span style="font-size: 18px; letter-spacing: -1px;"><span style="color: rgb(51, 51, 255);"><a href="https://mega.nz/#F!FCZDVZ4A!hhRLysZ5EO2ZmBGJ22i_AQ">MK3 Unlocker&nbsp;software and driver</a></span><br /></span></p><div><span style="font-size: 18px; letter-spacing: -1px;"><br /></span></div><br />            </div>
+        </div>
+        <div id="p_ab_vw_2" style="display:none">
+                    </div>
+        <div id="p_ab_vw_3" style="display:none"><a name="Service"></a>
+            <div class="blank60px"></div>
+            <div id="p_ab_vw_xy_3">
+                            </div>
+        </div>
+        <div id="p_ab_vw_4" style="display:none">
+            <div id="p_ab_vw_xy_4">
+                                <div class="product-Reviews">
+	<div id="pic_list_2" class="">
+		<div class="clear"></div>
+		<div class="box">
+			<div class="product-Reviews_top">
+							</div>
+			<div class="clear"></div>
+			<a class="submitbutton" href="http://www.norman-keys.com/catalog/reviewproduct/add?spu=11005&_id=59e083ad6f1a2c2a37147d07" >
+				Write a Comment			</a>
+			<div class="clear"></div>
+			<div class="view_all_review">
+				<a href="http://www.norman-keys.com/catalog/reviewproduct/lists?spu=11005&_id=59e083ad6f1a2c2a37147d07" >
+					View  All Review(0)
+				</a>
+			</div>
+		</div>
+	</div>
+</div>            </div>
+        </div>
+        <div id="p_ab_vw_5" style="display:none">
+            <a name="AftersalesService"></a>
+            <div class="blank60px"></div>
+            <p>FECSHOP.com accepts PayPal, Credit Card, Western Union and Wire Transfer as secure payment methods:</p>
+
+<p>Global:</p>
+
+<p>1. PayPal</p>
+
+<p>1) Login To Your Account or use Credit Card Express.<br>
+2) Enter your Card Details, the order will be shipped to your PayPal address. And click "Submit".<br>
+3) Your Payment will be processed and a receipt will be sent to your email inbox.</p>
+
+<p>2. Credit Card</p>
+
+<p>	1) Choose your shipping address OR create a new one.<br>
+	2) Enter your Card Details and click "Submit".<br>
+	3) Your Payment will be processed and a receipt will be sent to your email inbox.</p>
+        </div>
+
+        <div class="blank5px"></div>
+        <div class="blank10px" id="na_pro_releated"></div>
+        <div id="ProRelated_Pros"></div>
+
+        <div id="WishProFavorites"></div>
+        <div id="WishProVisitedList"></div>
+        <div class="clear"></div>
+    </div>
+    <div class="main_bottom"></div>
+</div>
+
+<script>
+    // add to cart js
+        
+</script>
+
+
+
+
+</div>
+<div class="footer-container">
+    <div class="ft_wrapper">
+    <div class="ft_ext">
+        <div style="background: rgb(250, 250, 250); margin: 0px; padding: 20px; clear: both; border-top-color: rgb(230, 230, 230); border-bottom-color: rgb(220, 220, 220); border-top-width: 2px; border-bottom-width: 1px; border-top-style: solid; border-bottom-style: solid;">
+            <div style="width: 25%; float: left;"><strong>Shipment &amp; Payment</strong>
+                <ul>
+                    <li><a href="http://www.norman-keys.com/how-we-ship-the-item-to-you" rel="nofollow" target="_blank">Delivery
+                            Options </a></li>
+                    <li><a href="http://www.norman-keys.com/how-about-your-delivery-cost" rel="nofollow" target="_blank">Delivery
+                            Cost </a></li>
+                    <li><a href="http://www.norman-keys.com/customs-clearance-import-duty" rel="nofollow">Customs &amp; Import Tax</a></li>
+                    <li><a href="http://www.norman-keys.com/payment" rel="nofollow">Payment</a></li>
+                </ul>
+            </div>
+
+            <div style="width: 25%; float: left;"><strong>Return Information</strong>
+
+                <ul>
+                    <li><a href="http://www.norman-keys.com/return-policy" rel="nofollow" target="_blank">Return & Refund Policy</a></li>
+                    <li><a href="http://www.norman-keys.com/products-warranty" rel="nofollow" target="_blank">Products Warranty</a></li>
+                    <li><a href="http://www.norman-keys.com/privacy-policy" rel="nofollow">Privacy Policy</a></li>
+                    <li><a href="http://www.norman-keys.com/after-sale-service" rel="nofollow">After-sale service</a></li>
+                </ul>
+            </div>
+
+            <div style="width: 25%; float: left;"><strong>Customer Service</strong>
+
+                <ul>
+                    <li><a href="http://www.norman-keys.com/about-us" rel="nofollow">About us</a></li>
+                    <li><a href="http://www.norman-keys.com/contact-us" rel="nofollow" target="_blank">Help & Contact us</a></li>
+                </ul>
+            </div>
+
+            <div style="width: 25%; float: left;">Join Our Community<br/>
+                <a href="https://www.facebook.com/Norman-Keys-926541694178608/" rel="nofollow" name="Norman-Keys/">     <img alt="facebook" src="http://img.normankeys.com/images/facebook.png" style="border-image:none; border:0px currentColor; height:32px; width:32px" /></a>   <a href="https://twitter.com/MK3_KeyUnlocker" rel="nofollow">                    <img alt="twitter" src="http://img.normankeys.com/images/twitter.png" style="border-image:none; border:0px currentColor; height:32px; width:32px" /></a><a href="https://plus.google.com/+uobd2net" rel="nofollow">&nbsp;</a><a href="https://www.youtube.com/channel/UCjBUXsjMG7onZv2_tfWZ8xQ" rel="nofollow"><img alt="uobd2 youtube" src="http://img.normankeys.com/images/youtube.png" style="border-image:none; border:0px currentColor; height:32px; width:32px" />        </a><br /><div class="w230 px11 gray">Newsletter get Coupon:                    <form action="/app/nl.asp" method="post" target="_blank">                        <input name="nl_email" style="width:125px" type="text" value="Your Email Address" />                          <input name="" type="submit" value="GO" /><input name="action" type="hidden" value="add" />                    </form>                </div>            </div>
+
+            <div class="clear">&nbsp;</div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="footer">
+        <div class="ft_menu">
+            <a href="/">Home</a>
+            <span>|</span> <a href="http://www.norman-keys.com/contact-us">Help & Contact us</a> <span>|</span>
+            <a href="http://www.norman-keys.com/payment">Payment</a>
+            <span>|</span> <a href="http://www.norman-keys.com/about-us">About us</a> <span>|</span>
+            <a href="http://www.norman-keys.com/return-policy">Return & Refund Policy</a> <span>
+        <div class="blank10px"></div>
+        <div class="align_center">
+            <div class="blank5px"></div>
+            <div class="blank5px"></div><img src="http://img.normankeys.com/images/2015072171509025.png" width="570" height="31" border="0" hspace="0" vspace="0" alt="" align="absmiddle" /><div class="blank5px"></div>            <div class="blank5px"></div>
+        </div>
+        <div class="ft_copyright">
+            Copyright &copy;2017 &nbsp;China Norman Keys Auto Electronic Co.,Ltd. &nbsp;A professional locksmith tools supplier. All rights reserved.<br />Address: LongHua District Shenzhen, China (PC.518109)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;E-Mail:<a href="mailto:carkeyunlock@gmail.com">carkeyunlock@gmail.com</a>&nbsp;<div class="clear"></div>            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+</div>
+
+<script src="/assets/e4062ffb/js/jquery-3.0.0.min.js?v=1"></script>
+<script src="/assets/e4062ffb/js/jquery.lazyload.min.js?v=1"></script>
+<script src="/assets/e4062ffb/js/owl.carousel.min.js?v=1"></script>
+<script src="/assets/e4062ffb/elevatezoom/jquery.elevatezoom.js?v=1"></script>
+<script src="/assets/e4062ffb/fancybox/jquery.fancybox.pack.js?v=1"></script>
+<script src="/assets/e4062ffb/js/js.js?v=1"></script>
+<script src="/assets/e4062ffb/js/common.js?v=1"></script>
+<script src="/assets/e4062ffb/js/parabola.js?v=1"></script>
+<script type="text/javascript">$(document).ready(function(){
+   //initiate the plugin and pass the id of the div containing gallery images
+	$("#zoom_03").elevateZoom({
+			gallery:'gal1',
+			cursor: 'pointer',
+			galleryActiveClass: 'active',
+			imageCrossfade: true,
+			//preloading: 1,
+			loadingIcon: 'http://img.normankeys.com/images/lazyload.gif',
+			});
+
+	//pass the images to Fancybox
+	$("#zoom_03").bind("click", function(e) {
+		var ez =   $('#zoom_03').data('elevateZoom');
+		$.fancybox(ez.getGalleryList());
+		return false;
+	});
+	$(document).ready(function(){
+		$(".next_images").click(function(){
+			//83
+			i = 0;
+			$(".product-img-box .box-img .list-img img").each(function(){
+				i++;
+			});
+			maxright = 1*(i-4);
+			nowright = $(".product-img-box .list-img").css("top");
+			nowright = parseFloat(nowright.replace("px",""));
+			abs_nowright = Math.abs(nowright);
+			//alert(nowright);
+			if(abs_nowright >= maxright && (nowright < 0)){
+				$(".product-img-box .list-img").animate({top: '0px'}, "slow");
+			}else{
+				$(".product-img-box .list-img").animate({top: '-=125px'}, "fast");
+			}
+		});
+
+		$(".pre_images").click(function(){
+
+			//83
+			i = 0;
+			$(".product-img-box .box-img .list-img img").each(function(){
+				i++;
+			});
+			maxright = 83*(i-4);
+			nowright = $(".product-img-box .list-img").css("top");
+			nowright = parseFloat(nowright.replace("px",""));
+			abs_nowright = Math.abs(nowright);
+
+			if(nowright<0){
+
+				$(".product-img-box .list-img").animate({top: '+=125px'}, "fast");
+			}else{
+				$(".product-img-box .list-img").animate({top: '0px'}, "slow");
+			}
+
+		});
+	});
+});
+
+    $(document).ready(function () {
+        $(".addProductToCart").click(function () {
+            i = 1;
+
+            if (i) {
+                custom_option = new Object();
+                $(".product_custom_options .pg .rg ul").each(function () {
+                    $m = $(this).find("li.current a.current");
+                    attr = $m.attr("attr");
+                    value = $m.attr("value");
+                    custom_option[attr] = value;
+                });
+                custom_option_json = JSON.stringify(custom_option);
+                //alert(custom_option_json);
+                sku = $(".sku").val();
+                qty = $(".qty").val();
+                qty = qty ? qty : 1;
+                csrfName = $(".product_csrf").attr("name");
+                csrfVal = $(".product_csrf").val();
+
+                $(".product_custom_options").val(custom_option_json);
+                $(this).addClass("dataUp");
+                // ajax 提交数据
+
+                addToCartUrl = "http://www.norman-keys.com/checkout/cart/add";
+                $data = {};
+                $data['custom_option'] = custom_option_json;
+                $data['product_id'] = "59e083ad6f1a2c2a37147d07";
+                $data['qty'] = qty;
+                $data[csrfName] = csrfVal;
+                jQuery.ajax({
+                    async: true,
+                    timeout: 6000,
+                    dataType: 'json',
+                    type: 'post',
+                    data: $data,
+                    url: addToCartUrl,
+                    success: function (data, textStatus) {
+                        if (data.status == 'success') {
+                            items_count = data.items_count;
+                            //eleShopCart:到达的目的地#str_num_mycart
+                            var eleFlyElement = document.querySelector("#flyItem"), eleShopCart = document.querySelector("#str_num_mycart");
+                            var myParabola = funParabola(eleFlyElement, eleShopCart, {
+                                speed: 300, //抛物线速度
+                                curvature: 0.001, //控制抛物线弧度
+                                complete: function () {
+                                    eleFlyElement.style.visibility = "hidden";
+                                    $("#str_num_mycart").find(".verdana").html(items_count);
+                                }
+                            });
+                            if (eleFlyElement && eleShopCart) {
+                                [].slice.call(document.getElementsByClassName("addProductToCart")).forEach(function (button) {
+                                    // 滚动大小
+                                    var scrollLeft = document.documentElement.scrollLeft || document.body.scrollLeft || 0,
+                                        scrollTop = document.documentElement.scrollTop || document.body.scrollTop || 0;
+                                    eleFlyElement.style.left = event.clientX + scrollLeft + "px";
+                                    eleFlyElement.style.top = event.clientY + scrollTop + "px";
+                                    eleFlyElement.style.visibility = "visible";
+                                    // 需要重定位
+                                    myParabola.position().move();
+                                    //});
+                                });
+                            }
+
+
+                        } else {
+                            content = data.content;
+                            $(".addProductToCart").removeClass("dataUp");
+                            alert(content);
+                        }
+
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    }
+                });
+
+            }
+        });
+        $(".goProductToCart").click(function () {
+            i = 1;
+
+            if (i) {
+                custom_option = new Object();
+                $(".product_custom_options .pg .rg ul").each(function () {
+                    $m = $(this).find("li.current a.current");
+                    attr = $m.attr("attr");
+                    value = $m.attr("value");
+                    custom_option[attr] = value;
+                });
+                custom_option_json = JSON.stringify(custom_option);
+                //alert(custom_option_json);
+                sku = $(".sku").val();
+                qty = $(".qty").val();
+                qty = qty ? qty : 1;
+                csrfName = $(".product_csrf").attr("name");
+                csrfVal = $(".product_csrf").val();
+
+                $(".product_custom_options").val(custom_option_json);
+                $(this).addClass("dataUp");
+                // ajax 提交数据
+
+                addToCartUrl = "http://www.norman-keys.com/checkout/cart/add";
+                $data = {};
+                $data['custom_option'] = custom_option_json;
+                $data['product_id'] = "59e083ad6f1a2c2a37147d07";
+                $data['qty'] = qty;
+                $data[csrfName] = csrfVal;
+                jQuery.ajax({
+                    async: true,
+                    timeout: 6000,
+                    dataType: 'json',
+                    type: 'post',
+                    data: $data,
+                    url: addToCartUrl,
+                    success: function (data, textStatus) {
+                        if (data.status == 'success') {
+                            window.location.href = "http://www.norman-keys.com/checkout/cart";
+                        } else {
+                            content = data.content;
+                            $(".addProductToCart").removeClass("dataUp");
+                            alert(content);
+                        }
+
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    }
+                });
+
+            }
+        });
+        // product favorite
+        $("#divMyFavorite").click(function () {
+            if ($(this).hasClass('act')) {
+                $('#txt_r_addToFavorites').empty().html('<span class="px11 red">Added it successfully.</span>');
+            } else {
+                url = $(this).attr('url');
+                $(this).addClass('act');
+                window.location.href = url;
+            }
+        });
+        // 改变个数的时候，价格随之变动
+        $(".qty").blur(function () {
+            // 如果全部选择完成，需要到ajax请求，得到最后的价格
+            i = 1;
+            $(".product_custom_options .pg .rg ul.required").each(function () {
+                val = $(this).find("li.current a.current").attr("value");
+                attr = $(this).find("li.current a.current").attr("attr");
+                if (!val) {
+                    i = 0;
+                }
+            });
+            if (i) {
+                getCOUrl = "http://www.norman-keys.com/catalog/product/getcoprice";
+                product_id = "59e083ad6f1a2c2a37147d07";
+                qty = $(".qty").val();
+                custom_option_sku = '';
+                for (x in custom_option_arr) {
+                    one = custom_option_arr[x];
+                    j = 1;
+                    $(".product_custom_options .pg .rg ul.required").each(function () {
+                        val = $(this).find("li.current a.current").attr("value");
+                        attr = $(this).find("li.current a.current").attr("attr");
+                        if (one[attr] != val) {
+                            j = 0;
+                            //break;
+                        }
+                    });
+                    if (j) {
+                        custom_option_sku = one['sku'];
+                        break;
+                    }
+                }
+                $data = {
+                    custom_option_sku: custom_option_sku,
+                    qty: qty,
+                    product_id: product_id
+                };
+                jQuery.ajax({
+                    async: true,
+                    timeout: 6000,
+                    dataType: 'json',
+                    type: 'get',
+                    data: $data,
+                    url: getCOUrl,
+                    success: function (data, textStatus) {
+                        $(".price_info").html(data.price);
+                    },
+                    error: function (XMLHttpRequest, textStatus, errorThrown) {
+                    }
+                });
+            }
+        });
+    });
+    </script></body>
+</html>
+<script type="text/javascript" async="async" defer="defer" data-cfasync="false" src="https://mylivechat.com/chatinline.aspx?hccid=94621973"></script>
+
+
