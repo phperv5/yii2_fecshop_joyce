@@ -20,7 +20,15 @@ $jsOptions = [
 			'js/jquery.lazyload.min.js',
 			'js/owl.carousel.min.js',
 			'js/js.js',
-            'js/common.js',
+		],
+	],
+	# js config 2
+	[
+		'options' => [
+			'condition'=> 'lt IE 9',
+		],
+		'js'	=>[
+			'js/ie9js.js'
 		],
 	],
 ];
@@ -32,7 +40,18 @@ $cssOptions = [
 		'css'	=>[
 			'css/style.css',
 			'css/ie.css',
+//            'css/bootstrap.min.css',
 			'onestepcheckout/onestepcheckout.css',
+		],
+	],
+	
+	# css config 2.
+	[
+		'options' => [
+			'condition'=> 'lt IE 9',
+		],
+		'css'	=>[
+			'css/ltie9.css',
 		],
 	],
 ];
