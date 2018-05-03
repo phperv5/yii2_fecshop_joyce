@@ -96,7 +96,7 @@ class Menu extends Service
             'parent_id' => $parentId,
             'status' => $model::STATUS_ENABLE,
             'is_brand' => 1,
-        ])->all();
+        ])->orderBy('sort ASC')->all();
         if (is_array($data) && !empty($data)) {
             foreach ($data as &$category) {
                 $category = [

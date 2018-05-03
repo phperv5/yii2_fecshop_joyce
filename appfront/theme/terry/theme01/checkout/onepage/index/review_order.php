@@ -1,13 +1,4 @@
 <?php
-/**
- * FecShop file.
- *
- * @link http://www.fecshop.com/
- * @copyright Copyright (c) 2016 FecShop Software LLC
- * @license http://www.fecshop.com/license/
- */
-?>
-<?php
 use fecshop\app\appfront\helper\Format;
 ?>
 <?php  $cart_info = $parentThis['cart_info'];   ?>

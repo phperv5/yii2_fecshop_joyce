@@ -137,6 +137,7 @@ class CategoryMongodb implements CategoryInterface
         $one['status']    = (int)$one['status'];
         $one['menu_show'] = (int)$one['menu_show'];
         $one['is_brand'] = (int)$one['is_brand'];
+        $one['sort'] = (int)$one['sort'];
         $saveStatus = Yii::$service->helper->ar->save($model, $one);
         $originUrl = $originUrlKey.'?'.$this->getPrimaryKey() .'='. $primaryVal;
         $originUrlKey = isset($one['url_key']) ? $one['url_key'] : '';
@@ -208,8 +209,8 @@ class CategoryMongodb implements CategoryInterface
         } else {
             $where = ['parent_id' => $rootCategoryId];
         }
-        $categorys = $this->_categoryModel->find()->asArray()->where($where)->all();
-        //var_dump($categorys);exit;
+        $categorys = $this->_categoryModel->find()->asArray()->where($where)->orderBy('sort ASC')->all();
+//        var_dump($categorys);exit;
         $idKey = $this->getPrimaryKey();
         if (!empty($categorys)) {
             foreach ($categorys as $cate) {
@@ -413,8 +414,9 @@ class CategoryMongodb implements CategoryInterface
         //echo $category_id;
         $data = $this->_categoryModel->find()->asArray()->where([
                         'parent_id' => $category_id,
-                    ])->all();
+                    ])->orderBy('sort ASC')->all();
         $arr = [];
+
         if (is_array($data) && !empty($data)) {
             foreach ($data as $one) {
                 $currentUrlKey = $one['url_key'];

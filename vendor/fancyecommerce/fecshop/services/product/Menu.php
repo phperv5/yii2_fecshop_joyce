@@ -103,6 +103,18 @@ class Menu extends Service
         return true;
     }
 
+    public function actionGetMenuList($numPerPage = 10)
+    {
+        $filter = [
+            'numPerPage' => $numPerPage,
+            'orderBy'	=> ['sort_order' => SORT_ASC ],
+        ];
+        $keywordsColl = $this->list($filter);
+        $keywords = $keywordsColl['coll'];
+
+        return $keywords;
+    }
+
     /**
      * @property $filter|array
      * get artile collection by $filter

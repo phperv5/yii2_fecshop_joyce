@@ -242,8 +242,9 @@
 .hm_box_jmp_right {
     margin: 0px;
     padding: 0px;
-    float: right;
-    width: 960px;
+    overflow: hidden;
+    float: left;
+    /*width: 960px;*/
 }
 
 .hm_box_jmp_right ul, .hm_box_jmp_left ul {
@@ -262,9 +263,9 @@
 }
 
 .hm_box_jmp_right li {
-    width: 300px;
-    margin-left: 20px;
-    float: right;
+    width: 290px;
+    padding:0 9px 0 1px;
+    float: left;
     list-style: none;
     position: relative;
 }

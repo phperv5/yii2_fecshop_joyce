@@ -85,19 +85,6 @@ class Index extends AppadminbaseBlockEdit implements AppadminbaseBlockEditInterf
         $str .= '</ul>';
 
         return $str;
-        /*
-        <ul class="tree treeFolder">
-                <li><a href="javascript:void(0);">11</a>
-                    <ul>
-                        <li><a href="javascript:void(0);" >22</a></li>
-                        <li><a href="javascript:void(0);" >33</a></li>
-                        <li><a href="javascript:void(0);" >44</a></li>
-                        <li><a href="javascript:void(0);" >55</a></li>
-                    </ul>
-                </li>
-
-             </ul>
-        */
     }
 
     public function saveCategory()
@@ -306,6 +293,7 @@ class Index extends AppadminbaseBlockEdit implements AppadminbaseBlockEditInterf
                 'require' => 0,
             ],
             [
+
                 'label' => '排序',
                 'name' => 'sort',
                 'display' => [
@@ -317,6 +305,7 @@ class Index extends AppadminbaseBlockEdit implements AppadminbaseBlockEditInterf
                 'label' => '分类描述',
                 'name' => 'description',
                 'display' => [
+
                     'type' => 'textarea',
                     'lang' => true,
                     'rows' => 14,

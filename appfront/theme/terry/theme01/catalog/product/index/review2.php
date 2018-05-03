@@ -25,12 +25,12 @@
 								<div class="review-content">
 									<?= $one['review_content'] ?>
 								</div>
-								<?php if($one['status'] == $noActiveStatus): ?>
+								<?php if($one['status'] == $noActiveStatus): ?>  
 								<div class="moderation">
 									<?= Yii::$service->page->translate->__('Your comment is awaiting moderation'); ?>...
 								</div>
 								<?php endif; ?>
-
+								
 							</div>
 						</div>
 						<div class="clear"></div>
@@ -46,7 +46,7 @@
 			<div class="clear"></div>
 			<div class="view_all_review">
 				<a href="<?= Yii::$service->url->getUrl('catalog/reviewproduct/lists',['spu'=>$spu,'_id'=>$_id]); ?>" >
-					<?= Yii::$service->page->translate->__('View  All Review'); ?>(<?= $review_count; ?>)
+					<?= Yii::$service->page->translate->__('View  All Review'); ?>(<?= $review_count; ?>) 
 				</a>
 			</div>
 		</div>

@@ -12,7 +12,12 @@
             <div class="align_right px11 verdana" style="margin-top:-10px;"><a href="<?= $homeUrl ?>">Home</a> - <a href="<?= Yii::$service->url->getUrl('customer/order') ?>">My Account: <b class="red account-email"></b></a> - Edit Address Information</div><div class="blank5px"></div><h1>Edit Address Information</h1>
             <form class="addressedit" action="<?= Yii::$service->url->getUrl('customer/address/edit'); ?>" method="post" id="form-validate">
                 <input name="address[address_id]" value="<?= $address_id; ?>" type="hidden">
+                <input name="redirect_url" value="<?= Yii::$app->request->get('redirect_url'); ?>" type="hidden">
                 <dl>
+                    <dt><span class="red_star">*</span>Email Address:</dt>
+                    <dd>
+                        <input class="input-text required-entry input_normal" maxlength="255" title="Email" value="<?= $email ?>" name="address[email]" id="customer_email"   type="text">
+                    </dd>
                     <dt><span class="red_star">*</span>Received Name is:</dt>
                     <dd>
                         <div class="fl w200px"><b class="px11">First Name</b></div>

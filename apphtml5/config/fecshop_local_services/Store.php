@@ -4,7 +4,7 @@
         'class'  => 'fecshop\services\Store',
         'stores' => [
             // store key：域名去掉http部分，作为key，这个必须这样定义。
-            'front.fecshop.co' => [
+            'm.fecshop.co' => [
                 'language'         => 'en_US',        // 语言简码需要在@common/config/fecshop_local_services/FecshopLang.php 中定义。
                 'languageName'     => 'English',    // 语言简码对应的文字名称，将会出现在语言切换列表中显示。
                 'localThemeDir'    => '@apphtml5/theme/terry/theme01', // 设置当前store对应的模板路径。关于多模板的方面的知识，您可以参看fecshop多模板的知识。

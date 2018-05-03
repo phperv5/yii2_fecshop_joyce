@@ -133,7 +133,7 @@ class Shipping extends Service
      */
     public function getShippingByTableCsvCache($shipping_method)
     {
-        $shipping_key = 'norman.shipping.key1.' . $shipping_method;
+        $shipping_key = 'norman.shipping.key2.' . $shipping_method;
         $shippingArr = $this->rememberCache($shipping_key, 7 * 24 * 60 * 60, function () use ($shipping_method) {
             $shippingArr = $this->getShippingByTableCsv($shipping_method);
             return $shippingArr;
