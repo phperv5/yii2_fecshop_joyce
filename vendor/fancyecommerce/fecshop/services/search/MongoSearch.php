@@ -6,9 +6,7 @@
  * @copyright Copyright (c) 2016 FecShop Software LLC
  * @license http://www.fecshop.com/license/
  */
-
 namespace fecshop\services\search;
-
 //use fecshop\models\mongodb\Product;
 //use fecshop\models\mongodb\Search;
 use fecshop\services\Service;
@@ -23,7 +21,7 @@ class MongoSearch extends Service implements SearchInterface
 {
     public $searchIndexConfig;
     public $searchLang;
-
+    public $enable;
     protected $_productModelName = '\fecshop\models\mongodb\Product';
     protected $_productModel;
     protected $_searchModelName = '\fecshop\models\mongodb\Search';
@@ -63,7 +61,6 @@ class MongoSearch extends Service implements SearchInterface
                 $config2['weights'][$column] = (int)$weight;
             }
         }
-
         //$langCodes = Yii::$service->fecshoplang->allLangCode;
         if (!empty($this->searchLang) && is_array($this->searchLang)) {
             foreach ($this->searchLang as $langCode => $mongoSearchLangName) {
@@ -88,7 +85,6 @@ class MongoSearch extends Service implements SearchInterface
                 'description' => 'text',
             ],
             [
-
                 'weights' => [
                     'name' => 10,
                     'description' => 5,
@@ -117,6 +113,9 @@ class MongoSearch extends Service implements SearchInterface
             $coll = Yii::$service->product->coll($filter);
             if (is_array($coll['coll']) && !empty($coll['coll'])) {
                 foreach ($coll['coll'] as $one) {
+                    //$langCodes = Yii::$service->fecshoplang->allLangCode;
+                    //if(!empty($langCodes) && is_array($langCodes)){
+                    //	foreach($langCodes as $langCodeInfo){
                     $one_name = $one['name'];
                     $one_description = $one['description'];
                     $one_short_description = $one['short_description'];
@@ -126,9 +125,10 @@ class MongoSearch extends Service implements SearchInterface
                             $searchModel = $this->_searchModel->findOne(['_id' => $one['_id']]);
                             if (!$searchModel['_id']) {
                                 $searchModel = new $this->_searchModelName();
+                            } else {
+                                unset($one['_id']);
                             }
                             $one['name'] = Yii::$service->fecshoplang->getLangAttrVal($one_name, 'name', $langCode);
-                            $one['category'] = $one['category'];
                             $one['description'] = Yii::$service->fecshoplang->getLangAttrVal($one_description, 'description', $langCode);
                             $one['short_description'] = Yii::$service->fecshoplang->getLangAttrVal($one_short_description, 'short_description', $langCode);
                             $one['sync_updated_at'] = time();
@@ -143,6 +143,7 @@ class MongoSearch extends Service implements SearchInterface
                 }
             }
         }
+        //echo "MongoSearch sync done ... \n";
 
         return true;
     }
@@ -187,7 +188,6 @@ class MongoSearch extends Service implements SearchInterface
                 ]);
             }
         }
-
         return true;
     }
 
@@ -212,18 +212,27 @@ class MongoSearch extends Service implements SearchInterface
      * ]
      * 得到搜索的产品列表.
      */
-    public function actionGetSearchProductColl($select, $where, $pageNum, $numPerPage, $product_search_max_count)
+    protected function actionGetSearchProductColl($select, $where, $pageNum, $numPerPage, $product_search_max_count)
     {
-        $filter = [
-            'pageNum' => $pageNum,
-            'numPerPage' => $numPerPage,
-            'where' => $where,
-            'product_search_max_count' => $product_search_max_count,
-            'select' => $select,
-        ];
-//        var_dump($filter);exit;
-        $collection = $this->fullTearchText($filter);
+        // 先进行sku搜索，如果有结果，说明是针对sku的搜索
+        $searchText = $where['$text']['$search'];
+        $productM = Yii::$service->product->getBySku($searchText);
+        if ($productM) {
+            $collection['coll'][] = $productM;
+            $collection['count'] = 1;
+        } else {
+            $filter = [
+                'pageNum' => $pageNum,
+                'numPerPage' => $numPerPage,
+                'where' => $where,
+                'product_search_max_count' => $product_search_max_count,
+                'select' => $select,
+            ];
+            //var_dump($filter);exit;
+            $collection = $this->fullTearchText($filter);
+        }
         $collection['coll'] = Yii::$service->category->product->convertToCategoryInfo($collection['coll']);
+        //var_dump($collection);
         return $collection;
     }
 
@@ -246,8 +255,8 @@ class MongoSearch extends Service implements SearchInterface
     {
         $sModel = $this->_searchModel;
         $where = $filter['where'];
+        $where['status'] = 1;
         $product_search_max_count = $filter['product_search_max_count'] ? $filter['product_search_max_count'] : 1000;
-
         $select = $filter['select'];
         $pageNum = $filter['pageNum'];
         $numPerPage = $filter['numPerPage'];
@@ -260,10 +269,8 @@ class MongoSearch extends Service implements SearchInterface
          */
         $sModel::$_lang = Yii::$service->store->currentLangCode;
         //$search_data = $this->_searchModel->getCollection();
-
         //$mongodb = Yii::$app->mongodb;
         //$search_data = $mongodb->getCollection('full_search_product_en')
-
         $search_data = $this->_searchModel->getCollection()->find(
             $where,
             ['search_score' => ['$meta' => 'textScore'], 'id' => 1, 'spu' => 1, 'score' => 1],
@@ -307,7 +314,6 @@ class MongoSearch extends Service implements SearchInterface
             foreach ($productIds as $product_id) {
                 $return_data[] = $s_data[(string)$product_id];
             }
-
             return [
                 'coll' => $return_data,
                 'count' => $count,
@@ -343,7 +349,6 @@ class MongoSearch extends Service implements SearchInterface
         $sModel = $this->_searchModel;
         $sModel::$_lang = Yii::$service->store->currentLangCode;
         $filter_data = $this->_searchModel->getCollection()->aggregate($pipelines);
-
         return $filter_data;
     }
 }

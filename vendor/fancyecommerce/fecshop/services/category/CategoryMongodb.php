@@ -137,6 +137,7 @@ class CategoryMongodb implements CategoryInterface
         $one['status']    = (int)$one['status'];
         $one['menu_show'] = (int)$one['menu_show'];
         $one['is_brand'] = (int)$one['is_brand'];
+        $one['sort'] = (int)$one['sort'];
         $saveStatus = Yii::$service->helper->ar->save($model, $one);
         $originUrl = $originUrlKey.'?'.$this->getPrimaryKey() .'='. $primaryVal;
         $originUrlKey = isset($one['url_key']) ? $one['url_key'] : '';
@@ -208,8 +209,8 @@ class CategoryMongodb implements CategoryInterface
         } else {
             $where = ['parent_id' => $rootCategoryId];
         }
-        $categorys = $this->_categoryModel->find()->asArray()->where($where)->all();
-        //var_dump($categorys);exit;
+        $categorys = $this->_categoryModel->find()->asArray()->where($where)->orderBy('sort ASC')->all();
+//        var_dump($categorys);exit;
         $idKey = $this->getPrimaryKey();
         if (!empty($categorys)) {
             foreach ($categorys as $cate) {
@@ -218,6 +219,7 @@ class CategoryMongodb implements CategoryInterface
                     $idKey    => $idVal,
                     'level'   => $level,
                     'name'    => Yii::$service->fecshoplang->getLangAttrVal($cate['name'], 'name', $lang),
+                    'url' => Yii::$service->url->getUrl($cate['url_key']),
                 ];
                 if($appserver){
                     $arr[$idVal]['url'] = '/catalog/category/'.$idVal;
@@ -333,7 +335,7 @@ class CategoryMongodb implements CategoryInterface
         return $data;
     }
 
-    protected function getOneLevelCateChild($category)
+    public function getOneLevelCateChild($category)
     {
         //'_id' 		=> $currentId,
         //'name' 		=> $currentName,
@@ -360,7 +362,7 @@ class CategoryMongodb implements CategoryInterface
         return $data;
     }
 
-    protected function getAllParentCate($allParent)
+    public function getAllParentCate($allParent)
     {
         //var_dump($allParent);exit;
         $d = $allParent;
@@ -407,13 +409,14 @@ class CategoryMongodb implements CategoryInterface
         return $data;
     }
 
-    protected function getChildCate($category_id)
+    public function getChildCate($category_id)
     {
         //echo $category_id;
         $data = $this->_categoryModel->find()->asArray()->where([
                         'parent_id' => $category_id,
-                    ])->all();
+                    ])->orderBy('sort ASC')->all();
         $arr = [];
+
         if (is_array($data) && !empty($data)) {
             foreach ($data as $one) {
                 $currentUrlKey = $one['url_key'];

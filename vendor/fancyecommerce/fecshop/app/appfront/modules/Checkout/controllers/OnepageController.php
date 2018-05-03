@@ -20,19 +20,13 @@ class OnepageController extends AppfrontController
 {
     public $enableCsrfValidation = true;
 
-    //public function init(){
-    //	Yii::$service->page->theme->layoutFile = 'one_step_checkout.php';
-
-    //}
-
     public function actionIndex()
     {
-        $guestOrder = Yii::$app->controller->module->params['guestOrder'];
-        if(!$guestOrder && Yii::$app->user->isGuest){
+        if (Yii::$app->user->isGuest) {
             $checkoutOrderUrl = Yii::$service->url->getUrl('checkout/onepage/index');
             Yii::$service->customer->setLoginSuccessRedirectUrl($checkoutOrderUrl);
             return Yii::$service->url->redirectByUrlKey('customer/account/login');
-        } 
+        }
         $_csrf = Yii::$app->request->post('_csrf');
         if ($_csrf) {
             $status = $this->getBlock('placeorder')->getLastData();
@@ -59,4 +53,23 @@ class OnepageController extends AppfrontController
     {
         $this->getBlock('index')->ajaxUpdateOrderAndShipping();
     }
+
+    /*
+     * 订单显示
+     */
+    public function actionOrderdetail()
+    {
+        $data = $this->getBlock('orderdetail')->getLastData();
+        return $this->render($this->action->id, $data);
+    }
+    
+    /*
+     * 订单付款
+     */
+    public function actionOrderpay()
+    {
+        $data = $this->getBlock('orderdetail')->paySave();
+    }
+    
+    
 }

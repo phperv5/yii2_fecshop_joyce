@@ -40,7 +40,7 @@
                 <div class="rowf_sign_lt"></div>
                 <div class="rowf_sign_ri">
                     <input name="Submit" type="submit" id="js_registBtn" class="btn_submit btn_big btn_prolong redBtn" value="Sign In" id="js_registBtn" /> &nbsp;&nbsp;&nbsp;
-                    <a href="getPassword.asp.html" style="vertical-align:bottom;">Forgot password? </a>
+                    <a href="<?= Yii::$service->url->getUrl('customer/account/forgotpassword');  ?>" style="vertical-align:bottom;">Forgot password? </a>
                 </div>
                 <div class="clear"></div>
             </div>

@@ -38,18 +38,17 @@ return [
             ],
             'forgotPassword' => [
                 // 忘记密码页面的验证码是否开启
-                'forgotCaptcha' => true,
+                'forgotCaptcha' => false,
 
             ],
             // 在账户中心左侧栏显示的菜单。
             'leftMenu'  => [
-                'Account Dashboard'     => 'customer/account',
+                'View My Orders'             => 'customer/order',
+                // 'Account Dashboard'     => 'customer/account',
                 'Account Information'   => 'customer/editaccount',
-                'Address Book'          => 'customer/address',
-                'My Orders'             => 'customer/order',
-                'My Product Reviews'    => 'customer/productreview',
+                'Manage Address Book'          => 'customer/address',
+                "My Products' Reviews"    => 'customer/productreview',
                 'My Favorite'           => 'customer/productfavorite',
-
             ],
 
             'contacts'    => [

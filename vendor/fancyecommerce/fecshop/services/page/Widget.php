@@ -27,7 +27,7 @@ class Widget extends Service
     public $widgetConfig;
 
     /**
-     * @property configKey   String or Array
+     * @property configKey String or Array
      * 如果传递的是一个配置数组，内容格式如下：
      * [
      *    # class 选填
@@ -59,12 +59,13 @@ class Widget extends Service
             if (isset($this->widgetConfig[$configKey])) {
                 $config = $this->widgetConfig[$configKey];
             } else {
-                throw new InvalidValueException(" config key: '$configKey', can not find in  ".'Yii::$service->page->widget->widgetConfig'.', you must config it before use it.');
+                throw new InvalidValueException(" config key: '$configKey', can not find in  " . 'Yii::$service->page->widget->widgetConfig' . ', you must config it before use it.');
             }
         }
 
         return $this->renderContent($configKey, $config, $parentThis);
     }
+
     /**
      * @property $configKey | string ,使用配置中的widget，该参数对应相应的数组key
      * @property $config,就是上面actionRender()方法中的参数，格式一样。
@@ -73,8 +74,7 @@ class Widget extends Service
      */
     protected function actionRenderContentHtml($configKey, $config, $parentThis = '')
     {
-        if (!isset($config['view']) || empty($config['view'])
-        ) {
+        if (!isset($config['view']) || empty($config['view'])) {
             throw new InvalidConfigException('view and class must exist in array config!');
         }
         $params = [];
@@ -102,6 +102,7 @@ class Widget extends Service
 
         return Yii::$app->view->renderFile($viewFile, $params);
     }
+
     /**
      * @property $configKey | string ,使用配置中的widget，该参数对应相应的数组key
      * @property $config,就是上面actionRender()方法中的参数，格式一样。
@@ -112,7 +113,7 @@ class Widget extends Service
     {
         if (isset($config['cache']['enable']) && $config['cache']['enable']) {
             if (!isset($config['class']) || !$config['class']) {
-                throw new InvalidConfigException('in widget ['.$configKey.'],you enable cache ,you must config widget class .');
+                throw new InvalidConfigException('in widget [' . $configKey . '],you enable cache ,you must config widget class .');
             } elseif ($ob = new $config['class']()) {
                 if ($ob instanceof BlockCache) {
                     $cacheKey = $ob->getCacheKey();
@@ -126,7 +127,7 @@ class Widget extends Service
 
                     return $content;
                 } else {
-                    throw new InvalidConfigException($config['class'].' must implete fecshop\interfaces\block\BlockCache  when you use block cache .');
+                    throw new InvalidConfigException($config['class'] . ' must implete fecshop\interfaces\block\BlockCache  when you use block cache .');
                 }
             }
         }
@@ -148,7 +149,7 @@ class Widget extends Service
 
         foreach ($absoluteDir as $dir) {
             if ($dir) {
-                $file = $dir.'/'.$view;
+                $file = $dir . '/' . $view;
                 //echo $file."<br/>";
                 if (file_exists($file)) {
                     return $file;
@@ -161,11 +162,11 @@ class Widget extends Service
             $notExistFile = [];
             foreach ($absoluteDir as $dir) {
                 if ($dir) {
-                    $file = $dir.'/'.$view;
+                    $file = $dir . '/' . $view;
                     $notExistFile[] = $file;
                 }
             }
-            throw new InvalidValueException('view file is not exist in'.implode(',', $notExistFile));
+            throw new InvalidValueException('view file is not exist in' . implode(',', $notExistFile));
         } else {
             return false;
         }

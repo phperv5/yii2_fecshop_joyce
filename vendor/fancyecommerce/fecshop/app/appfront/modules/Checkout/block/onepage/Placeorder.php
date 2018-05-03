@@ -47,7 +47,6 @@ class Placeorder
                 // 如果游客用户勾选了注册账号，则注册，登录，并把地址写入到用户的address中
                 //$gus_status = $this->guestCreateAndLoginAccount($post);
                 $save_address_status = $this->updateAddress($post);
-                //if ($gus_status && $save_address_status) {
                 if ($save_address_status) {
 
                     // 更新Cart信息
@@ -57,32 +56,7 @@ class Placeorder
                     $checkout_type = $serviceOrder::CHECKOUT_TYPE_STANDARD;
                     $serviceOrder->setCheckoutType($checkout_type);
                     // 将购物车数据，生成订单。
-
-                    $innerTransaction = Yii::$app->db->beginTransaction();
-                    try {
-                        # 生成订单，扣除库存，但是，不清空购物车。
-                        $genarateStatus = Yii::$service->order->generateOrderByCart($this->_billing, $this->_shipping_method, $this->_payment_method, false);
-                        if ($genarateStatus) {
-                            //清除购物车
-                            Yii::$service->cart->clearCartProductAndCoupon();
-
-                            // 得到当前的订单信息
-                            //$orderInfo = Yii::$service->order->getCurrentOrderInfo();
-                            // 发送新订单邮件
-                            //Yii::$service->email->order->sendCreateEmail($orderInfo);
-                            // 得到支付跳转前的准备页面。
-                            $startUrl = Yii::$service->payment->getStandardStartUrl();
-                            $innerTransaction->commit();
-                            Yii::$service->url->redirect($startUrl);
-
-                            return true;
-                        } else {
-                            $innerTransaction->rollBack();
-                        }
-                    } catch (Exception $e) {
-                        $innerTransaction->rollBack();
-                    }
-
+                    return $this->generateOrder();
                 }
             } else {
             }
@@ -91,6 +65,42 @@ class Placeorder
 
         return false;
     }
+
+    /*
+     * 生成订单处理
+     * 如果是
+     */
+    public function generateOrder()
+    {
+        $innerTransaction = Yii::$app->db->beginTransaction();
+        try {
+            # 生成订单，扣除库存，但是，不清空购物车。
+            $genarateStatus = Yii::$service->order->generateOrderByCart($this->_billing, $this->_shipping_method, $this->_payment_method, false);
+            if ($genarateStatus) {
+                //清除购物车
+                Yii::$service->cart->clearCartProductAndCoupon();
+                // 得到当前的订单信息
+                $orderInfo = Yii::$service->order->getCurrentOrderInfo();
+                // 发送新订单邮件
+                //Yii::$service->email->order->sendCreateEmail($orderInfo);
+                // 得到支付跳转前的准备页面。
+                $innerTransaction->commit();
+                //paypal支付跳转
+                if ($this->_payment_method == 'paypal_standard') {
+                    $startUrl = Yii::$service->payment->getStandardStartUrl();
+                    Yii::$service->url->redirect($startUrl);
+                } else {
+                    return Yii::$service->url->redirectByUrlKey('checkout/onepage/orderdetail?order_id='.$orderInfo['order_id']);
+                }
+                return true;
+            } else {
+                $innerTransaction->rollBack();
+            }
+        } catch (Exception $e) {
+            $innerTransaction->rollBack();
+        }
+    }
+
 
     /**
      * @property $post|Array，前台传递参数数组。
@@ -153,37 +163,12 @@ class Placeorder
     public function updateAddress($post)
     {
         if (!Yii::$app->user->isGuest) {
-            $billing = $post['billing'];
             $address_id = $post['address_id'];
+
             if (!$address_id) {
-                $identity = Yii::$app->user->identity;
-                $customer_id = $identity['id'];
-                $one = [
-                    'first_name' => $billing['first_name'],
-                    'last_name' => $billing['last_name'],
-                    'email' => $billing['email'],
-                    'company' => '',
-                    'telephone' => $billing['telephone'],
-                    'fax' => '',
-                    'street1' => $billing['street1'],
-                    'street2' => $billing['street2'],
-                    'city' => $billing['city'],
-                    'state' => $billing['state'],
-                    'zip' => $billing['zip'],
-                    'country' => $billing['country'],
-                    'customer_id' => $customer_id,
-                    'is_default' => 1,
-                ];
-                $address_id = Yii::$service->customer->address->save($one);
-                $this->_address_id = $address_id;
-                if (!$address_id) {
-                    Yii::$service->helper->errors->add('new customer address save fail');
-
-                    return false;
-                }
-                //echo "$address_id,$this->_shipping_method,$this->_payment_method";
+                Yii::$service->helper->errors->add('please add your shipping address.');
+                return false;
             }
-
             return Yii::$service->cart->updateLoginCart($this->_address_id, $this->_shipping_method, $this->_payment_method);
         } else {
             return Yii::$service->cart->updateGuestCart($this->_billing, $this->_shipping_method, $this->_payment_method);

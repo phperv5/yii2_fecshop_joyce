@@ -20,7 +20,7 @@
 <div class="scene px13 line15em" id="ar_os_shippingAddress"
      <?php if (!$address_select): ?>style="display: none;"<?php endif; ?>>
     <div class="float_right"><a href="javascript:void(0);" class="change"><b class="px11">Change</b></a></div>
-    Receiver: <span class="cur_address"><?= $address_select['first_name'] ?>&nbsp;<?= $address_select['first_name'] ?>
+    Receiver: <span class="cur_address"><?= $address_select['first_name'] ?>&nbsp;<?= $address_select['last_name'] ?>
         <br>
         <?= $address_select['street1'] ?><br>
         <?php if ($address_select['street2']): ?>
@@ -34,9 +34,8 @@
 <!--地址列表-->
 <div class="scene" id="shippingAddress_select" <?php if ($address_select): ?>style="display: none;"<?php endif; ?>>
     <div class="fr"><a href="javascript:void(0);"
-                       onclick="javascript:window.location.href='<?= Yii::$service->url->getUrl('customer/address/edit') ?>'"><strong><img
-                        src="<?= Yii::$service->image->getImgUrl('images/ico/edit.gif'); ?>" hspace="3" border="0">Entera
-                New Address</strong></a></div>
+                       onclick="javascript:window.location.href='<?= Yii::$service->url->getUrl('customer/address/edit?redirect_url='.Yii::$service->url->getUrl('checkout/onepage')) ?>'"><strong><img
+                        src="<?= Yii::$service->image->getImgUrl('images/ico/edit.gif'); ?>" hspace="3" border="0">Enter a New Address</strong></a></div>
     <strong class="verdana">Please Choose Your Shipping Address</strong>
     <div class="dashed5px"></div>
     <?php if (is_array($address_list) && !empty($address_list)): ?>
@@ -53,7 +52,7 @@
                         <strong class="red_dark">Shipping Address #<?php echo $n; ?></strong>
                         <div class="blank5px"></div>
                         <span class="select_address">
-                    <?= $one['first_name'] ?>&nbsp;<?= $one['first_name'] ?><br>
+                    <?= $one['first_name'] ?>&nbsp;<?= $one['last_name'] ?><br>
                             <?= $one['street1'] ?><br>
                             <?php if ($one['street2']): ?>
                                 <?= $one['street2'] ?><br>

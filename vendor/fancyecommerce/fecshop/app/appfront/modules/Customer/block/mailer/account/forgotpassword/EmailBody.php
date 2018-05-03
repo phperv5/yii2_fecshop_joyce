@@ -24,9 +24,7 @@ class EmailBody
     {
         $identity = $this->params;
         $resetUrl = Yii::$service->url->getUrl('customer/account/resetpassword', ['resetToken'=>$identity['password_reset_token']]);
-        //echo $resetUrl;
-        //exit;
-        //echo Yii::$service->image->getImgUrl('mail/logo.png','appfront');exit;
+
         return [
             'name'        => $identity['firstname'].' '. $identity['lastname'],
             'email'        => $identity['email'],
@@ -35,11 +33,7 @@ class EmailBody
             'contactsEmailAddress'    => Email::contactsEmailAddress(),
             'contactsPhone'            => Email::contactsPhone(),
             'homeUrl'    => Yii::$service->url->homeUrl(),
-            'logoImg'    => Yii::$service->image->getImgUrl('mail/logo.png', 'appfront'),
-
-            //'loginUrl'	=> Yii::$service->url->getUrl("customer/account/index"),
-            //'accountUrl'=> Yii::$service->url->getUrl("customer/account/index"),
-
+            'logoImg'    => Yii::$service->image->getImgUrl('email/logo.png'),
             'identity'  => $identity,
         ];
     }

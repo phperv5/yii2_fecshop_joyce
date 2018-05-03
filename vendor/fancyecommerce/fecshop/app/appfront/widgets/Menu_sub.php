@@ -9,8 +9,8 @@ class Menu_sub implements BlockCache
 {
     public function getLastData()
     {
-        $categoryArr = Yii::$service->page->menu->getMenuData();
-        //var_dump($categoryArr);
+        $categoryArr  = Yii::$service->product->menu->getMenuList();
+
         return [
             'categoryArr' => $categoryArr,
         ];

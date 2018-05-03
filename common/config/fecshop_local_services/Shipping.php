@@ -17,12 +17,12 @@ return [
                 'name' => 'HK Air Post',
                 'cost' => 'csv',
             ],
-            'e_package'=> [
-                'label'=> 'E-package',
-                'name' => 'E-package',
-                'cost' => 'csv', // 请将文件名字的命名写入 fast_shipping.csv
-
-            ],
+//            'e_package'=> [
+//                'label'=> 'E-package',
+//                'name' => 'E-package',
+//                'cost' => 'csv', // 请将文件名字的命名写入 fast_shipping.csv
+//
+//            ],
             'dhl'=> [
                 'label'=> 'DHL',
                 'name' => 'DHL',

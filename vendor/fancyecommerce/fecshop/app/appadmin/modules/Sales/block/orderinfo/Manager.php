@@ -58,12 +58,12 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
         $toolBar = $this->getToolBar($this->_param['numCount'], $this->_param['pageNum'], $this->_param['numPerPage']);
 
         return [
-            'pagerForm'        => $pagerForm,
-            'searchBar'        => $searchBar,
-            'editBar'        => $editBar,
-            'thead'        => $thead,
-            'tbody'        => $tbody,
-            'toolBar'    => $toolBar,
+            'pagerForm' => $pagerForm,
+            'searchBar' => $searchBar,
+            'editBar' => $editBar,
+            'thead' => $thead,
+            'tbody' => $tbody,
+            'toolBar' => $toolBar,
         ];
     }
 
@@ -73,20 +73,38 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
     public function getSearchArr()
     {
         $data = [
-
             [    // 字符串类型
-                'type'=>'inputtext',
-                'title'=>'订单号',
-                'name'=>'increment_id',
-                'columns_type' =>'string',
+                'type' => 'inputtext',
+                'title' => '订单号',
+                'name' => 'increment_id',
+                'columns_type' => 'string',
+            ],
+            [    // 字符串类型
+                'type' => 'inputtext',
+                'title' => 'Email',
+                'name' => 'customer_email',
+                'columns_type' => 'string',
+            ],
+            [    // 字符串类型
+                'type' => 'inputtext',
+                'title' => 'firstname',
+                'name' => 'customer_firstname',
+                'columns_type' => 'string',
+            ],
+            [    // selecit的Int 类型
+                'type' => 'select',
+                'title' => '订单状态',
+                'name' => 'order_status',
+                'columns_type' => 'string',  // int使用标准匹配， string使用模糊查询
+                'value' => Yii::$service->order->getStatusArr(),
             ],
             [    // 时间区间类型搜索
-                'type'=>'inputdatefilter',
-                'name'=> 'created_at',
-                'columns_type' =>'int',
-                'value'=>[
-                    'gte'=>'创建时间开始',
-                    'lt' =>'创建时间结束',
+                'type' => 'inputdatefilter',
+                'name' => 'created_at',
+                'columns_type' => 'int',
+                'value' => [
+                    'gte' => '创建时间开始',
+                    'lt' => '创建时间结束',
                 ],
             ],
         ];
@@ -100,99 +118,121 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
     public function getTableFieldArr()
     {
         $table_th_bar = [
+//            [
+//                'orderField' => $this->_primaryKey,
+//                'label' => 'ID',
+//                'width' => '50',
+//                'align' => 'center',
+//
+//            ],
             [
-                'orderField'    => $this->_primaryKey,
-                'label'            => 'ID',
-                'width'            => '50',
-                'align'        => 'center',
-
-            ],
-            [
-                'orderField'    => 'increment_id',
-                'label'            => '订单号',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'increment_id',
+                'label' => '订单号',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'created_at',
-                'label'            => '创建时间',
-                'width'            => '50',
-                'align'        => 'left',
-                'convert'        => ['int' => 'date'],
+                'orderField' => 'created_at',
+                'label' => '创建时间',
+                'width' => '50',
+                'align' => 'left',
+                'convert' => ['int' => 'date'],
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'order_status',
-                'label'            => '订单状态',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'customer_firstname',
+                'label' => 'first name',
+                'width' => '50',
+                'align' => 'left',
+                //'lang'			=> true,
+            ],
+            [
+                'orderField' => 'customer_lastname',
+                'label' => 'last name',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'items_count',
-                'label'            => '总数',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'order_status',
+                'label' => '订单状态',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'total_weight',
-                'label'            => '总重量',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'items_count',
+                'label' => '总数',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'base_grand_total',
-                'label'            => '总金额（美元）',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'total_weight',
+                'label' => '总重量',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'payment_method',
-                'label'            => '支付方式',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'base_grand_total',
+                'label' => '总金额（美元）',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'shipping_method',
-                'label'            => '货运方式',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'payment_method',
+                'label' => '支付方式',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'base_shipping_total',
-                'label'            => '运费（美元）',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'shipping_method',
+                'label' => '货运方式',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'customer_address_country',
-                'label'            => '国家',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'base_shipping_total',
+                'label' => '运费（美元）',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
             [
-                'orderField'    => 'customer_email',
-                'label'            => '邮箱',
-                'width'            => '50',
-                'align'        => 'left',
+                'orderField' => 'shipping_number',
+                'label' => 'shipping_number',
+                'width' => '30',
+                'align' => 'left',
+                //'lang'			=> true,
+            ],
+            [
+                'orderField' => 'delivery_remark',
+                'label' => 'delivery_remark',
+                'width' => '50',
+                'align' => 'left',
+                //'lang'			=> true,
+            ],
+
+            [
+                'orderField' => 'customer_email',
+                'label' => '邮箱',
+                'width' => '50',
+                'align' => 'left',
                 //'lang'			=> true,
             ],
 
@@ -207,7 +247,7 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
     public function getTableTbodyHtml($data)
     {
         $fileds = $this->getTableFieldArr();
-        $str .= '';
+        $str = '';
         $csrfString = \fec\helpers\CRequest::getCsrfString();
         $user_ids = [];
         foreach ($data as $one) {
@@ -215,15 +255,15 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
         }
         $users = Yii::$service->adminUser->getIdAndNameArrByIds($user_ids);
         foreach ($data as $one) {
-            $str .= '<tr target="sid_user" rel="'.$one[$this->_primaryKey].'">';
-            $str .= '<td><input name="'.$this->_primaryKey.'s" value="'.$one[$this->_primaryKey].'" type="checkbox"></td>';
+            $str .= '<tr target="sid_user" rel="' . $one[$this->_primaryKey] . '">';
+            $str .= '<td><input name="' . $this->_primaryKey . 's" value="' . $one[$this->_primaryKey] . '" type="checkbox"></td>';
             foreach ($fileds as $field) {
                 $orderField = $field['orderField'];
                 $display = $field['display'];
                 $val = $one[$orderField];
                 if ($orderField == 'created_person') {
                     $val = isset($users[$val]) ? $users[$val] : $val;
-                    $str .= '<td>'.$val.'</td>';
+                    $str .= '<td>' . $val . '</td>';
                     continue;
                 }
                 if ($val) {
@@ -233,7 +273,7 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
                     }
                     if (isset($field['convert']) && !empty($field['convert'])) {
                         $convert = $field['convert'];
-                        foreach ($convert as $origin =>$to) {
+                        foreach ($convert as $origin => $to) {
                             if (strstr($origin, 'mongodate')) {
                                 if (isset($val->sec)) {
                                     $timestramp = $val->sec;
@@ -265,7 +305,7 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
                                 if ($to == 'img') {
                                     $t_width = isset($field['img_width']) ? $field['img_width'] : '100';
                                     $t_height = isset($field['img_height']) ? $field['img_height'] : '100';
-                                    $val = '<img style="width:'.$t_width.'px;height:'.$t_height.'px" src="'.$val.'" />';
+                                    $val = '<img style="width:' . $t_width . 'px;height:' . $t_height . 'px" src="' . $val . '" />';
                                 }
                             }
                         }
@@ -277,14 +317,13 @@ class Manager extends AppadminbaseBlock implements AppadminbaseBlockInterface
                         $val = Yii::$service->fecshoplang->getDefaultLangAttrVal($val, $orderField);
                     }
                 }
-                $str .= '<td>'.$val.'</td>';
+                $str .= '<td>' . $val . '</td>';
             }
-            $str .= '<td>
-						<a title="编辑" target="dialog" class="btnEdit" mask="true" drawable="true" width="1000" height="580" href="'.$this->_editUrl.'?'.$this->_primaryKey.'='.$one[$this->_primaryKey].'" >编辑</a>
-						<!-- <a title="删除" target="ajaxTodo" href="'.$this->_deleteUrl.'?'.$csrfString.'&'.$this->_primaryKey.'='.$one[$this->_primaryKey].'" class="btnDel">删除</a>
-						-->
-					</td>';
-            $str .= '</tr>';
+            $str .= '<td><a title="编辑" target="dialog" class="btnEdit" mask="true" drawable="true" width="1000" height="580" href="' . $this->_editUrl . '?' . $this->_primaryKey . '=' . $one[$this->_primaryKey] . '" >编辑</a>';
+            //if ($one['order_status'] == Yii::$service->order->payment_status_processing) {
+            $str .= '<a title="发货" target="dialog" class="buttonActive" mask="true" drawable="true" width="1000" height="580" href="' . CUrl::getUrl('sales/orderinfo/track?order_id=') . $one['order_id'] . '" ><span>发货</span></a>';
+            //}
+            $str .= '</td></tr>';
         }
 
         return $str;

@@ -41,7 +41,7 @@ class Image extends Service
     // 默认产品图片，当产品图片找不到的时候，就会使用该默认图片
     public $defaultImg = '/default.jpg';
     // 产品水印图片。
-    public $waterImg   = 'product_water.jpg';
+    public $waterImg = 'product_water.jpg';
     protected $_defaultImg;
     protected $_md5WaterImgPath;
 
@@ -66,7 +66,7 @@ class Image extends Service
      */
     protected function actionGetUrl($str)
     {
-        return Yii::$service->image->GetImgUrl($this->imageFloder.$str, 'common');
+        return Yii::$service->image->GetImgUrl($this->imageFloder . $str, 'common');
     }
 
     /**
@@ -74,7 +74,7 @@ class Image extends Service
      */
     protected function actionGetDir($str)
     {
-        return Yii::$service->image->GetImgDir($this->imageFloder.$str, 'common');
+        return Yii::$service->image->GetImgDir($this->imageFloder . $str, 'common');
     }
 
     /**
@@ -94,6 +94,7 @@ class Image extends Service
 
         return Yii::$service->image->saveUploadImg($FILE);
     }
+
     /**
      * 获取产品默认图片的完整URL
      */
@@ -115,18 +116,23 @@ class Image extends Service
      */
     protected function actionGetResize($imageVal, $imgResize, $isWatered = false)
     {
-        
+
         $originImgPath = $this->getDir($imageVal);
         if (!file_exists($originImgPath)) {
             $originImgPath = $this->getDir($this->defaultImg);
         }
         $waterImgPath = '';
         if ($isWatered) {
-            $waterImgPath = $this->getDir('/'.$this->waterImg);
+            $waterImgPath = $this->getDir('/' . $this->waterImg);
         }
-        list($newPath, $newUrl) = $this->getProductNewPath($imageVal, $imgResize, $waterImgPath);
-        if($newPath && $newUrl){
+        list($newPath, $newUrl, $path) = $this->getProductNewPath($imageVal, $imgResize, $waterImgPath);
+
+        if ($newPath && $newUrl) {
             if (!file_exists($newPath)) {
+                $defaultImage = 'default.jpg';
+                if (stripos($originImgPath, $defaultImage) !== false) {
+                    $newPath = $path . $defaultImage;
+                }
                 \fec\helpers\CImage::saveResizeMiddleWaterImg($originImgPath, $newPath, $imgResize, $waterImgPath);
             }
             return $newUrl;
@@ -139,6 +145,40 @@ class Image extends Service
      * @property $waterImgPath | String ， 水印图片的路径
      * 获取按照自定义尺寸获取的产品图片的文件绝对路径和完整url
      */
+//    protected function getProductNewPath($imageVal, $imgResize, $waterImgPath)
+//    {
+//        if (!$this->_md5WaterImgPath) {
+//            if (!$waterImgPath) {
+//                $waterImgPath = 'defaultWaterPath';
+//            }
+//            //echo $waterImgPath;exit;
+//            $this->_md5WaterImgPath = md5($waterImgPath);
+//        }
+//
+//        $baseDir = '/cache/'.$this->_md5WaterImgPath;
+//        if (is_array($imgResize)) {
+//            list($width, $height) = $imgResize;
+//        } else {
+//            $width = $imgResize;
+//            $height = '0';
+//        }
+//
+//        $imageArr = explode('/', $imageVal);
+//        $dirArr = ['cache', $this->_md5WaterImgPath, $width, $height];
+//        foreach ($imageArr as $igf) {
+//            if ($igf && !strstr($igf, '.')) {
+//                $dirArr[] = $igf;
+//            }
+//        }
+//        $createDir = \fec\helpers\CDir::createFloder($this->getBaseDir(), $dirArr);
+//        if($createDir){
+//            $newPath = $this->getBaseDir().$baseDir .'/'.$width.'/'.$height.$imageVal;
+//            $newUrl = $this->getBaseUrl().$baseDir .'/'.$width.'/'.$height.$imageVal;
+//            return [$newPath, $newUrl];
+//        }else{
+//            return [];
+//        }
+//    }
     protected function getProductNewPath($imageVal, $imgResize, $waterImgPath)
     {
         if (!$this->_md5WaterImgPath) {
@@ -149,7 +189,7 @@ class Image extends Service
             $this->_md5WaterImgPath = md5($waterImgPath);
         }
 
-        $baseDir = '/cache/'.$this->_md5WaterImgPath;
+        $baseDir = '/cache/' . $this->_md5WaterImgPath;
         if (is_array($imgResize)) {
             list($width, $height) = $imgResize;
         } else {
@@ -165,8 +205,9 @@ class Image extends Service
             }
         }
         \fec\helpers\CDir::createFloder($this->getBaseDir(), $dirArr);
-        $newPath = $this->getBaseDir().$baseDir .'/'.$width.'/'.$height.$imageVal;
-        $newUrl = $this->getBaseUrl().$baseDir .'/'.$width.'/'.$height.$imageVal;
-        return [$newPath, $newUrl];
+        $newPath = $this->getBaseDir() . $baseDir . '/' . $width . '/' . $height . $imageVal;
+        $newUrl = $this->getBaseUrl() . $baseDir . '/' . $width . '/' . $height . $imageVal;
+        $path = $this->getBaseDir() . $baseDir . '/' . $width . '/' . $height . '/';
+        return [$newPath, $newUrl, $path];
     }
 }

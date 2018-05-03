@@ -156,4 +156,9 @@ class Category extends Service
     {
         return $this->_category->getFilterCategory($category_id, $parent_id);
     }
+
+    protected function actionGetChildCate($category_id)
+    {
+        return $this->_category->getChildCate($category_id);
+    }
 }

@@ -21,7 +21,6 @@ class View
     {
         $order_id = Yii::$app->request->get('order_id');
         $order_info = $this->getCustomerOrderInfo($order_id);
-
         return $order_info;
     }
 

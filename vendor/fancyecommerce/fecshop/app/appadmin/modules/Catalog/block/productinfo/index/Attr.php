@@ -158,7 +158,7 @@ class Attr
                     'lang' => false,
 
                 ],
-                'require' => 0,
+                'require' => 1,
             ],
             [
                 'label'=>'package',
@@ -344,24 +344,62 @@ class Attr
                 'label'=>'产品Short描述',
                 'name'=>'short_description',
                 'display'=>[
-                    'type' => 'textarea',
+                    'type' => 'inputString',
                     'lang' => true,
-                    'rows'    => 14,
-                    'cols'    => 100,
                 ],
                 'require' => 0,
             ],
-
             [
                 'label'=>'产品描述（<b>必填</b>）',
                 'name'=>'description',
                 'display'=>[
                     'type' => 'textarea',
                     'lang' => true,
+                    'rows'    => 300,
+                    'cols'    => 300,
+                ],
+                'require' => 1,
+            ],
+            [
+                'label'=>'产品描述概述',
+                'name'=>'main_description',
+                'display'=>[
+                    'type' => 'textarea',
+                    'lang' => true,
+                    'rows'    => 10,
+                    'cols'    => 100,
+                ],
+                'require' => 0,
+            ],
+            [
+                'label'=>'Video',
+                'name'=>'video',
+                'display'=>[
+                    'type' => 'textarea',
+                    'lang' => true,
                     'rows'    => 14,
                     'cols'    => 100,
                 ],
-                'require' => 1,
+            ],
+            [
+                'label'=>'Tech Support',
+                'name'=>'tech_support',
+                'display'=>[
+                    'type' => 'textarea',
+                    'lang' => true,
+                    'rows'    => 14,
+                    'cols'    => 100,
+                ],
+            ],
+            [
+                'label'=>'After-sales Service',
+                'name'=>'payment',
+                'display'=>[
+                    'type' => 'textarea',
+                    'lang' => true,
+                    'rows'    => 14,
+                    'cols'    => 100,
+                ],
             ],
         ];
     }

@@ -21,44 +21,60 @@ class Index
     {
         $this->initHead();
         $currency_info = Yii::$service->page->currency->getCurrencyInfo();
+        $cart_info = $this->getCartInfo();
+        $shippingMethods = $this->getShippingMethod($cart_info['shipping_method'], $cart_info['shipping_country']);
         return [
-            'cart_info' => $this->getCartInfo(),
+            'cart_info' => $cart_info,
             'currency_info' => $currency_info,
             //zhuang edit
             'country' => Yii::$service->helper->country->getAllCountryArray(),
-            'allShipMethod' => Yii::$service->shipping->getShippingMethod(),
+            'allShipMethod' => $shippingMethods,
         ];
     }
 
+    /*
+     * 显示对应的国家
+     */
+    public function getShippingMethod($shipping_method, $shipping_country)
+    {
+        $e_package_country_arr = ['IL', 'KR', 'MY', 'SG', 'SA', 'TR', 'AT', 'BE', 'DK', 'FI', 'FR', 'DE',
+            'HU', 'IT', 'LU', 'NL', 'NO', 'PL', 'PT', 'RU', 'SE', 'CH', 'UA', 'GB', 'CA', 'MX', 'US', 'AU', 'NZ'];
+        $shippingMethods = Yii::$service->shipping->getShippingMethod();
+        if (!in_array($shipping_country, $e_package_country_arr)) {
+            unset($shippingMethods['e_package']);
+        }
+        return $shippingMethods;
+    }
+
     /** @return data example
-     *	[
-     *				'coupon_code' 	=> $coupon_code,
-     *				'grand_total' 	=> $grand_total,
-     *				'shipping_cost' => $shippingCost,
-     *				'coupon_cost' 	=> $couponCost,
-     *				'product_total' => $product_total,
-     *				'products' 		=> $products,
-     *	]
-     *			上面的products数组的个数如下：
-     *			$products[] = [
-     *					    'item_id' => $one['item_id'],
-     *						'product_id' 		=> $product_id ,
-     *						'qty' 				=> $qty ,
-     *						'custom_option_sku' => $custom_option_sku ,
-     *						'product_price' 	=> $product_price ,
-     *						'product_row_price' => $product_row_price ,
-     *						'product_name'		=> $product_one['name'],
-     *						'product_url'		=> $product_one['url_key'],
-     *						'product_image'		=> $product_one['image'],
-     *						'custom_option'		=> $product_one['custom_option'],
-     *						'spu_options' 		=> $productSpuOptions,
-     *				];
+     *    [
+     *                'coupon_code'    => $coupon_code,
+     *                'grand_total'    => $grand_total,
+     *                'shipping_cost' => $shippingCost,
+     *                'coupon_cost'    => $couponCost,
+     *                'product_total' => $product_total,
+     *                'products'        => $products,
+     *    ]
+     *            上面的products数组的个数如下：
+     *            $products[] = [
+     *                        'item_id' => $one['item_id'],
+     *                        'product_id'        => $product_id ,
+     *                        'qty'                => $qty ,
+     *                        'custom_option_sku' => $custom_option_sku ,
+     *                        'product_price'    => $product_price ,
+     *                        'product_row_price' => $product_row_price ,
+     *                        'product_name'        => $product_one['name'],
+     *                        'product_url'        => $product_one['url_key'],
+     *                        'product_image'        => $product_one['image'],
+     *                        'custom_option'        => $product_one['custom_option'],
+     *                        'spu_options'        => $productSpuOptions,
+     *                ];
      */
     public function getCartInfo()
     {
         $cart_info = Yii::$service->cart->getCartInfo();
         if (isset($cart_info['products']) && is_array($cart_info['products'])) {
-            foreach ($cart_info['products'] as $k=>$product_one) {
+            foreach ($cart_info['products'] as $k => $product_one) {
                 // 设置名字，得到当前store的语言名字。
                 $cart_info['products'][$k]['name'] = Yii::$service->store->getStoreAttrVal($product_one['product_name'], 'name');
                 // 设置图片
@@ -94,7 +110,7 @@ class Index
         $custom_option_sku = $product_one['custom_option_sku'];
         if (isset($custom_option[$custom_option_sku]) && !empty($custom_option[$custom_option_sku])) {
             $custom_option_info = $custom_option[$custom_option_sku];
-            foreach ($custom_option_info as $attr=>$val) {
+            foreach ($custom_option_info as $attr => $val) {
                 if (!in_array($attr, ['qty', 'sku', 'price', 'image'])) {
                     $attr = str_replace('_', ' ', $attr);
                     $attr = ucfirst($attr);

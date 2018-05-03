@@ -1,7 +1,7 @@
 <div class="hd_menu">
     <a href="/" class="hd_menu_nv_gohome">Home</a>
     <div class="hd_menu_cate">
-        <div class="hd_wr_nav"><a href="/search/" rel="nofollow"><strong>OBD2 Categories</strong></a>
+        <div class="hd_wr_nav"><a href="javascript:void(0);" rel="nofollow"><strong>Categories</strong></a>
             <ul class="hdcate">
                 <?php $categories = Yii::$service->category->menu->getChildCate('0');?>
                 <?php foreach($categories as $category): ?>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="hd_menu_brands">
-        <div class="hd_wr_nav"><a href="/search/" rel="nofollow"><b>Brands</b></a>
+        <div class="hd_wr_nav"><a href="javascript:void(0);" rel="nofollow"><b>Brands</b></a>
             <ul class="hdbrands">
                 <?php $categories = Yii::$service->category->menu->getBrand();?>
                 <?php foreach($categories as $category): ?>

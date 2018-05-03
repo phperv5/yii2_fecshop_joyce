@@ -86,8 +86,6 @@ class Getproductcategory
         $count = $query->count();
         $product_coll = $query->all();
         if (!($count)) {
-            //echo $this->_modelName;
-            //echo $product_coll->count;exit;
             $model = $this->getModel('catalog_category');
 
             $store_array = Store::getAllStoreArrayOnly();

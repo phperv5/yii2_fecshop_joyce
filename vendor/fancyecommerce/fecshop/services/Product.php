@@ -458,4 +458,24 @@ class Product extends Service
     {
         return $this->_product->updateProductReviewInfo($spu, $avag_rate, $count, $lang_code, $avag_lang_rate, $lang_count);
     }
+
+    /**
+     *    得到全部产品中的产品
+     */
+    protected function actionGetRelateProduct($filter, $limit = 4)
+    {
+        $where['where'][] = $filter['where'];
+        $count = $this->_product->collCount($where);
+        $offset = mt_rand(0, $count - 1);
+        $filter['limit'] = $limit;
+        $filter['offset'] = $offset;
+        $products = Yii::$service->product->getProducts($filter);
+        $products = Yii::$service->category->product->convertToCategoryInfo($products);
+        return $products;
+    }
+
+    protected function actionCategorySave($one, $category)
+    {
+        return $this->_product->categorySave($one, $category);
+    }
 }

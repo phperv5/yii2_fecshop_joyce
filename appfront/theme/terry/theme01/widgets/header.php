@@ -18,9 +18,7 @@
                         <a href="<?= Yii::$service->url->getUrl('customer/order') ?>"
                            rel="nofollow"><?= Yii::$service->page->translate->__('My Orders'); ?><span
                                     id="myaccount_num_orders"></span></a>
-                        <!--                        <a href="members/�action=inbox.html" rel="nofollow">My Tickets<span id="myaccount_num_orders"></span></a>-->
                         <a href="<?= Yii::$service->url->getUrl('customer/productreview') ?>" rel="nofollow"><?= Yii::$service->page->translate->__('My Review'); ?><span id="myaccount_num_orders"></span></a>
-                        <!--                        <a href="members/�action=specialproducts.html" rel="nofollow">VIP Special Products<span id="myaccount_num_orders"></span></a>-->
                         <a id="myaccount_myfavorites" href="<?= Yii::$service->url->getUrl('customer/productfavorite') ?>" rel="nofollow"><?= Yii::$service->page->translate->__('My Favorites'); ?><span id="myaccount_num_orders"></span></a>
                     </ul>
                 </div>
@@ -29,7 +27,7 @@
                 <div class="hd_wr_nav"><a href="support/support.html">Help</a>
                     <ul>
                         <a href="<?= Yii::$service->url->getUrl('help') ?>">Help Center</a>
-                        <a href="<?= Yii::$service->url->getUrl('freed back') ?>">Freed Back</a>
+                        <a href="<?= Yii::$service->url->getUrl('freed back') ?>">Feed Back</a>
                     </ul>
                 </div>
             </div>
@@ -54,16 +52,13 @@
             <span class="mycart-text">My Shopping Cart</span>
         </a>
     </div>
-    <div class="hd_pop_kw"><a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=MB BGA Tool');?>">MB BGA Tool</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=VVDI2');?>">VVDI2</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=2017 Launch X431');?>">2017 Launch X431</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=XTruck USB Link');?>">XTruck USB Link</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=VXDIAG VCX NANO');?>">VXDIAG VCX NANO</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=Volvo VCADS');?>">Volvo VCADS</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=XTUNER');?>">XTUNER</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=Launch X431 V');?>">Launch X431 V</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=X100 Pad');?>">X100 Pad</a>
-        <a href="<?= Yii::$service->url->getUrl('catalogsearch/index?q=CBAY Handy Baby');?>">CBAY Handy Baby</a>
+    <div class="hd_pop_kw">
+        <?php
+            $keywords = Yii::$service->product->keywords->getKeywordsList(1);
+            foreach($keywords as $v):
+        ?>
+          <a href="<?php if(isset($v['url']) && !empty($v['url'])) echo $v['url'];else echo  Yii::$service->url->getUrl('catalogsearch/index?q='.$v['keywords']);?>"><?= $v['keywords'];?></a>
+        <?php endforeach;?>
     </div>
     <div class="clear">
     </div>

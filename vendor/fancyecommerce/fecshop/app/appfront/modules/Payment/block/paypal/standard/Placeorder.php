@@ -39,9 +39,7 @@ class Placeorder
             Yii::$service->helper->errors->add('token can not empty');
             return false;
         }
-        
-        //echo '33'.'<br>';
-        echo $token.'<br>';
+
         // 得到当前的订单信息
         $doExpressCheckoutReturn = $this->doExpressCheckoutPayment($token);
         if ($doExpressCheckoutReturn) {

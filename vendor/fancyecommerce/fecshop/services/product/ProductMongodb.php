@@ -498,7 +498,7 @@ class ProductMongodb implements ProductInterface
      */
     public function getProducts($filter)
     {
-        $where = !isset($filter['where']) || empty($filter['where']) ? $filter['where'] : '';
+        $where = isset($filter['where']) && !empty($filter['where']) ? $filter['where'] : '';
         $select = $filter['select'];
         $query = $this->_productModel->find()->asArray();
         if ($where) {
@@ -508,8 +508,14 @@ class ProductMongodb implements ProductInterface
         if (is_array($select) && !empty($select)) {
             $query->select($select);
         }
-        if(isset($filter['limit'])){
+        if (isset($filter['limit'])) {
             $query->limit($filter['limit']);
+        }
+        if (isset($filter['offset'])) {
+            $query->offset($filter['offset']);
+        }
+        if (isset($filter['orderBy'])) {
+            $query->orderBy($filter['orderBy']);
         }
         return $query->all();
     }
@@ -657,5 +663,18 @@ class ProductMongodb implements ProductInterface
                 $one->save();
             }
         }
+    }
+
+    /*
+     * 批量修改category
+     */
+    public function categorySave($product_ids, $category)
+    {
+        foreach ($product_ids as $product_id) {
+            $model = $this->_productModel->findOne($product_id);
+            $model->category = $category;
+            $result = $model->save();
+        }
+        return true;
     }
 }

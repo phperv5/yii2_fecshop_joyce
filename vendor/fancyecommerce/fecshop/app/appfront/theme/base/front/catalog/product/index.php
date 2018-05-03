@@ -126,8 +126,7 @@
 				</div>
 				<div class="clear"></div>
 			</div>
-			
-			
+
 			<div>
 				<?php # tier price 部分。
 					$buyAlsoBuyView = [
@@ -193,15 +192,8 @@
 							
 						?>
 						<?= Yii::$service->page->widget->render($paymentView); ?>
-					
-					
-						
 					</div>  
-					<!--					
-					<div class="text-wholesale" style="width:100%;height:500px;background:yellow;text-align:center;">
-						
-					</div>  
-					-->
+
 				</div> 
 			</div>
 		</div>

@@ -22,7 +22,7 @@ class Info extends Service
     /**
      * 单个sku加入购物车的最大个数。
      */
-    public $maxCountAddToCart = 100;
+    public $maxCountAddToCart = 100000;
 
     // 上架状态产品加入购物车时，
     // 如果addToCartCheckSkuQty设置为true，则需要检查产品qty是否>购买qty，

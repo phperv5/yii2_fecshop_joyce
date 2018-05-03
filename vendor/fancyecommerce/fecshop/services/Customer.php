@@ -576,4 +576,16 @@ class Customer extends Service
             }
         }
     }
+    
+    
+    public function actionGetAllUserEmail()
+   {
+        $reuslt = $this->_customerModel->find()->all();
+        $emailArr = [];
+        foreach($reuslt as $v)
+        {
+            $emailArr[] = $v->email;
+        }
+        return $emailArr;
+   }
 }
