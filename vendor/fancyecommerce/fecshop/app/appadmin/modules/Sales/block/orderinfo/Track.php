@@ -60,7 +60,7 @@ class Track
         }
         //发送邮件
         if (isset($editForm['is_email_status'])) {
-            $this->sendMail($orderModel->customer_email,'Norman-keys,'.'your order:'.$orderModel->increment_id.' is shipped.','your order:'.$orderModel->increment_id.' is shipped.',$orderModel->customer_firstname.' '.$orderModel->customer_lastname);
+            $this->sendMail($orderModel->customer_email,'Autoecupart,'.'your order:'.$orderModel->increment_id.' is shipped.','your order:'.$orderModel->increment_id.' is shipped.',$orderModel->customer_firstname.' '.$orderModel->customer_lastname);
         }
         echo json_encode([
             'statusCode' => '200',
