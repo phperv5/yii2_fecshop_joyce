@@ -11,23 +11,23 @@ return [
     'cms' => [
         'params'=> [
             'home_title'            => [
-                'home_title_en' => 'Autoecupart, Locksmith Tools Golden Supplier',
-                'home_title_zh' => 'Autoecupart, Locksmith Tools Golden Supplier',
-                'home_title_fr' => 'Autoecupart, Locksmith Tools Golden Supplier',
-                'home_title_es' => 'Autoecupart, Locksmith Tools Golden Supplier',
+                'home_title_en' => 'Auto components',
+                'home_title_zh' => 'Auto components',
+                'home_title_fr' => 'Auto components',
+                'home_title_es' => 'Auto components',
             ],
             'home_meta_keywords'            => [
-                'home_meta_keywords_en' => 'Autoecupart, Locksmith Tools Golden Supplier',
-                'home_meta_keywords_zh' => 'Autoecupart, Locksmith Tools Golden Supplier',
-                'home_meta_keywords_fr' => 'Norman-Keys, Locksmith Tools Golden Supplier',
-                'home_meta_keywords_es' => 'Norman-Keys, Locksmith Tools Golden Supplier',
+                'home_meta_keywords_en' => 'Auto components',
+                'home_meta_keywords_zh' => 'Auto components',
+                'home_meta_keywords_fr' => 'Auto components',
+                'home_meta_keywords_es' => 'Auto components',
             ],
 
             'home_meta_description'            => [
-                'home_meta_description_en' => 'Norman-Keys, Locksmith Tools Golden Supplier',
-                'home_meta_description_zh' => 'Norman-Keys, Locksmith Tools Golden Supplier',
-                'home_meta_description_fr' => 'Norman-Keys, Locksmith Tools Golden Supplier',
-                'home_meta_description_es' => 'Norman-Keys, Locksmith Tools Golden Supplier',
+                'home_meta_description_en' => 'Auto components',
+                'home_meta_description_zh' => 'Auto components',
+                'home_meta_description_fr' => 'Auto components',
+                'home_meta_description_es' => 'Auto components',
             ],
             'homeBestSellerSku'        => [
                 '10001', '10002', '10003', '10004','10005'
