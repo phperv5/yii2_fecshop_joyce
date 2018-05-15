@@ -75,7 +75,7 @@
                             <img align="right" alt="" border="0" hspace="5" src="<?= Yii::$service->image->getImgUrl('images/pay/pay_remark_paypal.gif'); ?>">If you have PayPal account, you can pay your order by your PayPal account.<br>
                             If you don't have PayPal account, it doesn't matter. You firstly charge your Paypal with you credit card or bank debit card , then also pay via PayPal.<br>
                             Payment can be submitted in any currency.&nbsp;<br>
-                            Our PayPal account is: <b style="font-size: 18px;">carkeyunlock@gmail.com</b>
+                            Our PayPal account is: <b style="font-size: 18px;">xiongxinquan0314_api1.hotmail.com</b>
                             <div class="blank10px"></div>
                             <input name="" type="image" class="ipt_img onestepcheckout-button" src="<?= Yii::$service->image->getImgUrl('images/pay/pp-checkout-logo-large.png'); ?>" alt="Check out with PayPal" id="onestepcheckout-place-order">
                         </div>
@@ -106,28 +106,6 @@
                         </div>
                         <div class="dashed_line"></div>
                         <div class="blank5px"></div>
-                        <div class="blank5px"></div>
-
-                        <label for="MoneyGram">
-                            <input name="payment_method" type="radio" id="MoneyGram" value="MoneyGram" onclick="javascript:AreaMultiShowHide('area_pay_method_exp_',3,3);">
-                            <img src="<?= Yii::$service->image->getImgUrl('images/pay/MoneyGram.jpg'); ?>" style="width: 96px;" alt="MoneyGram" border="0" align="absmiddle">&nbsp;&nbsp;<b class="px13 verdana">MoneyGram</b>
-                        </label>
-                        <div class="blank5px"></div>
-                        <div style="display:none" class="pay_ex_a" id="area_pay_method_exp_3">
-                            <div>
-                                <strong>First Name: LEI<br>Last Name : CUI</strong><br>
-                                <strong>City: SHENZHEN</strong><br>
-                                <strong>Country:CHINA</strong><br>
-                                <strong>Postal Code:518000</strong><br>
-                                <strong>Tel:+8618617061230</strong><br>
-                            </div>
-                            <p>Note:for easy and quick confirmation of your payment, please do not fix the exchange rate of money.
-                                When you pay it, send the billing full information to company email box carkeyunlock@gmail.com
-                                We will check it soon, and arrange your order as soon as possible.
-                            </p>
-                            <input name="submit" type="submit" value="Submit"  alt="" id="onestepcheckout-place-order" style="cursor: pointer;">
-                        </div>
-                        <div class="dashed_line"></div>
                         <div class="blank5px"></div>
                         <div class="clear"></div>
                     </div>
