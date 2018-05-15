@@ -15,7 +15,7 @@ use yii\mongodb\ActiveRecord;
  * @author Terry Zhao <2358269014@qq.com>
  * @since 1.0
  */
-class L extends ActiveRecord
+class Prolist extends ActiveRecord
 {
     /**
      * mongodb collection 的名字，相当于mysql的table name
