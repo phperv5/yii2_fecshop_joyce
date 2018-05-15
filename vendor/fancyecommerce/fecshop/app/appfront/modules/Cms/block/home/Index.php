@@ -14,13 +14,12 @@ class Index
     {
         $this->initHead();
         $newArrivals = Yii::$service->product->newarrivals->getList();
-        var_dump($this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['2121',]));
         return [
             'newArrivals' => $this->getNewArrivals($newArrivals),
-            'bestSellerProducts1' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['2121',]),
-            'bestSellerProducts2' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['2121',]),
-            'bestSellerProducts3' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['2121',]),
-            'bestSellerProducts4' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['2121',]),
+            'bestSellerProducts1' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['LA89F680',]),
+            'bestSellerProducts2' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['LA89F680',]),
+            'bestSellerProducts3' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['LA89F680',]),
+            'bestSellerProducts4' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['LA89F680',]),
         ];
     }
 

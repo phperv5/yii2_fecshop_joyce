@@ -90,17 +90,7 @@
                         <div class="blank5px"></div>
                         <div style="display: none;" class="pay_ex_a" id="area_pay_method_exp_2">
                             <p>
-<<<<<<< HEAD
-                                <strong>First Name: LEI<br>Last Name : CUI</strong><br>
-                                <strong>City: SHENZHEN</strong><br>
-                                <strong>Country:CHINA</strong><br>
-                                <strong>Postal Code:518000</strong><br>
-                                <strong>Tel: +8618617061230</strong><br>
-                            </p>
-                            <p>
-                                Note: for easy and quick confirmation of your payment, please do not fix the exchange rate of money.
-                                When you pay it, send the billing full information to company email box <b style="font-size: 18px;">carkeyunlock@gmail.com</b>
-=======
+
                                 <strong>First Name: QUAN<br>Last Name : XIN</strong><br>
                                 <strong>City: SHENZHEN</strong><br>
                                 <strong>Country:CHINA</strong><br>
@@ -110,7 +100,6 @@
                             <p>
                                 Note: for easy and quick confirmation of your payment, please do not fix the exchange rate of money.
                                 When you pay it, send the billing full information to company email box <b style="font-size: 18px;">xiongxinquan0314_api1.hotmail.com</b>
->>>>>>> eec353c5a1e04171d8ef350da010f640e33c3d0f
                                 We will check it soon, and arrange your order as soon as possible.
                             </p>
                             <input name="submit" type="submit" value="Submit"  alt="" id="onestepcheckout-place-order" style="cursor: pointer;">
