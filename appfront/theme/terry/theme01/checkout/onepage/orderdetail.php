@@ -124,15 +124,15 @@ use fecshop\app\appfront\helper\Format;
                         <div class="blank5px"></div>
                         <div <?php if($cart_info['payment_method'] != 'WesternUnion'): ?> style="display: none;" <?php endif;?> class="pay_ex_a" id="area_pay_method_exp_2">
                             <p>
-                                <strong>First Name: LEI<br>Last Name : CUI</strong><br>
+                                <strong>First Name: QUAN<br>Last Name : XIN</strong><br>
                                 <strong>City: SHENZHEN</strong><br>
                                 <strong>Country:CHINA</strong><br>
                                 <strong>Postal Code:518000</strong><br>
-                                <strong>Tel: +8618617061230</strong><br>
+                                <strong>Tel: +8615002075217</strong><br>
                             </p>
                             <p>
                                 Note: for easy and quick confirmation of your payment, please do not fix the exchange rate of money.
-                                When you pay it, send the billing full information to company email box <b style="font-size: 18px;">carkeyunlock@gmail.com</b>
+                                When you pay it, send the billing full information to company email box <b style="font-size: 18px;">xiongxinquan0314_api1.hotmail.com</b>
                                 We will check it soon, and arrange your order as soon as possible.
                             </p>
                         </div>
@@ -140,27 +140,6 @@ use fecshop\app\appfront\helper\Format;
                         <div class="blank5px"></div>
                         <div class="blank5px"></div>
 
-                        <label for="MoneyGram">
-                            <input name="payment_method" type="radio" id="MoneyGram" value="MoneyGram"  <?php if($cart_info['payment_method'] == 'MoneyGram'): ?> checked <?php endif;?> onclick="javascript:AreaMultiShowHide('area_pay_method_exp_',3,3);">
-                            <img src="<?= Yii::$service->image->getImgUrl('images/pay/MoneyGram.jpg'); ?>" style="width: 96px;" alt="MoneyGram" border="0" align="absmiddle">&nbsp;&nbsp;<b class="px13 verdana">MoneyGram</b>
-                        </label>
-                        <div class="blank5px"></div>
-                        <div <?php if($cart_info['payment_method'] != 'MoneyGram'): ?> style="display: none;" <?php endif;?> class="pay_ex_a" id="area_pay_method_exp_3">
-                            <div>
-                                <strong>First Name: LEI<br>Last Name : CUI</strong><br>
-                                <strong>City: SHENZHEN</strong><br>
-                                <strong>Country:CHINA</strong><br>
-                                <strong>Postal Code:518000</strong><br>
-                                <strong>Tel: +8618617061230</strong><br>
-                            </div>
-                            <p>Note:for easy and quick confirmation of your payment, please do not fix the exchange rate of money.
-                                When you pay it, send the billing full information to company email box carkeyunlock@gmail.com
-                                We will check it soon, and arrange your order as soon as possible.
-                            </p>
-                        </div>
-                        <div class="dashed_line"></div>
-                        <div class="blank5px"></div>
-                        <div class="clear"></div>
                     </div>
                     <?= Yii::$service->page->widget->render('flashmessage'); ?>
                     <div class="clear"></div>
