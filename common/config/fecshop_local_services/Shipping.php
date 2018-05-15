@@ -28,16 +28,16 @@ return [
                 'name' => 'DHL',
                 'cost' => 'csv', // 请将文件名字的命名写入 fast_shipping.csv
             ],
-            'fedex'=> [
-                'label'=> 'Fedex',
-                'name' => 'Fedex',
-                'cost' => 'csv', // 请将文件名字的命名写入 fast_shipping.csv
-            ],
-            'tnt'=> [
-                'label'=> 'TNT',
-                'name' => 'TNT',
-                'cost' => 'csv', // 请将文件名字的命名写入 fast_shipping.csv
-            ],
+//            'fedex'=> [
+//                'label'=> 'Fedex',
+//                'name' => 'Fedex',
+//                'cost' => 'csv', // 请将文件名字的命名写入 fast_shipping.csv
+//            ],
+//            'tnt'=> [
+//                'label'=> 'TNT',
+//                'name' => 'TNT',
+//                'cost' => 'csv', // 请将文件名字的命名写入 fast_shipping.csv
+//            ],
         ],
         // 该值必须在上面的配置 $shippingConfig中存在，如果不存在，则返回为空。
         'defaultShippingMethod' => [
