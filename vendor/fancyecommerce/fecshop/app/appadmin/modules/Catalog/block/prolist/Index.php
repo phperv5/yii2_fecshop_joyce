@@ -25,9 +25,9 @@ class Index extends AppadminbaseBlock implements AppadminbaseBlockInterface
      */
     public function init()
     {
-        $this->_editUrl = CUrl::getUrl('catalog/newarrivals/manageredit');
-        $this->_deleteUrl = CUrl::getUrl('catalog/newarrivals/managerdelete'); //delete data url
-        $this->_service = Yii::$service->product->newarrivals;
+        $this->_editUrl = CUrl::getUrl('catalog/prolist/manageredit');
+        $this->_deleteUrl = CUrl::getUrl('catalog/prolist/managerdelete'); //delete data url
+        $this->_service = Yii::$service->product->prolist;
         $this->_param['orderField'] = 'sort_order';
         $this->_param['orderDirection'] = 'ASC';
         parent::init();
