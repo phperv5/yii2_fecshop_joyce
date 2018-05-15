@@ -7,7 +7,7 @@
  * @license http://www.fecshop.com/license/
  */
 
-namespace fecshop\app\appadmin\modules\Catalog\block\newarrivals;
+namespace fecshop\app\appadmin\modules\Catalog\block\prolist;
 
 use fec\helpers\CUrl;
 use fecshop\app\appadmin\interfaces\base\AppadminbaseBlockInterface;
