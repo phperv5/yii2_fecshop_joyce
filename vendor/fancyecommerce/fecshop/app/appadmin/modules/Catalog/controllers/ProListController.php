@@ -15,7 +15,7 @@ use fecshop\app\appadmin\modules\Catalog\CatalogController;
  * @author Terry Zhao <2358269014@qq.com>
  * @since 1.0
  */
-class ProListController extends CatalogController
+class ProlistController extends CatalogController
 {
     public function actionIndex()
     {
