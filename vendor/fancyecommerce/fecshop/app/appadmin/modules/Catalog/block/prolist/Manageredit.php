@@ -44,7 +44,7 @@ class Manageredit extends AppadminbaseBlockEdit implements AppadminbaseBlockEdit
 
     public function setService()
     {
-        $this->_service = Yii::$service->product->newarrivals;
+        $this->_service = Yii::$service->product->prolist;
     }
 
     public function getEditArr()
