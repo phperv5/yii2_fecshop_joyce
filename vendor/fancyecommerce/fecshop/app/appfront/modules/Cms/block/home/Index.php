@@ -15,7 +15,7 @@ class Index
         $this->initHead();
         $newArrivals = Yii::$service->product->newarrivals->getList();
         $proList = Yii::$service->product->prolist->getList();
-
+        var_dump($proList);
         return [
             'newArrivals' => $this->getNewArrivals($newArrivals),
             'bestSellerProducts1' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', ['LA89F680',]),
