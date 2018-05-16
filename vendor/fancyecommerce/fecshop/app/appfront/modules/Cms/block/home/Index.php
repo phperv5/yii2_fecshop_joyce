@@ -21,7 +21,7 @@ class Index
             'bestSellerProducts1' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', isset($proList[0])?$proList[0]:[]),
             'bestSellerProducts2' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', isset($proList[1])?$proList[1]:[]),
             'bestSellerProducts3' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', isset($proList[2])?$proList[2]:[]),
-            'bestSellerProducts4' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', isset($proList[3])?$proList[3]:[]),
+            'bestSellerProducts4' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', []),
         ];
     }
 
