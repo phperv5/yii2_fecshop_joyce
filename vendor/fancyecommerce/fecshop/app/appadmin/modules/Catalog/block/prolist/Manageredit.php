@@ -59,13 +59,20 @@ class Manageredit extends AppadminbaseBlockEdit implements AppadminbaseBlockEdit
                 'require' => 1,
             ],
             [
-                'label'=>'sort_order',
+                'label'=>'Position',
                 'name'=>'sort_order',
-                'width' => '200',
                 'display'=>[
-                    'type' => 'inputString',
+                    'type' => 'select',
+                    'data' => [
+                        1    => '第一栏',
+                        2    => '第二栏',
+                        3    => '第三栏',
+                        4    => '第四栏',
+                    ],
                 ],
+                'require' => 1,
             ],
+
         ];
     }
 
