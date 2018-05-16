@@ -94,9 +94,15 @@ class Index extends AppadminbaseBlock implements AppadminbaseBlockInterface
             ],
             [
                 'orderField' => 'sort_order',
-                'label' => 'sort_order',
+                'label' => 'Position',
                 'width' => '110',
                 'align' => 'left',
+                'display' => [
+                    1    => '第一栏',
+                    2    => '第二栏',
+                    3    => '第三栏',
+                    4    => '第四栏',
+                ],
             ],
 
             [
