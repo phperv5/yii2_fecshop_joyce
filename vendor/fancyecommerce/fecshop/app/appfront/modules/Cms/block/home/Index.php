@@ -15,13 +15,14 @@ class Index
         $this->initHead();
         $newArrivals = Yii::$service->product->newarrivals->getList();
         $proList = Yii::$service->product->prolist->getList();
+        $emptyArr = ['_test_'];
 
         return [
             'newArrivals' => $this->getNewArrivals($newArrivals),
-            'bestSellerProducts1' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', isset($proList[0])?$proList[0]:[]),
-            'bestSellerProducts2' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', isset($proList[1])?$proList[1]:[]),
-            'bestSellerProducts3' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', isset($proList[2])?$proList[2]:[]),
-            'bestSellerProducts4' => $this->getBestSellerProducts('599823c3625a9c1a0f792c82', []),
+            'bestSellerProducts1' => $this->getBestSellerProducts('', isset($proList[0])?$proList[0]:$emptyArr),
+            'bestSellerProducts2' => $this->getBestSellerProducts('', isset($proList[1])?$proList[1]:$emptyArr),
+            'bestSellerProducts3' => $this->getBestSellerProducts('', isset($proList[2])?$proList[2]:$emptyArr),
+            'bestSellerProducts4' => $this->getBestSellerProducts('', isset($proList[3])?$proList[3]:$emptyArr),
         ];
     }
 
