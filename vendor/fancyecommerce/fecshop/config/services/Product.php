@@ -68,7 +68,7 @@ return [
                 'class' => 'fecshop\services\product\Banner',  //菜单模块
             ],
             'prolist' => [
-                'class' => 'fecshop\services\product\Prolist',  //菜单模块
+                'class' => 'fecshop\services\product\Prolist',  //首页产品
             ],
         ],
     ],
