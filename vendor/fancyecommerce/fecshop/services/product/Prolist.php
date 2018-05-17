@@ -134,7 +134,6 @@ class Prolist extends Service
         ];
         $keywordsColl = $this->list($filter);
         $result = $keywordsColl['coll'];
-        var_dump($result);
         $arrivals = [];
         if ($result) {
             foreach ($result as $v) {
