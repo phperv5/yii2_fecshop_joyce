@@ -16,7 +16,7 @@ class Index
         $newArrivals = Yii::$service->product->newarrivals->getList();
         $proList = Yii::$service->product->prolist->getList();
         $emptyArr = ['_test_'];
-
+        var_dump($proList);
         return [
             'newArrivals' => $this->getNewArrivals($newArrivals),
             'bestSellerProducts1' => $this->getBestSellerProducts('', isset($proList[0])?$proList[0]:$emptyArr),
