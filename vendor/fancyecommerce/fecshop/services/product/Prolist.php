@@ -136,7 +136,7 @@ class Prolist extends Service
         $result = $keywordsColl['coll'];
         $arrivals = [];
         if ($result) {
-            foreach ($result as $v) {
+            foreach ($result as $k=>$v) {
                 $arrivals[] = array_map('trim',explode(',',$v['sku']));
             }
         }
