@@ -134,10 +134,11 @@ class Prolist extends Service
         ];
         $keywordsColl = $this->list($filter);
         $result = $keywordsColl['coll'];
+        var_dump($result);
         $arrivals = [];
         if ($result) {
-            foreach ($result as $k=>$v) {
-                $arrivals[$k] = array_map('trim',explode(',',$v['sku']));
+            foreach ($result as $v) {
+                $arrivals[$v['sort_order']] = array_map('trim',explode(',',$v['sku']));
             }
         }
         return $arrivals;
