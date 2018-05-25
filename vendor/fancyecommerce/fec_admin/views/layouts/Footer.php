@@ -11,7 +11,7 @@ use Yii;
 use fec\helpers\CUrl;
 class Footer{
 	public static function getContent(){
-		return '<div id="footer">Copyright &copy; 2010 <a href="http://www.autoecupart.com" target="_blank">Fecshop团队 - www.norman-keys.com</a></div>';
+		return '<div id="footer">Copyright &copy; 2010 <a href="http://www.autoecupart.com" target="_blank">www.autoecupart.com</a></div>';
 		
 	}
 	
