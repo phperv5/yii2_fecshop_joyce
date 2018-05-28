@@ -130,7 +130,15 @@ class Batchimport extends AppadminbaseBlockEdit implements AppadminbaseBlockEdit
             $product['created_at'] = time();
             //$product['status'] = 2;
 
-            $error = $this->_service->apiSave($product);
+            $product_id = $this->_service->apiSave($product);
+            if($product_id){
+                $one = [
+                  'product_id'=>$product_id,
+                    'qty'=>100
+                ];
+                Yii::$service->product->stock->saveProductStock($product_id, $one);
+            }
+
         }
         return $error;
     }
