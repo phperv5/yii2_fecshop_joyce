@@ -172,7 +172,7 @@ class ProductMongodb implements ProductInterface
         $collection = $this->_productModel->find()->getCollection();
         $result = $collection->save($product_one);
 
-        return isset($result['oid'])?$result['oid']:false;
+        return isset($result->oid)?$result->oid:false;
     }
 
     /**
