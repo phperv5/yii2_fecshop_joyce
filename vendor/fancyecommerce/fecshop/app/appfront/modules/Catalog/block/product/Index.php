@@ -475,8 +475,10 @@ class Index
     // 面包屑导航
     protected function breadcrumbs($name)
     {
+        echo 'nagative';
         if (Yii::$app->controller->module->params['category_breadcrumbs']) {
             $parent_info = Yii::$service->category->getAllParentInfo($this->_category['parent_id']);
+            var_dump($parent_info);
             if (is_array($parent_info) && !empty($parent_info)) {
                 foreach ($parent_info as $info) {
                     $parent_name = Yii::$service->store->getStoreAttrVal($info['name'], 'name');
