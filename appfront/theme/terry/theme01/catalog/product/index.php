@@ -1,6 +1,3 @@
-<?php
-
-?>
 <div class="main">
     <?= Yii::$service->page->widget->render('breadcrumbs', $this); ?>
     <div class="page_where_r"><a href="javascript:history.go(-1);" rel="nofollow">&laquo; Go Back</a></div>
@@ -28,7 +25,6 @@
                 <div class="blank5px"></div>
                 <div class="pro_chf_bri_itemno">Item No.<?= $sku; ?>
                     <div class="blank5px"></div>
-                    <!--                    <span class="gray verdana no_bold">Manufacturer: <a href="/wholesale/brand-obdstar/">OBDSTAR</a></span>-->
                     <span id="num_pro_sold_51561"></span>
                 </div>
                 <div class="pro_ch_bf_rate" id="pro_rate_51561">
