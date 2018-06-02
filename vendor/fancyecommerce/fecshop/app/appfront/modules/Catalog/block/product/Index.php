@@ -455,7 +455,7 @@ class Index
         ]);
         $this->_title = Yii::$service->store->getStoreAttrVal($product['meta_title'], 'meta_title');
         $name = Yii::$service->store->getStoreAttrVal($product['name'], 'name');
-        //$this->breadcrumbs($name);
+        $this->breadcrumbs($name);
         $this->_title = $this->_title ? $this->_title : $name;
         Yii::$app->view->title = $this->_title;
         //$this->_where = $this->initWhere();
