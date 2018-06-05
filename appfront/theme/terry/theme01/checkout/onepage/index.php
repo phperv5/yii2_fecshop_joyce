@@ -90,7 +90,7 @@
                         <div class="blank5px"></div>
                         <div style="display: none;" class="pay_ex_a" id="area_pay_method_exp_2">
                             <p>
-                                <strong>First Name: XINQUAN<br>Last Name : XIN</strong><br>
+                                <strong>First Name: XINQUAN<br>Last Name : XIONG</strong><br>
                                 <strong>City: SHENZHEN</strong><br>
                                 <strong>Country:CHINA</strong><br>
                                 <strong>Postal Code:518129</strong><br>
