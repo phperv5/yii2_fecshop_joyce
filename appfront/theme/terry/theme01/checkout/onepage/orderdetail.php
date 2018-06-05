@@ -124,10 +124,10 @@ use fecshop\app\appfront\helper\Format;
                         <div class="blank5px"></div>
                         <div <?php if($cart_info['payment_method'] != 'WesternUnion'): ?> style="display: none;" <?php endif;?> class="pay_ex_a" id="area_pay_method_exp_2">
                             <p>
-                                <strong>First Name: QUAN<br>Last Name : XIN</strong><br>
+                                <strong>First Name: XINQUAN<br>Last Name : XIN</strong><br>
                                 <strong>City: SHENZHEN</strong><br>
                                 <strong>Country:CHINA</strong><br>
-                                <strong>Postal Code:518000</strong><br>
+                                <strong>Postal Code:518129</strong><br>
                                 <strong>Tel: +8615002075217</strong><br>
                             </p>
                             <p>
