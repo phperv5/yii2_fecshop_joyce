@@ -221,6 +221,7 @@ class MongoSearch extends Service implements SearchInterface
             $collection['coll'][] = $productM;
             $collection['count'] = 1;
         } else {
+            $where['$text']['$caseSensitive'] = false;
             $filter = [
                 'pageNum' => $pageNum,
                 'numPerPage' => $numPerPage,
