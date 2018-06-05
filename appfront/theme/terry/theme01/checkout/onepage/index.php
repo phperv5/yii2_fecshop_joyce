@@ -75,7 +75,7 @@
                             <img align="right" alt="" border="0" hspace="5" src="<?= Yii::$service->image->getImgUrl('images/pay/pay_remark_paypal.gif'); ?>">If you have PayPal account, you can pay your order by your PayPal account.<br>
                             If you don't have PayPal account, it doesn't matter. You firstly charge your Paypal with you credit card or bank debit card , then also pay via PayPal.<br>
                             Payment can be submitted in any currency.&nbsp;<br>
-                            Our PayPal account is: <b style="font-size: 18px;">xiongxinquan0314_api1.hotmail.com</b>
+                            Our PayPal account is: <b style="font-size: 18px;">xiongxinquan0314@hotmail.com</b>
                             <div class="blank10px"></div>
                             <input name="" type="image" class="ipt_img onestepcheckout-button" src="<?= Yii::$service->image->getImgUrl('images/pay/pp-checkout-logo-large.png'); ?>" alt="Check out with PayPal" id="onestepcheckout-place-order">
                         </div>
@@ -99,7 +99,7 @@
                             </p>
                             <p>
                                 Note: for easy and quick confirmation of your payment, please do not fix the exchange rate of money.
-                                When you pay it, send the billing full information to company email box <b style="font-size: 18px;">xiongxinquan0314_api1.hotmail.com</b>
+                                When you pay it, send the billing full information to company email box <b style="font-size: 18px;">remotekey86@gmail.com</b>
                                 We will check it soon, and arrange your order as soon as possible.
                             </p>
                             <input name="submit" type="submit" value="Submit"  alt="" id="onestepcheckout-place-order" style="cursor: pointer;">
