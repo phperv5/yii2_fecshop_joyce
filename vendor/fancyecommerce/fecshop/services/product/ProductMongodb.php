@@ -62,13 +62,14 @@ class ProductMongodb implements ProductInterface
      */
     public function getBySku($sku, $returnArr = true)
     {
+//        ['sku' => $sku]
         if ($sku) {
             if ($returnArr) {
                 $product = $this->_productModel->find()->asArray()
-                    ->where(['sku' => $sku])
+                    ->where(['like', 'sku', $sku])
                     ->one();
             } else {
-                $product = $this->_productModel->findOne(['sku' => $sku]);
+                $product = $this->_productModel->findOne(['like', 'sku', $sku]);
             }
             $primaryKey = $this->getPrimaryKey();
             if (isset($product[$primaryKey]) && !empty($product[$primaryKey])) {
