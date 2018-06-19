@@ -9,7 +9,7 @@
     <div class="main_scene">
         <div class="exh_top"></div>
         <div class="exh_main">
-            <div class="align_right px11 verdana" style="margin-top:-10px;"><a href="../">Home</a> - <a href="../members/">My Account: <b class="red account-email"></b></a> - My Favorites</div><div class="blank5px"></div><h1>My Favorites</h1>
+            <div class="align_right px11 verdana" style="margin-top:-10px;"><a href="../">Home</a> - <a href="../members/">My Account: <b class="red account-email"></b></a> - My Favorites</div><div class="blank5px"></div><h1>My Products' Reviews</h1>
 
             <div class="blank10px"></div>
 
