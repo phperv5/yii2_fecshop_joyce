@@ -67,19 +67,16 @@
                         <div class="blank10px"></div>
                         <div class="blank10px"></div>
                         <div class="pro_bo_add_l">
-                            <input name="btn_buyitnow" type="button" class="btn_buyitnow goProductToCart" value=""
-                                   title="Buy It Now"/>
+                            <input name="btn_buyitnow" type="button" class="btn_buyitnow goProductToCart" value="" title="Buy It Now"/>
                         </div>
                         <div class="pro_bo_add_m">
-                            <div id="flyItem" class="fly_item"><img
-                                        src="<?= Yii::$service->product->image->getResize($image_thumbnails['main']['image'], [40, 40], false) ?>"
-                                        width="40" height="40"></div>
-                            <input name="add_to_cart" type="button" class="btn_addtocart addProductToCart" value=""
-                                   title="Add to Cart"/>
+                            <div id="flyItem" class="fly_item">
+                                <img  src="<?= Yii::$service->product->image->getResize($image_thumbnails['main']['image'], [40, 40], false) ?>" width="40" height="40">
+                            </div>
+                            <input name="add_to_cart" type="button" class="btn_addtocart goProductToCart" value="" title="Add to Cart"/>
                         </div>
                         <div class="pro_bo_add_r">
-                            <input name="add_to_favorites" type="button" class="btn_add_to_favorites" id="divMyFavorite"
-                                   url="<?= Yii::$service->url->getUrl('catalog/favoriteproduct/add', ['product_id' => $_id]); ?>"/>
+                            <input name="add_to_favorites" type="button" class="btn_add_to_favorites" id="divMyFavorite" url="<?= Yii::$service->url->getUrl('catalog/favoriteproduct/add', ['product_id' => $_id]); ?>"/>
                             <span id="txt_r_addToFavorites"></span>
                         </div>
                     <?php else:?>
