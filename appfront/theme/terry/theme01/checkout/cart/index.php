@@ -170,7 +170,7 @@ use fecshop\app\appfront\helper\Format;
         })
         $('.text-amount').blur(function(){
             $item_id = $(this).attr("rel");
-            $nums = $(this).attr("num");
+            $nums = $(this).val();
             if($nums<1){
                 alert('Please fill in the correct quantity')
             }
