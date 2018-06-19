@@ -299,6 +299,28 @@ class QuoteItem extends Service
         return false;
     }
 
+
+    public function updateItems($item_id,$nums)
+    {
+        $cart_id = Yii::$service->cart->quote->getCartId();
+        if ($cart_id) {
+            $one = $this->_itemModel->find()->where([
+                'cart_id' => $cart_id,
+                'item_id' => $item_id,
+            ])->one();
+            if ($one['item_id']) {
+                    $one['qty'] = $nums;
+                    $one->save();
+                    // 重新计算购物车的数量
+                    Yii::$service->cart->quote->computeCartInfo();
+
+                    return true;
+            }
+        }
+
+        return false;
+    }
+
     /**
      * @property $item_id | Int ， quoteItem表的id
      * @return bool

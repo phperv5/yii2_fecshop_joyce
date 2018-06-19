@@ -190,6 +190,7 @@ class CartController extends AppfrontController
     {
         $item_id = Yii::$app->request->get('item_id');
         $up_type = Yii::$app->request->get('up_type');
+        $nums = (int)Yii::$app->request->get('nums');
         $innerTransaction = Yii::$app->db->beginTransaction();
         try {
             if ($up_type == 'add_one') {
@@ -198,6 +199,13 @@ class CartController extends AppfrontController
                 $status = Yii::$service->cart->lessOneItem($item_id);
             } elseif ($up_type == 'remove') {
                 $status = Yii::$service->cart->removeItem($item_id);
+            }elseif($up_type == 'update_item'){
+                if($nums<1){
+                    echo json_encode([
+                        'status' => 'fail',
+                    ]);
+                }
+                $status = Yii::$service->cart->updateItems($item_id);
             }
             if ($status) {
                 echo json_encode([

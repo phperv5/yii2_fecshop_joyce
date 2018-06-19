@@ -111,6 +111,17 @@ class Cart extends Service
         
     }
 
+    protected function actionUpdateItems($item_id,$nums)
+    {
+        $status = Yii::$service->cart->quoteItem->updateItems($item_id,$nums);
+        if (!$status) {
+            return false;
+        }
+        Yii::$service->cart->quote->computeCartInfo();
+        return true;
+
+    }
+
     /**
      * @property $item_id | Int 购物车产品表的id字段
      * 通过item id 删除购物车中的某个产品

@@ -168,7 +168,33 @@ use fecshop\app\appfront\helper\Format;
             }
             location.href = "<?= Yii::$service->url->getUrl('checkout/onepage'); ?>";
         })
-
+        $('.text-amount').blur(function(){
+            $item_id = $(this).attr("rel");
+            $nums = $(this).attr("num");
+            if($nums<1){
+                alert('Please fill in the correct quantity')
+            }
+            $data = {
+                item_id: $item_id,
+                nums: $nums,
+                up_type: "update_item"
+            };
+            jQuery.ajax({
+                async: true,
+                timeout: 6000,
+                dataType: 'json',
+                type: 'get',
+                data: $data,
+                url: updateCartInfoUrl,
+                success: function (data, textStatus) {
+                    if (data.status == 'success') {
+                        window.location.href = currentUrl;
+                    }
+                },
+                error: function (XMLHttpRequest, textStatus, errorThrown) {
+                }
+            });
+        })
         $(".cartdown").click(function () {
             $item_id = $(this).attr("rel");
             num = $(this).attr("num");
