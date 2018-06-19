@@ -70,20 +70,20 @@
                 <div class="clear"></div>
             </div>
 
-            <div id="u_reg_country" class="rowfull">
-                <div class="rowf_per25tr"><span class="red_star">*</span><b>Country / Region:</b></div>
-                <div class="rowf_per70">
-                    <div class="input-box">
-                        <select name="editForm[country]" id="uCountry" size="10" class='required-entry'>
-                            <option value="">---- All Countries &amp; Territories (A to Z) ----</option>
-                            <?php foreach ($country as $code => $c) { ?>
-                                <option value="<?= $code; ?>"><?= $c; ?></option>
-                            <?php } ?>
-                        </select>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
+<!--            <div id="u_reg_country" class="rowfull">-->
+<!--                <div class="rowf_per25tr"><span class="red_star">*</span><b>Country / Region:</b></div>-->
+<!--                <div class="rowf_per70">-->
+<!--                    <div class="input-box">-->
+<!--                        <select name="editForm[country]" id="uCountry" size="10" class='required-entry'>-->
+<!--                            <option value="">---- All Countries &amp; Territories (A to Z) ----</option>-->
+<!--                            --><?php //foreach ($country as $code => $c) { ?>
+<!--                                <option value="--><?//= $code; ?><!--">--><?//= $c; ?><!--</option>-->
+<!--                            --><?php //} ?>
+<!--                        </select>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="clear"></div>-->
+<!--            </div>-->
 
 
             <div id="u_reg_verification_code" class="rowfull">
