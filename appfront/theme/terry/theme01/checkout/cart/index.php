@@ -170,8 +170,8 @@ use fecshop\app\appfront\helper\Format;
         })
         $('.text-amount').blur(function(){
             $item_id = $(this).attr("rel");
-            $nums = $(this).val();
-            if($nums<1){
+            $nums = parseInt($(this).val());
+            if(isNaN($nums) || $nums<1){
                 alert('Please fill in the correct quantity')
             }
             $data = {

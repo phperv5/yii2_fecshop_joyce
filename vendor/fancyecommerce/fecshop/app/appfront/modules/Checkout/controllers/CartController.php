@@ -201,11 +201,11 @@ class CartController extends AppfrontController
                 $status = Yii::$service->cart->removeItem($item_id);
             }elseif($up_type == 'update_item'){
                 if($nums<1){
-                    echo json_encode([
+                    exit(json_encode([
                         'status' => 'fail',
-                    ]);
+                    ]));
                 }
-                $status = Yii::$service->cart->updateItems($item_id);
+                $status = Yii::$service->cart->updateItems($item_id,$nums);
             }
             if ($status) {
                 echo json_encode([
