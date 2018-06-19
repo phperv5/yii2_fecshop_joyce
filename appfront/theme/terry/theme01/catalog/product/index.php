@@ -162,9 +162,6 @@
                 <li>
                     <span><a href="<?= Yii::$service->url->getUrl('catalog/reviewproduct/add', ['spu' => $spu, '_id' => $_id]); ?>">Write a Comment</a></span>
                 </li>
-                <li id="p_ab_mn_5"
-                    onclick="AreaMultiMenuShowHide('p_ab_mn_','p_ab_vw_',5,5,'current',''); GotoScrollTop('1', 'pro_ctab_star', 100, '', '', '');">
-                    <span>After-sales Service</span></li>
             </ul>
             <div class="clear"></div>
         </div>
@@ -204,20 +201,6 @@
                 ?>
                 <?= Yii::$service->page->widget->render($reviewView, $reviewParam); ?>
             </div>
-        </div>
-        <div id="p_ab_vw_5" style="display:none">
-            <a name="AftersalesService"></a>
-            <div class="blank60px"></div>
-            <?php # payment部分。
-            if (empty($payment)) {
-                $paymentView = [
-                    'view' => 'catalog/product/index/payment.php',
-                ];
-                echo Yii::$service->page->widget->render($paymentView);
-            } else {
-                echo $payment;
-            }
-            ?>
         </div>
 
         <div class="blank5px"></div>
