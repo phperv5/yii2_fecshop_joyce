@@ -24,9 +24,9 @@ return [
           //  'de_DE' => [
           //      'code'                    => 'de',
           //  ],
-          //  'es_ES' => [
-          //      'code'                    => 'es',
-          //  ],
+            'es_ES' => [
+                'code'                    => 'es',
+            ],
            // 'ru_RU' => [
             ///    'code'                    => 'ru',
            // ],
