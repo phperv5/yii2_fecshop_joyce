@@ -445,7 +445,8 @@ class Order extends Service
         $deductStatus = Yii::$service->product->stock->deduct($cartInfo['products']);
         if(!$deductStatus){
             // 库存不足则返回
-            return false;
+           // Yii::$service->helper->errors->add('this product is not enough');
+            //return false;
         }
         $beforeEventName = 'event_generate_order_before';
         $afterEventName  = 'event_generate_order_after';

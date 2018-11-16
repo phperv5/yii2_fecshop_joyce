@@ -1,0 +1,1034 @@
+Audi
+        A3
+            2003-2006
+            2007-
+        A4
+            RB4 2002-2005
+            RB8 2006-2007
+        A4L
+            2008-2012
+            2013-
+        A5
+            2008-2012
+            2013-
+        A6
+            1998-2004
+        A6L
+            2004-2008
+            2009-
+        A8L
+            2003-2006
+            2007-2011
+        Q5
+            2008-2012
+            2013-
+        Q7
+            2006-2008
+            2009-
+        R8
+            R8 2007-
+        S5
+            2008-2012
+            2013-
+        S8
+            2007-2011
+        TT
+            TT 2007-
+
+    VW
+        Bora
+            JC 2013
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C32 VDO 2009-
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            VDO K line
+            2013-2015
+                NEC35XX
+        Beetle
+            NEC+95320 MM
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            Beetle k line
+        Caddy
+            CADDY
+            EC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            2008- CDC
+        CC
+            NEC+24C32
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        CDC 2007-
+        Cross Lavida
+            2013-2015
+                NEC35XX
+        EOS
+            2006-2007
+            2008 CDC
+            2008-(NEC+24C32)
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+        Gran Lavida
+            2013-2015
+                NEC35XX
+        Lavida
+            NEC+24C08
+            NEC+24C32
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+95320 MM
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            2013-2015
+                NEC35XX
+        Magotan
+            2007-2010 CDC
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        Golf
+            GOLF5 -2006
+            GOLF5 2007- CDC
+            9S12XHZ512
+            NEC+24C32
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            VDO K line
+        GTI
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        Jetta
+            JC 2013
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            9S12XHZ512
+            K Line -09
+            2013-2015
+                NEC35XX
+        Passat
+            NEC+24C32
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            VDO K line
+        Phaeton
+            2003-2007
+            2008-
+        Polo
+            2010(NEC+24C32)
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+95320 MM
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            VDO K line
+            2012-2015
+                NEC35XX
+        Sagitar
+            2006
+            2007-2010 CDC
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        Santana
+            2013-2015
+                NEC35XX
+        Scirocco
+            2008- CDC
+            2008-(NEC+24C32)
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        Sharan
+            VDO K line
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        T5
+            VDO K line
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        Tiguan
+            9S12XHZ512
+            2008- CDC
+            NEC+24C32
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+95320 MM
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+        Touareg
+            2003-2007
+            2008-
+        Touran
+            2006- CDC
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+        Transporter
+            NEC+24C32
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            NEC+24C64 color meter(type 1)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 color meter(type 2)
+                Read EEPROM
+                Write EEPROM
+                Read write mileage
+            NEC+24C64 13- white meter
+                Read EEPROM
+                Write EEPROM
+                Read write mileage        
+    Skoda
+        NEC+24C64 color meter(type 1)
+            Read EEPROM
+            Write EEPROM
+            Read write mileage
+        NEC+24C64 color meter(type 2)
+            Read EEPROM
+            Write EEPROM
+            Read write mileage
+        NEC+24C64 13- white meter
+            Read EEPROM
+            Write EEPROM
+            Read write mileage
+        VDO K line
+        CDC 2007-
+        Fabia
+            VDO K line
+            2007-(NEC+24C32)VDO
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+            2013-2015
+                NEC35XX
+        Octavia
+            -2006
+            2007- CDC
+            2009-2010(NEC+24C32)VDO
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+        Rapid
+            2013-2015
+                NEC35XX
+        Rapid Spaceback
+            2014-2015
+                NEC35XX
+        Superb
+            NEC+24C32 VDO
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO -12
+    Seat
+        NEC+C64 color meter(type 1)
+            Read EEPROM
+            Write EEPROM
+            Read write mileage
+        NEC+C64 color meter(type 2)
+            Read EEPROM
+            Write EEPROM
+            Read write mileage
+        NEC+C64 13- white meter
+            Read EEPROM
+            Write EEPROM
+            Read write mileage
+        VDO K line
+        Altea
+            NEC+24C64 VDO
+        Ibiza
+            2009(NEC+24C32)VDO
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO
+        Leon
+            2009-2010(NEC+24C32)VDO
+                Read write mileage
+                Read EEPROM
+                Write EEPROM
+            NEC+24C64 VDO
+Bentley
+        Coninental
+            -2007
+            2008-
+        Mousse    
+BENZ
+    A Series
+        W169
+    B Series
+        W245
+    C Series
+        W204
+    CLK Series
+        C207(E-COUPE)
+        W209
+    CLS Series
+        W218
+    E Series
+        W212
+    GL Series
+        X164
+    GLK Series
+        X204
+    ML Series
+        W164
+    R Series
+        W251
+    SLC Series
+        R197
+CHRYSLER
+    1500
+        2002-2005
+        2000-2001
+    200
+        2015
+        2010-
+    2500
+        2003-2005
+    300C
+        2011-
+        -2010
+    300M
+        2001-2004
+        1998-2000
+    3500
+        2003-2005
+    Aspen
+        2006-
+    Avenger
+        2010-
+        2007-2009
+    Caliber
+        2009-
+        2006-2008
+    Caravan
+        2012-
+        2011
+        2008-2010
+        2001-2007
+    Charger
+        2011-
+        2004-
+    Cherokee
+        2015
+    Commander
+        2005-
+    Compass
+        2008-
+        2005-2007
+    Concord
+        2001-2004
+        1998-2000
+    Dakota
+        2004-
+        2001-2003
+    Durango
+        2014-
+        2011-
+        2007-2010
+        2004-2006
+        2001-2003
+    Grand Cherokee
+        2014-
+        2011-
+        2005-2010
+        2002-2004
+    Interepid
+        2001-2004
+        1998-2000
+    Journey
+        2008-
+    LHS
+        2001-2004
+        1998-2000
+    Liberty
+        2008-
+        2002-2007
+    Magnum
+        2004-
+    Neon
+        2001-
+        1999-2001
+    New Sebring
+        2007-
+        2001-2006
+    Nitro
+        2006-
+    Pacifica
+        2007-
+        2003-2006
+    Patriot
+        2006-
+    PT Cruiser
+        2006-
+        2002-2005
+        1999-2001
+    RAM
+        2011-
+        2009-
+        2006-2008
+    Sebring
+        2010-
+        2007-2009
+        2001-2006
+    SRI
+        SRI-5 2005-
+        SRI-4 2005-
+        SRI-3 2005-
+    SX
+        SX-2.0 2001-
+    TJ/YJ/CJ
+        2007
+        2003-2005
+    Voyager
+        2015-
+        2008
+        2001-2007
+    Wrangler
+        2007-
+        2003-2005
+FORD
+    Ford
+        Crown Victoria
+            2005-
+        C-MAX
+            2012
+        E250
+            2008-2009
+        E350
+            2008-2009
+        E450
+            2008-2009
+        Ecosport
+            Type 1
+            Type 2
+        Edge
+            2015-
+                Small color meter
+                Big color meter
+        Escape
+            2008-2012
+        Expedition
+            2007-2010
+            2011
+        Explorer
+            2007-2010
+            2004
+        F150
+            2006-2007
+        F250
+            2006-2007
+        F350
+            2006-2007
+        F450
+            2006-2007
+        F500
+            2006-2007
+        F550
+            2006-2008
+        Fiesta
+            2013-
+                Type 1
+                Type 2
+            -2012
+        Five Hundred(500)
+        Flex
+            2008-2012
+        Focus
+            2013-
+            2009-(Multifunctional screen)
+            //-2008(Smaller screens)
+            2005-2008
+        Freestar
+            2006-
+        Freestyle
+            2005-
+        Kuga
+            2010
+            2012
+            2012-
+                Color meter
+                Monochrome meter
+        Merc Mariner
+            2008-
+        Mondeo
+            2011-2013
+                Monochrome screen meter
+                2 pointer color meter
+            2007-2010
+                Monochrome screen meter
+                4 pointer color meter
+        Navigator
+            2007-2010
+            2011
+        New Mondeo
+            Small color meter
+            Big color meter
+            Monochrome screen meter
+        S-MAX
+            2007-2010
+                Monochrome screen meter
+                4 pointer color meter
+        Town car
+            2005-
+        Taurus
+            2015-(Big color meter)
+            2008-2009
+            2004
+    Lincoln
+        MKZ
+            2015-(Big color meter)
+GM
+    Buick
+        Allure 05-09
+        Century
+        Enclave 2007-
+        Encore
+        Envision
+        Excelle GT/XT
+        GL8
+            Old GL8
+            New GL8
+        Firstland
+            Firstland
+            Firstland 2011
+        Lacrosse
+            -2007
+            2007-
+        Lucerne 2007-
+        Regal
+            2007-
+            -2007
+        Rendezvous 2000-
+        Verano 2013
+    Cadillac
+        ATS 2013-
+        CT6 2016
+        CTS 2013-
+        DTS 2007-
+        Escalade
+            -2002
+            2003-2006
+            2007-
+            2015-
+                Type 1
+                Type 2
+        SRX
+            Type 1
+            Type 2
+        STS 2007-
+        XTS 2013-
+    Chevrolet
+        Alero 1998-
+        Astro 2001-
+        Avalanche
+            -2002
+            2003-2006
+            2007-
+            2014-
+        Aveo
+        Blazer
+            1997-1998
+            1998
+        Camaro
+            1999-
+            2010-
+        Captiva
+        Cavalier 2001-2005
+        Cobalt
+            2005-2007
+            2008-
+        Colorado 2005-
+            Type 1
+            Type 2
+            Type 3
+        Corvette
+            1999-2004
+            2010-
+            2013-
+        Cruze 2010-
+        Equinox
+            2010-
+            2007-2009
+            2005-2006
+        Express
+            2003-2007
+            2008-
+        Express cutaway 2008-
+        Grand AM 1998-
+        HHR
+            2005-2007
+            2008-
+        Hornet
+        Impala
+            2000-2005
+            2006-
+        Imtrigue 1998-
+        Malibu
+            2004-2007
+            2008-
+            2010-
+        Montana
+            2000-2005
+            2006-
+        Monte carlo
+            2000-2005
+            2006-
+        S10
+            1997-1998
+            1998-
+        Silverado
+            1997-2001
+            2003-2006
+            2007-
+            2014-
+        Sonic
+        Spark 2014
+        Suburban
+            1998-2002
+            2003-2006
+            2007-
+            2014-
+        Tahoe
+            2000-2002
+            2003-2006
+            2007-
+            2014-
+        Trax
+        Trailblazer
+        Uplander 05-09
+        Venture 2000-
+    GMC
+        Acadia
+            2007-2009
+        Canyon 2005
+            Type 1
+            Type 2
+        Denali
+            2000-2002
+            2003-2006
+            2007-
+        Envoy
+        Safari 2001-
+        Savana
+            2003-2007
+            2008-
+        Sierra
+            1999-2001
+            2003-2006
+            2007-
+            2014
+            2015-
+                Type 1
+                Type 2
+        Sonoma
+            1997-1998
+            1998-
+        Terrain 2010-
+        Yukon
+            2000-2002
+            2003-2006
+            2007-
+            2014-
+                Type 1
+                Type 2
+    Hummer
+        H2
+            2003-2006
+            2007-
+        H3 2005
+            Type 1
+            Type 2
+    Oldsmobile
+        Alero 1998-
+        Aurora 2001-
+        Bravada
+        Intrigue 1998-
+        Oldsmobile 1998-
+        Silhouette 2000-
+    Pontiac
+        Aztek 2000-
+        Boneville 2001-
+        Firebird 1999-
+        G5
+            2004-2007
+            2008-
+        G6
+            2004-2007
+            2008-
+        Grand AM 1998-
+        Grand Prix 2001-2003
+        Pursuit
+            2005-2007
+            2008-
+        Solstice
+        Sunfire 2001-2005
+        Torrent
+            2006
+            2007-
+    Saturn
+        Outlook 2007-
+        Saturn
+            908 2001-
+            Relay 2005-
+            Vue
+                2003-2007
+                2007-
+ Besturn
+        Old Besturn
+    Citroen
+        Jumper 2015
+    Fiat
+        500
+        Albea
+            95040
+        Brava
+            95040
+        Bravo
+            95040
+        Croma
+            95040
+        Doblo
+            95040
+            2015
+        Ducato
+            95040
+            2011-
+            2015
+        Grande punto
+        Idea
+            95040
+        Linea
+            95040
+        Marelli(Auto)
+        Palio
+            95040
+            MM95160
+            VDO
+        Panda
+            95040
+            2012
+        Punto
+            95040
+            95160 2015
+        Qubo
+        Siena
+            VDO
+        Strada
+            VDO
+        Uno way
+            VDO
+    Geely
+        GC9
+        GS(D70F3529)
+        GL
+        GX7
+        GX9
+    GreatWall
+        H9
+    Hyundai
+        Accent 24C16
+        Azera D70F3423
+        Elantra D70F3536
+        Gets 24C16
+        HB20 D70F3423
+        I20 24C16
+        I25 24C16
+        Mistra
+        Sonata 9
+        Tucson 2016 D70F3536
+        Verna 24C16
+        Veloster 24C16
+    Infinite
+        JX35 2012-
+        QX60 2013-
+    Jaguar
+        F Series
+        XE Series
+            2015-
+        XJ Series
+            2010
+    Kia
+        Ceed
+            24C16
+            D70F3423
+        K4
+        K5
+            24C16
+            D70F3423
+            D70F3536
+        KX5
+            D70F3536
+        Magentis 24C16
+        Optima 
+            24C16
+            D70F3536
+        Rio 
+            24C16
+            2015 D70F3423
+        Sorento 
+            24C16
+            D70F3423
+            D70F3536
+        Soul 24C16
+        Sportage 
+            24C16
+            D70F3536
+        Sportage R
+            24C16
+            D70F3423
+            D70F3536
+    Land Rover
+        Discovery 4
+        Evoque2011-
+        Freelander2 2013
+        Range rover 
+            2010-
+            Sprort 2014
+    Mazda
+        Auto identify
+        Manual Selection
+            M6(Atenza)
+            M3(Axela)
+            CX4
+            CX5
+            CX7
+                2010-
+            CX9
+            M2
+            M3
+            M5
+            M6
+                2005-2009
+                2009-2013
+                2014-
+        Help info
+    MG
+        MG 7(K Line)
+    Mitsubishi
+        Raider 2005-
+    Nissan
+        Altima
+        Pathfinder
+        Teana 2013
+    Opel
+        Astra 2010
+        Combo 2015
+        Insignia 2010
+    Peugeot
+        BOXER 2015
+    Proton
+        Previa 2012(24C16)
+        Preve 2012
+    Renault
+        Koleos
+    Roewe
+        750(K Line)
+        950
+    Smart
+        BR451
+    Ssangyong
+        Actyon 24C16
+    Subaru
+        Outback(D70F3529)
+    Suzuki
+        Grand Vitara
+            Type 1 D70F3421
+            Type 2 D70F3422
+        Kizashi D70F3422
+        XL7 06-10
+    Volvo
+        S80
+            07-
+        XC60
+            07-
+        XC70
+            07-
+PORSCHE
+    911
+        2005-2010
+            Mileage adjustment
+            Data recovery
+    918
+        2015
+            Mileage adjustment
+            Data recovery
+    Boxster
+        2005-2010
+            Mileage adjustment
+            Data recovery
+    Cayenne
+        -2009
+            Mileage adjustment
+        2010
+            Mileage adjustment
+            Data recovery
+    Cayman
+        2005-2010
+            Mileage adjustment
+            Data recovery
+    Panamera
+        2010
+            Mileage adjustment
+            Data recovery
